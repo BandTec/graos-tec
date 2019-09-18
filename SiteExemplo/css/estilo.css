@@ -1,0 +1,43 @@
+
+body{
+background-color: violet;
+margin: 0px;
+}
+
+
+.centro{
+display: absolute;
+top: 50%;
+transform: translate(-50%,-50%);
+position: absolute;
+left: 50%;
+}
+
+.caixa {
+width: 400px;
+height: 400px;
+background-color:turquoise;
+border: 1px;
+border-color: black;
+border-style: solid;
+border-width: 3px;
+}
+
+.alinha_caixa{
+display: absolute;
+top: 50%;
+transform: translate(-50%,-50%);
+position: absolute;
+left: 50%;
+}
+
+.espaco_itens{
+margin-bottom: 15px;
+}
+
+.text_box_style{
+border-radius: 5px;
+}
+
+
+

@@ -1,0 +1,63 @@
+html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+body{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-image: url("https://www.vidarural.pt/wp-content/uploads/sites/5/2019/01/agricultura-vida-rural-2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: table;
+}
+
+.bordabot{
+    
+    background-color:rgba(99, 98, 10,0.5);
+    padding: 9px;
+}
+
+.logo{
+    
+    
+    height: 50px;
+    display: inline-block;
+}
+
+.logo1{
+    margin-top:6px; 
+    height: 40px;
+    
+    
+}
+
+.botoes{
+    float:right;
+    border-width:250px;
+    margin-top:15px;
+    width: 180px;
+    display: inline-block;
+    
+}
+
+.cadastre{
+    border: solid 1px;
+    background: transparent;
+    width: 80px;
+    margin-right: 3px;
+    outline: 0;
+    padding: 3.5px
+}
+
+.entre{
+    border:solid 1px;
+    background:transparent;
+    padding: 3.5px;
+    width: 80px;
+    outline: 0;
+    
+}

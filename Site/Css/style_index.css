@@ -1,9 +1,15 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
 body{
     margin: 0;
     padding: 0;
 }
 
 .Fundo {
+    margin: 0;
     height: 100vh;
     width: 100vw; 
     background-image: url("https://images.wallpaperscraft.com/image/coffee_grains_cinnamon_1434_1920x1200.jpg");
@@ -15,10 +21,28 @@ body{
     width: 100vw;
     background-color: rgba(0, 0, 0, 0.42);
     color: white;
+}
 
+.aTexto{
+    text-decoration: none;
+    color: inherit;
+    margin-left: 80%;
+}
+
+.Link_nav img{
+    margin-top: 10px;
+    margin-left: 10px;   
 }
 
 .Link_nav a{
-    text-decoration: none;
-    color: inherit;
+    padding: 0;    
+}
+
+.aTexto{
+    margin-left: 50px; 
+    cursor: pointer;
+}
+
+.cl_simulador{
+
 }

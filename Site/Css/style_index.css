@@ -18,6 +18,7 @@ body{
 
 .Barra_nav{
     margin-top: 0;
+    height: 55px;
     width: 100vw;
     background-color: rgba(0, 0, 0, 0.42);
     color: white;
@@ -26,21 +27,25 @@ body{
 .aTexto{
     text-decoration: none;
     color: inherit;
-    margin-left: 80%;
+   
 }
 
 .Link_nav img{
+    float: left;
     margin-top: 10px;
     margin-left: 10px;   
 }
 
 .Link_nav a{
-    padding: 0;    
+    padding: 0;   
+    background-color: red; 
 }
 
 .aTexto{
     margin-left: 50px; 
     cursor: pointer;
+    float: right;
+    
 }
 
 .cl_simulador{

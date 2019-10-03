@@ -1,0 +1,24 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.Fundo {
+    height: 100vh;
+    width: 100vw; 
+    background-image: url("https://images.wallpaperscraft.com/image/coffee_grains_cinnamon_1434_1920x1200.jpg");
+    background-size: cover;
+}
+
+.Barra_nav{
+    margin-top: 0;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.42);
+    color: white;
+
+}
+
+.Link_nav a{
+    text-decoration: none;
+    color: inherit;
+}

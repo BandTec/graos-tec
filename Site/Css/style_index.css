@@ -16,38 +16,99 @@ body{
     background-size: cover;
 }
 
-.Barra_nav{
-    margin-top: 0;
-    height: 55px;
+
+nav{
+    margin: 0 auto;
+    height: 58px;
     width: 100vw;
     background-color: rgba(0, 0, 0, 0.42);
     color: white;
 }
 
-.aTexto{
+class=""
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav .btn_link{
+    display: inline-block;
+    margin-left: 80px;
+    padding-top: 5px;
+    position: relative;
+}
+
+nav .btn_logo{
+    display: inline-block;
+    margin-right: 80px;
+    padding-top: 5px;
+    position: relative;
+    margin-left: 5px;
+}
+
+nav a{
+    color: white;
     text-decoration: none;
-    color: inherit;
-   
-}
-
-.Link_nav img{
-    float: left;
-    margin-top: 10px;
-    margin-left: 10px;   
-}
-
-.Link_nav a{
-    padding: 0;   
-    background-color: red; 
-}
-
-.aTexto{
-    margin-left: 50px; 
+    text-transform: uppercase;
+    font-size: 14px;
     cursor: pointer;
-    float: right;
-    
 }
 
-.cl_simulador{
 
+button{
+    height: 5vh;
+    width: 9vw;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-top: 25px;
+}
+input{
+    height: 5vh;
+    width: 20vw;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: large;
+    margin-top: 18px; 
+}
+
+/* CSS DO SIMULADOR */
+.cl_simulador{
+display: absolute;
+top: 50%;
+transform: translate(-50%,-50%);
+position: absolute;
+left: 80%;
+display: none;
+}
+
+.caixa {
+width: 400px;
+height: 400px;
+background-color:rgba(127, 255, 212, 0.219);
+border: 1px;
+
+border-color: rgba(0, 0, 0, 0.603);
+border-style: solid;
+border-width: 3px;
+}
+
+.alinha_caixa{
+display: absolute;
+top: 50%;
+transform: translate(-50%,-50%);
+position: absolute;
+left: 50%;
+}
+
+.espaco_itens{
+margin-bottom: 15px;
+}
+
+.text_box_style{
+border-radius: 5px;
+}
+
+.caixa h2 {
+    margin-left: 3vw;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 6px;
 }

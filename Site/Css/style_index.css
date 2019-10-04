@@ -33,43 +33,52 @@ nav ul{
 
 nav .btn_link{
     float: right;
-    display: inline-block;
-    margin-top: 15px;
+    display: block;
     margin-right: 10vw;
-    padding-top: 5px;
-    position: relative;
+    position: static;
+    margin-top: 20px;
 }
 
 nav .btn_logo{
-    display: inline-block;
-    margin-right: 80px;
-    padding-top: 5px;
-    position: relative;
+    display: block;
+    margin-right: 10vw;
+    position: static;
     margin-left: 5px;
-}
-
-nav a{
-    color: white;
+    position: absolute;
+    padding-top: 5px;
+    margin-top: 5px;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 14px;
     cursor: pointer;
 }
 
+nav .posiacao_a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 5px;
+    padding-top: 5px;
+}
+
 
 /* CSS DO SIMULADOR */
 button{
-    height: 3vh;
-    width: 7vw;
+    height: 40px;
+    width: 100px;
     background-color: rgba(130, 58, 20, 0.97);
     margin-top: 25px;
+    text-align: center;
 }
 input{
     height: 5vh;
     width: 20vw;
     background-color: rgba(130, 58, 20, 0.97);
     font-size: large;
-    margin-top: 18px; 
+    margin-top: 5vh;
+    display: block; 
 }
 
 .conteudo_exibido{
@@ -82,7 +91,7 @@ display: absolute;
 top: 50%;
 transform: translate(-50%,-50%);
 position: absolute;
-left: 80%;
+left: 80vw;
 display: none;
 }
 

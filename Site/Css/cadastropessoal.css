@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* aqui estou dizendo que todos os elementos possuem largura e altura igual a zero */
+}
+
+.fundo{
+    height: 100vh;
+    width: 100vw;
+    background-image:url("http://c1.peakpx.com/wallpaper/19/745/157/iowa-farm-sunset-dusk-evening-sky-wallpaper.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+
+nav{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 58px;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.42);
+    color: white;
+}
+/* Posição e fundo dos inputs */
+.btn_logo{
+    list-style: none;
+    display: block;
+    margin-right: 10vw;
+    position: static;
+    margin-left: 5px;
+    position: absolute;
+    padding-top: 5px;
+    margin-top: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+ul{
+    border: solid 1px;
+    border-color: rgb(10, 29, 46);
+    background-color:rgba(162, 214, 235, 0.5);
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    list-style: none;
+    width: 350px;
+    height: 350px;
+    
+}
+
+.corpo_lista input{
+    position: relative;
+    left: 5%;
+    width:90%;
+    height: 20px;
+    margin-top: 15px
+}
+
+/* botão */
+.borda{
+    position: relative;
+    left: 24%;
+    width: 50%;
+    margin-top: 25px;
+    
+}
+
+.cadastrar{
+    width: 80px
+}
+
+.voltar{
+    width: 80px;
+    position: relative;
+    left: 30px
+   
+}
+
+
+

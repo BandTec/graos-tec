@@ -60,12 +60,12 @@ nav .posição_n{
 
 /*Lista*/
 
-.caixa{
+.caixa {
     border: solid 1px;
     border-color: black;
-    background-color:rgba(162, 214, 235, 0.5);
-    height: 277px;
-    width: 299px;
+    background-color: rgba(162, 214, 235, 0.5);
+    height: 45vh;
+    width: 48vh;
     top: 22%;
     left: 38%;
     position: absolute;

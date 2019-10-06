@@ -12,25 +12,37 @@
         <div class="fundo"> <!-- fundo do site  -->
 
             <nav>
-                <li class="btn_logo"><a href="Index.html" class="Logo_imagem"> <!--nessa nav só possui o logo-->
-                <img src="./Imagens/logo.png"></a>
+                <ul>
+
+                    <li class="btn_logo"><a href="Index.html" class="Logo_imagem">
+                        <img src="./Imagens/logo.png">
+                    </a></li>
+ 
+                    <li class="btn_link"><a  href=""onclick="aparece_simular()" class="posiacao_a">Simulador</a></li> 
+ 
+                     <li class="btn_link"><a href="" class="posiacao_a">Login</a></li> 
+ 
+                     <li class="btn_link"><a href="./cadastro_pessoal.html" class="posiacao_a">Cadastro</a></li> 
+                 </ul>
             </nav>
 
             <!--campos a preencher (inputs)-->
-            <ul class="corpo_lista">
-                <li><input type="text" placeholder="Digite seu nome completo..." id=""></li>
-                <li><input type="text" placeholder="Digite seu cpf..."           id=""></li>   
-                <li><input type="text" placeholder="Digite um login desejado..." id=""></li>  
-                <li><input type="password" placeholder="Digite uma senha...."    id=""></li>  
-                <li><input type="password" placeholder="Confirmação de senha..." id=""></li>  
-                <li><input type="text" placeholder="E-mail..."                   id=""></li>  
-                <li><input type="text" placeholder="Telefone de contato..."      id=""></li>  
+            <div class="caixa">
+                <h2 class="titulo">Cadastrar-se</h2>
+                <ul class="corpo_lista">
+                    <li><input type="text" placeholder="Digite seu nome completo..." id=""></li>
+                    <li><input type="text" placeholder="Digite seu cpf..."           id=""></li>   
+                    <li><input type="text" placeholder="Digite um login desejado..." id=""></li>  
+                    <li><input type="password" placeholder="Digite uma senha...."    id=""></li>  
+                    <li><input type="password" placeholder="Confirmação de senha..." id=""></li>  
+                    <li><input type="text" placeholder="E-mail..."                   id=""></li>  
+                    <li><input type="text" placeholder="Telefone de contato..."      id=""></li>  
                     <div class="borda">
                         <a href="../Site/Corpo/cadastro_graos.html"><button  class="cadastrar">Cadastrar</button></a>
                         <a href="index.html"><button  class="voltar">Voltar</button></a>
                     </div>  
-            </ul>
-
+                </ul>
+            </div>
         </div>
     </body>
 </html>

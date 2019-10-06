@@ -73,8 +73,9 @@ nav .posição_n{
 
 .titulo{
     color: black;
-    margin-left: 8vh;
+    text-align: center;
     margin-top: 2vh;
+    font-family: sans-serif
 }
 
 .corpo_list{

@@ -14,17 +14,28 @@
 }
 
 nav{
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    margin: 0 auto;
     height: 58px;
     width: 100vw;
     background-color: rgba(0, 0, 0, 0.42);
     color: white;
 }
-/* Posição e fundo dos inputs */
-.btn_logo{
+
+nav ul{
+    margin: 0;
+    padding: 0;
     list-style: none;
+}
+
+nav .btn_link{
+    float: right;
+    display: block;
+    margin-right: 10vw;
+    position: static;
+    margin-top: 20px;
+}
+
+nav .btn_logo{
     display: block;
     margin-right: 10vw;
     position: static;
@@ -38,47 +49,64 @@ nav{
     cursor: pointer;
 }
 
-ul{
+nav .posiacao_a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 5px;
+    padding-top: 5px;
+} 
+/* Posição e fundo dos inputs */
+
+
+
+
+.caixa{
     border: solid 1px;
-    border-color: rgb(10, 29, 46);
+    border-color: rgb(7, 2, 24);
     background-color:rgba(162, 214, 235, 0.5);
-    transform: translate(-50%,-50%);
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    list-style: none;
     width: 350px;
     height: 350px;
-    
+    top: 22%;
+    left: 38%;
+    position: absolute;
+}
+
+.titulo{
+    color: black;
+    text-align: center;
+    margin-top: 2vh;
+    font-family:  sans-serif
+}
+
+.corpo_lista{
+    position: relative;
+    left: 5%;
+    margin-top:  1.5vh;
+    list-style-type: none
 }
 
 .corpo_lista input{
-    position: relative;
-    left: 5%;
-    width:90%;
-    height: 20px;
-    margin-top: 15px
-}
-
-/* botão */
-.borda{
-    position: relative;
-    left: 24%;
-    width: 50%;
-    margin-top: 25px;
-    
-}
-
-.cadastrar{
-    width: 80px
-}
-
-.voltar{
-    width: 80px;
-    position: relative;
-    left: 30px
+    width: 90%;
+    margin-top: 2.5vh;
    
 }
 
+.borda{
+    position: relative;
+    top: 2.8vh
+}
 
+.cadastrar{
+    position: relative;
+    left:20%;
+    width: 80px;
+}
 
+.voltar{
+    position: relative;
+    left:25%;
+    width: 80px;
+}

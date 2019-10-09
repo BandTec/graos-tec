@@ -27,7 +27,7 @@ nav ul{
     list-style: none;
 }
 
-nav .btn_link{
+.btn_link li{
     float: right;
     display: block;
     margin-right: 10vw;
@@ -49,7 +49,7 @@ nav .btn_logo{
     cursor: pointer;
 }
 
-nav .posiacao_a{
+.btn_link a{
     color: white;
     text-decoration: none;
     text-transform: uppercase;
@@ -57,56 +57,42 @@ nav .posiacao_a{
     cursor: pointer;
     margin-top: 5px;
     padding-top: 5px;
-} 
+}
 /* Posição e fundo dos inputs */
-
-
-
-
-.caixa{
+.caixa {
     border: solid 1px;
-    border-color: rgb(7, 2, 24);
-    background-color:rgba(162, 214, 235, 0.5);
-    width: 300px;
-    height: 290px;
-    top: 22%;
-    left: 38%;
+    border-color: rgb(10, 29, 46);
+    background-color:rgba(57, 120, 145, 0.94);
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
     position: absolute;
+    width: 350px;
+    padding: 20px;
 }
 
-.titulo{
-    color: black;
+.caixa input{
+    border: solid 1px;
+    height: 4vh;
+    width: 350px;
+    font-size: large;
+    margin-top: 20px;
+    display: block;
+}
+
+.caixa button{
+    border: solid 1px;
+    background-color: rgba(247, 241, 238, 0.534);
+    margin-top: 25px;
+    height: 30px;
+    width: 100px;
+    margin-bottom: 35px;
+}
+
+.caixa h2 {
     text-align: center;
-    margin-top: 2vh;
-    font-family:  sans-serif
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 4px;
 }
 
-.corpo_lista{
-    position: relative;
-    left: 5%;
-    margin-top:  1.5vh;
-    list-style-type: none
-}
-
-.corpo_lista input{
-    width: 90%;
-    margin-top: 2.5vh;
-   
-}
-
-.borda{
-    position: relative;
-    top: 2.8vh
-}
-
-.cadastrar_armazém{
-    position: relative;
-    left:20%;
-    width: 80px;
-}
-
-.voltar{
-    position: relative;
-    left:25%;
-    width: 80px;
-}

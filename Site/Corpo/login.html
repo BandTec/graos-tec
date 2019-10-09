@@ -4,42 +4,52 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="./Css/login.css">
+        <link rel="stylesheet" href="../Css/login.css">
         <title>Login</title>
     </head>
     <!-- (Giovanna) -->
     <body>
-        <div class="fundo"> <!-- fundo do site  -->
+        <div class="Fundo"> <!-- fundo do site  -->
 
-            <nav>
+            <nav class = "btn_link">
                 <ul>
 
-                    <li class="btn_logo"><a href="Index.html" class="Logo_imagem">
-                        <img src="./Imagens/logo.png">
+                    <li class="btn_logo"><a href="../Index.html">
+                        <img src="../Imagens/logo.png"> 
                     </a></li> 
  
-                    <li class="btn_link"><a href="./login.html" class="posiacao_a">Login</a></li>
+                    <li><a href="./cadastro_pessoal.html">Cadastro</a></li>
                     
-                    <li class="btn_link"><a href="../Site/Corpo/cadastro_graos.html" class="posiacao_a">Simulador</a></li>
+                    <li><a href="../Index.html">Simulador</a></li>
 
-                    <li class="btn_link"><a href="./cadastro_armazém.html" class="posiacao_a">Armazém</a></li>
+                    <li><a href="./cadastro_armazém.html">Armazém</a></li>
 
-                    <li class="btn_link"><a href="../Site/Corpo/cadastro_graos.html" class="posiacao_a">Grãos</a></li>
+                    <li><a href="./cadastro_graos.html">Grãos</a></li>
                  </ul>
             </nav>
 
             <!--campos a preencher (inputs)-->
             <div class="caixa">
-                <h2 class="titulo">Login</h2>
-                <ul class="corpo_lista">
-                    <li><input type="text" placeholder="Digite seu login..." id=""></li>  
-                    <li><input type="password" placeholder="Digite sua senha...."    id=""></li>  
-                    <div class="borda">
-                        <a href=""><button  class="login">Entrar</button></a>
-                        <a href="./cadastro_pessoal.html"><button  class="voltar">Cadastrar</button></a>
-                    </div>  
-                </ul>
+
+                <div class="borda">
+
+                 <h2>Login</h2>
+
+                   <input placeholder="Digite seu login..." id="">
+                   <input type="password" placeholder="Digite sua senha...."id="">
+
+                   <!-- <a href="">Esqueceu a senha ?</a> -->
+                   
+                        <button>Entrar</button>
+                        <a href="./cadastro_pessoal.html"><button>Cadastrar</button></a>
+                </div>  
+                
             </div>
+            
         </div>
-    </body>
+        
+    </div>
+    
+</body>
+
 </html>

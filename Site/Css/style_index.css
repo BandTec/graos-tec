@@ -35,114 +35,70 @@ nav ul{
     list-style: none;
 }
 
-nav .btn_link{
+.btn_link li{
     float: right;
     display: block;
     margin-right: 10vw;
-    position: static;
     margin-top: 20px;
 }
 
 nav .btn_logo{
-    display: block;
-    margin-right: 10vw;
-    position: static;
     margin-left: 5px;
     position: absolute;
     padding-top: 5px;
     margin-top: 5px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 14px;
-    cursor: pointer;
 }
 
-nav .posiacao_a{
+.btn_link a{
     color: white;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 14px;
-    cursor: pointer;
-    margin-top: 5px;
-    padding-top: 5px;
 }
 
 
 /* CSS DO SIMULADOR */
-button{
-    position: relative;
-    left: 6vw;
-    border: solid 1px;
-    background-color: rgba(247, 241, 238, 0.534);
-    margin-top: 25px;
-    text-align: center;
-    height: 4vh;
-    width: 100px;
-}
-input{
-    border: solid 1px;
-    height: 4vh;
-    width: 20vw;
-    font-size: large;
-    margin-top: 5vh;
-    display: block;
-}
-
-.conteudo_exibido{
-    color: black;
-    font-size: 20px;
-}
-
-.cl_simulador{
-display: absolute;
-top: 50%;
-transform: translate(-50%,-50%);
-position: absolute;
-left: 80vw;
-display: none;
-}
 
 .caixa {
     border: solid 1px;
     border-color: rgb(10, 29, 46);
-
-    background-color:rgba(162, 214, 235, 0.5);
+    background-color:rgba(57, 120, 145, 0.94);
     transform: translate(-50%,-50%);
     top: 50%;
-    left: 50%;
+    left: 80%;
     position: absolute;
-    list-style: none;
     width: 350px;
-    height: 350px;
-
-
-
+    padding: 20px;
 }
 
-.alinha_caixa{
-display: absolute;
-top: 50%;
-transform: translate(-50%,-50%);
-position: absolute;
-left: 50%;
+.caixa input{
+    border: solid 1px;
+    height: 4vh;
+    width: 350px;
+    font-size: large;
+    margin-top: 20px;
+    display: block;
 }
 
-.espaco_itens{
-margin-bottom: 15px;
-}
-
-.text_box_style{
-border-radius: 5px;
+.caixa button{
+    border: solid 1px;
+    background-color: rgba(247, 241, 238, 0.534);
+    margin-top: 25px;
+    height: 30px;
+    width: 100px;
+    margin-bottom: 35px;
 }
 
 .caixa h2 {
-    font-size: 10px;
-    margin-left: 3vw;
+    text-align: center;
+    font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 4px;
 }
 
-
-
+.caixa span{
+    color: black;
+    font-size: 20px;
+    margin-top: 35px;
+}
 
 

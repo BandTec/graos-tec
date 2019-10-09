@@ -18,7 +18,7 @@
 
 
             <!-- Barra de navegação com lista não ordenada e link -->
-            <nav> 
+            <nav class = "btn_link "> 
 
              <ul>
 
@@ -26,15 +26,13 @@
                        <img src="./Imagens/logo.png">
                    </a></li>
 
-                   <li class="btn_link"><a href="../Site/cadastro_pessoal.html" class="posiacao_a">Cadastro</a></li> 
+                   <li><a href="./Corpo/cadastro_pessoal.html">Cadastro</a></li> 
 
-                    <li class="btn_link"><a href="./login.html" class="posiacao_a">Login</a></li>
+                    <li><a href="./Corpo/login.html">Login</a></li>
 
-                    <li class="btn_link"><a onclick="aparece_simular()" class="posiacao_a">Simulador</a></li>
+                    <li><a href="./Corpo/cadastro_armazém.html">Armazém</a></li> 
 
-                    <li class="btn_link"><a href="../Site/cadastro_armazém.html" class="posiacao_a">Armazém</a></li> 
-
-                    <li class="btn_link"><a href="./Corpo/cadastro_graos.html" class="posiacao_a">Grãos</a></li> 
+                    <li><a href="./Corpo/cadastro_graos.html">Grãos</a></li> 
                 </ul>
             </nav>
 
@@ -43,28 +41,21 @@
             
     
                 <!-- Simulador financeiro, com css -->
-                <div class="cl_simulador" id="id_simulador">
+                <div class="caixa">
 
-                        <div class="caixa">
+                                <h2>Simulador</h2>
                     
-                            <div class="alinha_caixa">
+                    <input id="tonelada" placeholder="Digite a safra em toneladas anual">
                     
-                    <input type="text" id="tonelada" class="espaco_itens" placeholder="Digite a safra em toneladas anual">
+                    <input id="preco_tonelada" placeholder="Digite o preço por tonelada">
                     
-                    <input type="text" id="preco_tonelada" class="espaco_itens" placeholder="Digite o preço por tonelada">
-                    
-                    <button onclick = "calcular()" style="margin-bottom: 15px">Simular perda</button> <br>
+                    <button onclick = "calcular()">Simular perda</button> <br>
                     
                     
-                                <span id="escrever_perda" class="espaco_itens conteudo_exibido"></span>
+                                <span id="escrever_perda"></span>
                         
-                         </div>
-                    
                         </div>
-                    
                     </div>
-                    
-
         </div>
 
 

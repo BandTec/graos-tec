@@ -1,17 +1,25 @@
 *{
     padding: 0;
     margin: 0;
-    /* aqui estou dizendo que todos os elementos possuem largura e altura igual a zero */
 }
 
-.fundo{
+body{
+    margin: 0;
+    padding: 0;
+}
+/* https://images.wallpaperscraft.com/image/coffee_grains_cinnamon_1434_1920x1200.jpg ////
+essa é a imagem antiga, caso queiram voltar ao fundo anterior   (PEDRO)*/
+
+.Fundo {
+    margin: 0;
     height: 100vh;
     width: 100vw;
-    background-image:url("http://c1.peakpx.com/wallpaper/19/745/157/iowa-farm-sunset-dusk-evening-sky-wallpaper.jpg");
+    background-image: url("http://c1.peakpx.com/wallpaper/19/745/157/iowa-farm-sunset-dusk-evening-sky-wallpaper.jpg");
     background-size: cover;
-    background-position: center;
-
+    background-position: center; /*isso serve para centralizar a imagem, empurrando ela mais
+                                 para o fundo (apagam e façam o teste) (PEDRO)*/
 }
+
 
 nav{
     margin: 0 auto;
@@ -27,97 +35,62 @@ nav ul{
     list-style: none;
 }
 
-nav .link_nav{
+.btn_link li{
     float: right;
     display: block;
     margin-right: 10vw;
-    position: static;
     margin-top: 20px;
 }
 
-nav .nav_logo{
-    margin-right: 10vw;
-    position: static;
-    margin-left: 5px; /*Se diatancio da esquerda da borda 5px */
+nav .btn_logo{
+    margin-left: 5px;
     position: absolute;
-    padding-top: 5px; /*/*Deu uma dsitancia do topo de 5px*/
-    margin-top: 5px; /*Deu uma dsitancia do topo de 5px*/
-    text-decoration: none;  /*Tira o sublinado dos links*/
-    text-transform: uppercase;/*Deixando as letras maisculas*/
-    font-size: 14px; /*Editando o tamanho das letras*/
-    cursor: pointer;
+    padding-top: 5px;
+    margin-top: 5px;
 }
 
-nav .posição_n{
-    color: white; /*cor da letra*/
-    text-decoration: none; /*Tira o sublinado dos links*/
-    text-transform: uppercase; /*Deixando as letras maisculas*/
-    font-size: 14px;  /*Editando o tamanho das letras*/
-    cursor: pointer;
-    margin-top: 5px; /*Se diatancio do topo da borda 5px */
-    padding-top: 5px; /*Se diatancio do topo da borda 5px */
-}
+.btn_link a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}  
 
-/*Lista*/
-
+/* Posição e fundo dos inputs */
 .caixa {
     border: solid 1px;
-    border-color: black;
-    background-color: rgba(162, 214, 235, 0.5);
-    height: 45vh;
-    width: 48vh;
-    top: 22%;
-    left: 38%;
+    border-color: rgb(10, 29, 46);
+    background-color:rgba(57, 120, 145, 0.94);
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
     position: absolute;
+    width: 350px;
+    padding: 20px;
 }
 
-.titulo{
-    color: black;
+.caixa input{
+    border: solid 1px;
+    height: 4vh;
+    width: 350px;
+    font-size: large;
+    margin-top: 20px;
+    display: block;
+}
+
+.caixa button{
+    border: solid 1px;
+    background-color: rgba(247, 241, 238, 0.534);
+    margin-top: 25px;
+    height: 30px;
+    width: 100px;
+    margin-bottom: 35px;
+    margin-left: 14%;
+}
+
+.caixa h2 {
     text-align: center;
-    margin-top: 2vh;
-    font-family: sans-serif
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 4px;
 }
 
-.corpo_list{
-    position: relative;
-    left: 8%;
-    margin-top: 15px;
-}
-
-.inp_caixa1{
-    width: 249px;
-    height: 20px;
-    margin-top: 0vh;
-}
-
-.inp_caixa2{
-    width: 249px;
-    height: 20px;
-    margin-top: 3vh;
-}
-
-.inp_caixa3{
-    width: 249px;
-    height: 20px;
-    margin-top: 3vh;
-}
-
-.inp_caixa4{
-    width: 249px;
-    height: 20px;
-    margin-top: 3vh;
-}
-
-/*Botões*/
-
-.btn_grao1{
-    width: 87px;
-    margin-left: 7vh;
-    margin-top: 4vh;
-}
-
-.btn_grao2{
-    width: 87px;
-    margin-left: 6vh;
-    margin-top: 4vh;
-}

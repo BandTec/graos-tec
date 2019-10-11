@@ -63,27 +63,19 @@
 </html>
 
 <script>
+/* 
+ton = pega valor em toneladas (safra anual)
 
-        function aparece_simular(){
-            //faz aparecer o simulador
-            id_simulador.style.display = 'block';
-        }
+preco = preço de toneladas vendidas
 
+toneladas_perdidas = é a própria operação com base no valor constante de 5,6% (0.056 no código) de toneladas perdidas em média
 
+dinheiro_perdido = é o dinheiro perdido com base nas toneladas_perdidas
 
-        /* 
-        ton = pega valor em toneladas (safra anual)
-        
-        preco = preço de toneladas vendidas
-        
-        toneladas_perdidas = é a própria operação com base no valor constante de 5,6% (0.056 no código) de toneladas perdidas em média
-        
-        dinheiro_perdido = é o dinheiro perdido com base nas toneladas_perdidas
-        
-        if (se) = se a quantidade de toneladas perdidas for menor que 1 a frase exibida será em quilogramas (com base no calculo)
-        
-        else (se não) = frase padrão para perda em toneladas.
-        */
+if (se) = se a quantidade de toneladas perdidas for menor que 1 a frase exibida será em quilogramas (com base no calculo)
+
+else (se não) = frase padrão para perda em toneladas.
+*/
         function calcular(){
             var ton = Number(tonelada.value);
             var preco = Number(preco_tonelada.value);

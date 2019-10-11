@@ -7,8 +7,7 @@ body{
     margin: 0;
     padding: 0;
 }
-/* https://images.wallpaperscraft.com/image/coffee_grains_cinnamon_1434_1920x1200.jpg ////
-essa é a imagem antiga, caso queiram voltar ao fundo anterior   (PEDRO)*/
+
 
 .Fundo {
     margin: 0;
@@ -16,10 +15,8 @@ essa é a imagem antiga, caso queiram voltar ao fundo anterior   (PEDRO)*/
     width: 100vw;
     background-image: url("http://c1.peakpx.com/wallpaper/19/745/157/iowa-farm-sunset-dusk-evening-sky-wallpaper.jpg");
     background-size: cover;
-    background-position: center; /*isso serve para centralizar a imagem, empurrando ela mais
-                                 para o fundo (apagam e façam o teste) (PEDRO)*/
+    background-position: center;
 }
-
 
 nav{
     margin: 0 auto;

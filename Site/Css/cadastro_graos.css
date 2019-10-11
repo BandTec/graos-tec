@@ -53,9 +53,11 @@ nav .btn_logo{
     color: white;
     text-decoration: none;
     text-transform: uppercase;
-}  
+}
 
-/* Posição e fundo dos inputs */
+
+/* CSS DO SIMULADOR */
+
 .caixa {
     border: solid 1px;
     border-color: rgb(10, 29, 46);
@@ -93,4 +95,3 @@ nav .btn_logo{
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 4px;
 }
-

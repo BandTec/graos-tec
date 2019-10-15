@@ -56,8 +56,8 @@ nav .btn_logo{
     border-color: rgb(10, 29, 46);
     background-color:rgba(57, 120, 145, 0.94);
     transform: translate(-50%,-50%);
-    top: 50%;
-    left: 50%;
+    top: 55%;
+    left: 36.5%;
     position: absolute;
     width: 350px;
     padding: 20px;
@@ -83,6 +83,36 @@ nav .btn_logo{
 }
 
 .caixa h2 {
+    text-align: center;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 4px;
+}
+
+
+.caixa_endereço{
+    border: solid 1px;
+    border-color: rgb(10, 29, 46);
+    background-color:rgba(57, 120, 145, 0.94);
+    width: 350px;
+    height: 453px;
+    padding: 20px;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 55%;
+    left: 68%;
+}
+
+.caixa_endereço input{
+    border: solid 1px;
+    width: 345px;
+    margin-top: 20px;
+    font-size: large;
+    height: 4vh;
+    display: block;
+}
+
+.caixa_endereço h2 {
     text-align: center;
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;

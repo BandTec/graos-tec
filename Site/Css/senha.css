@@ -1,6 +1,6 @@
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
 body{
@@ -8,7 +8,7 @@ body{
     padding: 0;
 }
 
-.Fundo {
+.fundo {
     margin: 0;
     height: 100vh;
     width: 100vw;
@@ -45,13 +45,13 @@ nav .btn_logo{
     margin-top: 5px;
 }
 
+
 .btn_link a{
     color: white;
     text-decoration: none;
     text-transform: uppercase;
 }  
 
-/* Posição e fundo dos inputs */
 .caixa {
     border: solid 1px;
     border-color: rgb(10, 29, 46);
@@ -64,7 +64,7 @@ nav .btn_logo{
     padding: 20px;
 }
 
-.caixa input{
+input{
     border: solid 1px;
     height: 4vh;
     width: 350px;
@@ -73,28 +73,20 @@ nav .btn_logo{
     display: block;
 }
 
-.senha{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   color: white;
-
-}
-
-.caixa button{
+button{
     border: solid 1px;
     background-color: rgba(247, 241, 238, 0.534);
     margin-top: 25px;
     height: 30px;
-    width: 100px;
+    width: 250px;
     margin-bottom: 35px;
-    margin-left: 14%;
+    margin-left: 50px;
 }
 
-.caixa h2 {
+h2{
     text-align: center;
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 4px;
+    
 }
-

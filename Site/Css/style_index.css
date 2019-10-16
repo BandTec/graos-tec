@@ -54,6 +54,21 @@ nav .btn_logo{
 
 /* CSS DO SIMULADOR */
 
+.context{
+    border: solid 1px;
+    border-color: rgb(10, 29, 46);
+    background-color:rgba(57, 120, 145, 0.94);
+    transform: translate(-50%,-50%);
+    top: 60%;
+    left: 30%;
+    position: absolute;
+    width: 500px;
+    height: 375px;
+    padding: 20px;
+    font-size: 24px;
+}
+
+
 .caixa {
     border: solid 1px;
     border-color: rgb(10, 29, 46);
@@ -85,6 +100,13 @@ nav .btn_logo{
 }
 
 .caixa h2 {
+    text-align: center;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 4px;
+}
+
+.context h2 {
     text-align: center;
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;

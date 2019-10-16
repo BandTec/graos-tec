@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+    <script src=""></script>
     <!--Link do Stylo-->
     <link rel="stylesheet" href="./Css/style_index.css">
 
@@ -36,6 +36,26 @@
                 </ul>
             </nav>
 
+            
+            <div class = "context">
+
+                <h2>O que fazemos e quem somos</h2>
+                Um dos processos mais importante na produção de grãos
+                é o armazenamento, e neste 
+                processo é perdido cerca de 67,2% anualmente na produção, 
+                ocasionando perda de grande parte da produção e receita.
+
+                Isso ocorre pelo ambiente desregulado, causando deteriorização
+                dos grãos e a proliferação de insetos, fungos e microtoxinas. 
+
+                <br>
+                Quem somos:
+                a Grãostech é uma empresa que se dedica no bom armazenamento de grãos,
+                monitorando a temperatura e umidade nos silos. Assim garantindo 
+                a diminuição no desperdicio de grãos, e aumentando a receita. 
+
+            </div>
+
            
 
             
@@ -45,9 +65,9 @@
 
                                 <h2>Simulador</h2>
                     
-                    <input id="tonelada" placeholder="Digite a safra em toneladas anual">
+                    <input id="txb_tonelada" placeholder="Digite a safra em toneladas anual">
                     
-                    <input id="preco_tonelada" placeholder="Digite o preço por tonelada">
+                    <input id="txb_preco_tonelada" placeholder="Digite o preço por tonelada">
                     
                     <button onclick = "calcular()">Simular perda</button> <br>
                     
@@ -77,8 +97,8 @@ if (se) = se a quantidade de toneladas perdidas for menor que 1 a frase exibida 
 else (se não) = frase padrão para perda em toneladas.
 */
         function calcular(){
-            var ton = Number(tonelada.value);
-            var preco = Number(preco_tonelada.value);
+            var ton = Number(txb_tonelada.value);
+            var preco = Number(txb_preco_tonelada.value);
             var toneladas_perdidas;
             var dinheiro_perdido;
               

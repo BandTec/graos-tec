@@ -75,7 +75,7 @@ nav .btn_logo{
 .caixa button{
     border: solid 1px;
     background-color: rgba(247, 241, 238, 0.534);
-    margin-top: 25px;
+    margin-top: 40px; 
     height: 30px;
     width: 100px;
     margin-bottom: 35px;
@@ -95,7 +95,7 @@ nav .btn_logo{
     border-color: rgb(10, 29, 46);
     background-color:rgba(57, 120, 145, 0.94);
     width: 350px;
-    height: 406px;
+    height: 422px;
     padding: 20px;
     transform: translate(-50%,-50%);
     position: absolute;
@@ -117,4 +117,72 @@ nav .btn_logo{
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 4px;
+}
+
+/* Espaços dos alertas da validação "innerHTML" */
+
+/* Começo Alertas do "cadastrar-se" */
+
+#mensagem_nome{
+    position: absolute;
+    
+    height: 17px;
+    width: 350px;
+}
+#mensagem_email{
+    position: absolute;
+   
+    height: 17px;
+    width: 350px;
+}
+#mensagem_cpf{
+    position: absolute;
+   
+    height: 17px;
+    width: 350px;
+}
+#mensagem_senha{
+    position: absolute;
+    
+    height: 17px;
+    width: 350px;
+}
+#mensagem_telefone{
+    position: absolute;
+    
+    height: 37px;
+    width: 350px;
+}
+
+/* Final Alertas do "cadastrar-se"  */
+
+#mensagem_cep{
+    position: absolute;
+    
+     height: 32px;
+     width: 345px;
+}
+#mensagem_rua{
+    position: absolute;
+    
+     height: 32px;
+     width: 345px;
+}
+#mensagem_cidade{
+    position: absolute;
+    
+     height: 32px;
+     width: 345px;
+}
+#mensagem_estado{
+    position: absolute;
+    
+     height: 32px;
+     width: 345px;
+}
+#mensagem_numero{
+    position: absolute;
+   
+     height: 32px;
+     width: 345px;
 }

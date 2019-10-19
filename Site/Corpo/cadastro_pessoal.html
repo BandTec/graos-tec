@@ -6,6 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="../Css/cadastro_pessoal.css">
         <title>Cadastro</title>
+        <script src="../vincularJs/cadastrar_pessoal.js"></script>
     </head>
     <!-- (PEDRO) -->
     <body>
@@ -31,31 +32,36 @@
             <div class="caixa">
                 <h2>Cadastrar-se</h2>
                 
-                    <input type="text" placeholder="Digite seu nome completo..." id="">
+                    <input type="text" placeholder="Digite seu nome completo..." id="nome_validar">
+                        <div id="mensagem_nome"></div>
+                    <input type="text" placeholder="E-mail..."                   id="email_validar"> 
+                        <div id="mensagem_email"></div>
+                    <input type="text" placeholder="Digite seu cpf..."           id="cpf_validar">    
+                        <div id="mensagem_cpf"></div>
+                    <input type="password" placeholder="Digite uma senha...."    id="senhaum_validar">  
+ 
+                    <input type="password" placeholder="Confirmação de senha..." id="senhadois_validar">  
+                        <div id="mensagem_senha"></div>
+                    <input type="text" placeholder="Telefone para contato..."      id="telefone_validar">  
+                        <div id="mensagem_telefone"></div>
 
-                    <input type="text" placeholder="E-mail..."                   id=""> 
-
-                    <input type="text" placeholder="Digite seu cpf..."           id="">    
- 
-                    <input type="password" placeholder="Digite uma senha...."    id="">  
- 
-                    <input type="password" placeholder="Confirmação de senha..." id="">  
- 
-                    <input type="text" placeholder="Telefone para contato..."      id="">  
- 
-
-                        <button>Cadastrar</button>
+                        <button onclick="validacao()">Cadastrar</button>
                         <a href="../index.html"><button>Voltar</button></a>           
            </div>
 
            <div class="caixa_endereço">
                <h2>Endereço</h2>
-                <input placeholder="CEP">
-                <input placeholder="Rua">
-                <input placeholder="Cidade">
-                <input placeholder="Estado">
-                <input placeholder="Numero Residêcial">
-                <input placeholder="Complemento">
+                <input placeholder="CEP"                id="cep_validar">
+                <div id="mensagem_cep"></div>
+                <input placeholder="Rua"                id="rua_validar">
+                <div id="mensagem_rua"></div>
+                <input placeholder="Cidade"             id="cidade_validar">
+                <div id="mensagem_cidade"></div>
+                <input placeholder="Estado"             id="estado_validar">
+                <div id="mensagem_estado"></div>
+                <input placeholder="Numero Residêcial"  id="numero_validar">
+                <div id="mensagem_numero"></div>
+                <input placeholder="Complemento"        id="complemento_validar">
            </div>
     </div>
     </body>

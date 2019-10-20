@@ -118,5 +118,11 @@ nav .btn_logo{
     font-size: 20px;
     margin-top: 35px;
 }
-
+/* Aqui estou fixando a div mensagem (faz com que pare de aumentar o tamanho da caixa) */
+#escrever_perda{
+    position: absolute;
+    top:170px;
+    height: 40px;
+    width: 350px;
+}
 

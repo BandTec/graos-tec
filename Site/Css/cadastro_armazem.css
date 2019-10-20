@@ -96,3 +96,28 @@ nav .btn_logo{
     margin-bottom: 4px;
 }
 
+/*Validações*/
+
+#mensagem_nome{
+    position: absolute;
+    height: 32px;
+    width: 345px;
+}
+
+#mensagem_largura{
+    position: absolute;
+    height: 32px;
+    width: 345px;
+}
+
+#mensagem_altura{
+    position: absolute;
+    height: 32px;
+    width: 345px;
+}
+
+#mensagem_volume{
+    position: absolute;
+    height: 32px;
+    width: 345px;
+}

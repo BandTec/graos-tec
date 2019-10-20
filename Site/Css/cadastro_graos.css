@@ -92,3 +92,23 @@ nav .btn_logo{
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 4px;
 }
+
+/*Validações*/
+
+#mensagem_grao{
+    position: absolute;
+    height: 32px;
+    width: 345px;
+}
+
+#mensagem_temperatura{
+    position: absolute;
+    height: 32px;
+    width: 345px;
+}
+
+#mensagem_umidade{
+    position: absolute;
+    height: 32px;
+    width: 345px;
+}

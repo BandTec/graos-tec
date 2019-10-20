@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="shortcut icon" type="image/x-icon" href="./6361silo.ico">
+        <script type="text/javascript" src="../vincularJs/cadastror_armazém.js"></script>
         <link rel="stylesheet" href="../Css/cadastro_armazem.css">
         <title>Cadastro de armazém</title>
     </head>
@@ -32,17 +32,18 @@
 
             <div class="caixa">
 
-                
                 <h2>Cadastrar armazém</h2>
                 
-                    <input placeholder="Digite o nome do armazém" id="">
-                    <input placeholder="Digite a largura do armazém" id="">   
-                    <input placeholder="Digite a altura do armazém" id="">  
-                    <input placeholder="Digite o volume do armazém" id="">
-                      
+                    <input placeholder="Digite o nome do armazém" id="nome_validacao">
+                        <div id="mensagem_nome"></div>
+                    <input placeholder="Digite a largura do armazém" id="lagura_validacao">   
+                        <div id="mensagem_largura"></div>
+                    <input placeholder="Digite a altura do armazém" id="altura_validacao">  
+                        <div id="mensagem_altura"></div>
+                    <input placeholder="Digite o volume do armazém" id="volume_validacao">
+                        <div id="mensagem_volume"></div>
                     
-                    
-                    <button>Cadastrar</button>
+                    <button onclick="validacao()">Cadastrar</button>
                        <a href="../Index.html"><button>Voltar</button></a> 
             
         </div>

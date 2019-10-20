@@ -4,15 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" type="image/x-icon" href="../6361silo.ico"> <!--icone que fica na guia dos site-->
-    <link rel="stylesheet" href="../Css/cadastro_graos.css">
+    <script type="text/javascript" src="../vincularJs/cadastror_grãos.js"></script>
+   <link rel="stylesheet" href="../Css/cadastro_graos.css">
     <title>Cadastro de Grãos</title>
 </head>
 <body><!--Nilton-->
          <!--Imagem do fundo -->
-
 <div class="Fundo">
-
 
         <nav class="btn_link">   <!--Bara de navegação-->
             <ul>
@@ -30,18 +28,21 @@
 
             </ul>
                  
-        </nav>
+        </nav> 
 
                     
             <div class="caixa">
 
                 <h2>Cadastro de Grãos</h2>
                
-                    <input id="" placeholder="Digite o nome do grão">
-                    <input id="" placeholder="Informe a temperatura adequada (°C)">
-                    <input id="" placeholder="Informe a umidade adequada (UR)"> <!--UR é a sigla nacional dada a umidade--> 
+                    <input placeholder="Digite o nome do grão"               id="grao_validacao">
+                        <div id="mensagem_grao"></div>
+                    <input placeholder="Informe a temperatura adequada (°C)" id="temperatura_validacao">
+                        <div id="mensagem_temperatura"></div>
+                    <input placeholder="Informe a umidade adequada (UR)"     id="umidade_validacao"> <!--UR é a sigla nacional dada a umidade--> 
+                        <div id="mensagem_umidade"></div>
                 
-                    <button>Cadastrar</button>
+                    <button onclick="validacao()">Cadastrar</button>
                     <a href="../Index.html"><button>Voltar</button></a></li>
             </div>
 

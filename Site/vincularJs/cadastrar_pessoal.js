@@ -49,16 +49,16 @@ function validacao(){
         mensagem_cep.innerHTML = `<span style = "color:#a30f0f"> Preencha o campo <b>CEP</b> com o minimo de carateres`;
     }
     if(rua == ""){
-        mensagem_rua.innerHTML = `<span style = "color:#a30f0f"> Preencha o campo <b>Rua</b> com o minimo de carateres`
+        mensagem_rua.innerHTML = `<span style = "color:#a30f0f"> Preencha o campo <b>rua</b> com o minimo de carateres`
     }
     if(cidade == ""){
-        mensagem_cidade.innerHTML = `<span style = "color:#a30f0f"> Preencha o campo <b>Cidade</b> com o minimo de carateres`
+        mensagem_cidade.innerHTML = `<span style = "color:#a30f0f"> Preencha o campo <b>cidade</b> com o minimo de carateres`
     }
     if(estado == ""){
-        mensagem_estado.innerHTML = `<span style = "color:#a30f0f"> Preencha o campo <b>Estado</b> com o minimo de carateres`
+        mensagem_estado.innerHTML = `<span style = "color:#a30f0f"> Preencha o campo <b>estado</b> com o minimo de carateres`
     }
     if(numero == "" || numero.length <1){
-        mensagem_numero.innerHTML = `<span style = "color:#a30f0f"> Preencha o campo <b>Nume..</b> com o minimo de carateres`
+        mensagem_numero.innerHTML = `<span style = "color:#a30f0f"> Preencha o campo <b>nume..</b> com o minimo de carateres`
     }
      // Começo da validação "endereço"
     else{

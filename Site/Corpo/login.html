@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="../Css/login.css">
+        <script type="text/JavaScript" src="../vincularJs/login.js"></script>
         <title>Login</title>
     </head>
     <!-- (Giovanna) -->
@@ -33,11 +34,12 @@
 
                  <h2>Login</h2>
 
-                   <input placeholder="Digite seu login..." id="">
-                   <input type="password" placeholder="Digite sua senha...."id="">
-
+                   <input placeholder="Digite seu login..." id="login_validar">
+                   <div id="div_frase"></div>
+                   <input type="password" placeholder="Digite sua senha...."id="senha_validar">
+                    <div id="div_mensagem"></div>
                    
-                   <button>Entrar</button>
+                   <button onclick="entrar()">Entrar</button>
                    <a href="./cadastro_pessoal.html"><button>Cadastrar</button></a>
                    
                    <a class="senha" href="../Corpo/senha.html">Esqueceu a senha ?</a>

@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../Css/senha.css">
+    <script type="text/JavaScript" src="../vincularJs/recuperacao.js"></script>
+
     <title>Recuperação de senha</title>
 </head>
 
@@ -30,10 +32,11 @@
 
                 <h2>Redefinir senha</h2>
 
-                  <input placeholder="Digite seu e-mail..." id="">
+                  <input placeholder="Digite seu e-mail..." id="email_validar">
+                  <div id="div_msg"></div>
 
                   
-                  <button>Enviar código para recuperação</button>
+                  <button onclick="redefinir()">Enviar código para recuperação</button>
                   
        </div>
        

@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    margin: 0 auto;
+    height: 58px;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.42);
+    color: white;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.btn_link li{
+    float: right;
+    display: block;
+    margin-right: 10vw;
+    margin-top: 20px;
+}
+
+nav .btn_logo{
+    margin-left: 5px;
+    position: absolute;
+    padding-top: 5px;
+    margin-top: 5px;
+}
+
+.btn_link a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+.Fundo {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("http://c1.peakpx.com/wallpaper/19/745/157/iowa-farm-sunset-dusk-evening-sky-wallpaper.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.grafico{
+    background-color: #ffffffeb;
+}
+
+nav{
+    margin: 0 auto;
+    height: 58px;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.42);
+    color: white;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+canvas 
+{
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}

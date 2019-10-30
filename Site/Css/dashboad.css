@@ -9,6 +9,8 @@ body{
     background-image: url("http://c1.peakpx.com/wallpaper/19/745/157/iowa-farm-sunset-dusk-evening-sky-wallpaper.jpg");
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 nav{
@@ -30,6 +32,10 @@ nav ul{
     display: block;
     margin-right: 10vw;
     margin-top: 20px;
+}
+
+.btn_link{
+    width: 100%;
 }
 
 nav .btn_logo{
@@ -60,6 +66,7 @@ nav .btn_logo{
     width: 80%;
     height: 50%;
     margin-left: 10%;
+    
 }
 
 .grafico_umidade{
@@ -68,6 +75,7 @@ nav .btn_logo{
     width: 80%;
     height: 50%;
     margin-left: 10%;
+    margin-bottom: 3%;
 }
 
 nav{

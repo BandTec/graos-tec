@@ -6,6 +6,9 @@
 body{
     margin: 0;
     padding: 0;
+    background-image: url("http://c1.peakpx.com/wallpaper/19/745/157/iowa-farm-sunset-dusk-evening-sky-wallpaper.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 nav{
@@ -43,16 +46,24 @@ nav .btn_logo{
 }
 
 
-.Fundo {
+/* .fundo {
     margin: 0;
     height: 100vh;
     width: 100vw;
     background-image: url("http://c1.peakpx.com/wallpaper/19/745/157/iowa-farm-sunset-dusk-evening-sky-wallpaper.jpg");
     background-size: cover;
     background-position: center;
+} */
+
+.grafico_temperatura{
+    background-color: #ffffffeb;
+    width: 80%;
+    height: 50%;
+    margin-left: 10%;
 }
 
-.grafico{
+.grafico_umidade{
+    margin-top: 5%;
     background-color: #ffffffeb;
     width: 80%;
     height: 50%;

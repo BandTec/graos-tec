@@ -35,7 +35,10 @@ class ArduinoDataRead {
             arduino.pipe(parser);
             
             parser.on('data', (data) => {
-                this.listData.push(parseFloat(data));
+				let value = data.toString().split(';');
+				let temperature = parseFloat(value[0].replace('\r', ''));
+				let humidity = parseFloat(value[1].replace('\r', ''));
+                this.listData.push({ temperature, humidity });
             });
             
         }).catch(error => console.log(error));

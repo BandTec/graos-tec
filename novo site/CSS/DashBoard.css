@@ -6,7 +6,7 @@
 body {
     font-family: Open Sans, Arial, sans-serif;
     overflow-x: hidden;
-    background-color: #ccf;
+    background-color: rgba(88, 63, 30, 0.596);
 }
 
 /* Começo nav */
@@ -64,7 +64,7 @@ nav ul li a {
     color: rgb(255, 255, 255);
     text-align: left;
     padding-left: 20px;
-    margin-bottom:20px ;
+    margin-bottom:5px ;
     opacity: 0.5;
 }
 .links span{
@@ -87,62 +87,69 @@ nav ul li a {
 
 .Suporte{
     position: absolute;
-    top: 60%;
+    top: 80%;
    
     width: 200px;
    
 }
 
 
-/* Final nav */
+/* Gráfico */
 
-/* Começo Login */
-.FundoLogin{
-    border: solid 1px;
+.grafico_temperatura{
     position: absolute;
-    transform: translate(50%,-50%);
-    top: 50%;
-    left: 25%;
-    height: 400px;
-    width: 350px;
+    top: 10%;
+    background-color: #ffffffeb;
+    width: 80%;
+    height: 50%;
+    margin-left: 10%;
     
 }
 
-
-
-.FundoLogin input{
-    margin-bottom: 20px;
-    width: 320px;
-    height: 20px;
+.grafico_umidade{
+    position: absolute;
+    top: 70%;
+    background-color: #ffffffeb;
+    width: 80%;
+    height: 50%;
+    margin-left: 10%;
+    margin-bottom: 5%;
 }
-/* Final Login */
+
+canvas 
+{
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+
+.AnaliTemp{
+    border: solid 1px;
+    padding: 2px;
+    position: absolute;
+    left: 15%;
+    top: 2%;
+}
+
+.AnaliUmi{
+    border: solid 1px;
+    padding: 2px;
+    position: absolute;
+    left: 15%;
+    top: 2%;
+}
+
+
+
+/* Final nav */
+
+
 
 
 /* Botão */
 
 
-.posicaBtA{
-    position: absolute;
-    top: 63%;
-    left: 4%;
-    width: 310px;
-    height: 60px;
-    padding: 1%;
-}
-.posicaBtA button{
-    border: none;
-    position: absolute;
-    left: 42%;
-    top:40%;
-    background: transparent;
-    cursor: pointer;
-    opacity:0.8;
-    outline: none;
-}
-
-.posicaBtA button:hover{
-    opacity:5;
-}
 
 
 /* Final Botão */

@@ -110,17 +110,22 @@ nav ul li a {
 
 .posicaoinput{
     position: absolute;
-    top: 20%;
+    top: 25%;
     padding: 2%;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    
+    font-size: 18px; 
 }
 
 .FundoLogin input{
     margin-bottom: 20px;
     width: 320px;
-    height: 20px;
+    height: 25px;
+    margin-bottom: 7%;
+
+}
+.FundoLogin h1{
+position: relative;
+top: 5%;
 }
 /* Final Login */
 

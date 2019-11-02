@@ -103,18 +103,32 @@ nav ul li a {
     transform: translate(50%,-50%);
     top: 50%;
     left: 25%;
-    height: 400px;
-    width: 350px;
+    height: 450px;
+    width: 360px;
     
 }
 
 
 
 .FundoLogin input{
+
     margin-bottom: 20px;
-    width: 320px;
-    height: 20px;
+    width: 340px;
+    height: 25px;
+    margin-bottom: 7%;
 }
+
+.posicaoCad{
+    position: absolute;
+    top: 20%;
+}
+
+.FundoLogin h1{
+    position: relative;
+    top: 5%;
+    }
+
+
 /* Final Login */
 
 
@@ -123,8 +137,8 @@ nav ul li a {
 
 .posicaBtA{
     position: absolute;
-    top: 63%;
-    left: 4%;
+    top: 75%;
+    left: 5%;
     width: 310px;
     height: 60px;
     padding: 1%;

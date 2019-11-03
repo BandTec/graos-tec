@@ -6,7 +6,12 @@
 body {
     font-family: Open Sans, Arial, sans-serif;
     overflow-x: hidden;
-    background-color: #ccf;
+    background-image: url("../imagens/fundo7.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* background-color: rgba(88, 63, 30, 0.596); */
+   
 }
 
 /* Começo nav */
@@ -96,15 +101,18 @@ nav ul li a {
 
 /* Final nav */
 
-/* Começo Login */
+/* Começo Cadastro */
 .FundoLogin{
-    border: solid 1px;
+    border-right: 2px solid #373737;
+    border-bottom: 3px solid #1A1A1A;
+    background-color: rgb(104, 109, 109);
     position: absolute;
     transform: translate(50%,-50%);
+    padding: 0.5%;
     top: 50%;
     left: 25%;
     height: 450px;
-    width: 360px;
+    width: 365px;
     
 }
 
@@ -113,7 +121,7 @@ nav ul li a {
 .FundoLogin input{
 
     margin-bottom: 20px;
-    width: 340px;
+    width: 335px;
     height: 25px;
     margin-bottom: 7%;
 }
@@ -129,7 +137,7 @@ nav ul li a {
     }
 
 
-/* Final Login */
+/* Final Cadastro */
 
 
 /* Botão */
@@ -157,7 +165,6 @@ nav ul li a {
 .posicaBtA button:hover{
     opacity:5;
 }
-
 
 /* Final Botão */
 

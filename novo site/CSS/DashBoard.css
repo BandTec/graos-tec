@@ -6,7 +6,11 @@
 body {
     font-family: Open Sans, Arial, sans-serif;
     overflow-x: hidden;
-    background-color: rgba(88, 63, 30, 0.596);
+    /* background-color: rgba(88, 63, 30, 0.596); */
+    background-image: url("../imagens/fundo7.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 /* Começo nav */
@@ -99,7 +103,7 @@ nav ul li a {
 .grafico_temperatura{
     position: absolute;
     top: 10%;
-    background-color: #ffffffeb;
+    background-color: #ffffff9c;
     width: 80%;
     height: 50%;
     margin-left: 10%;
@@ -109,7 +113,7 @@ nav ul li a {
 .grafico_umidade{
     position: absolute;
     top: 70%;
-    background-color: #ffffffeb;
+    background-color: #ffffff9c;
     width: 80%;
     height: 50%;
     margin-left: 10%;

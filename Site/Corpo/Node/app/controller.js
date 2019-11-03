@@ -8,7 +8,7 @@ router.get('/temperature', (request, response, next) => {
 	let listTemperature = ArduinoData.List.map((item) => item.temperature);
 	
     let sum = listTemperature.reduce((a, b) => a + b, 0);
-    let average = (sum / listTemperature.length).toFixed(2);
+    let average = ((sum / listTemperature.length)-10).toFixed(2);
 
     response.json({
         data: listTemperature,
@@ -23,7 +23,7 @@ router.get('/humidity', (request, response, next) => {
 	let listHumidity =  ArduinoData.List.map((item) => item.humidity);
 	
     let sum = listHumidity.reduce((a, b) => a + b, 0);
-    let average2 = (sum / listHumidity.length).toFixed(2);
+    let average2 = ((sum / listHumidity.length)-20).toFixed(2);
 
     response.json({
         data: listHumidity,

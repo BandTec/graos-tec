@@ -6,12 +6,11 @@
 body {
     font-family: Open Sans, Arial, sans-serif;
     overflow-x: hidden;
+    /* background-color: rgba(88, 63, 30, 0.596); */
     background-image: url("../imagens/fundo7.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    /* background-color: rgba(88, 63, 30, 0.596); */
-   
 }
 
 /* Começo nav */
@@ -54,11 +53,13 @@ nav ul li a {
 .content {
     padding-top: 300px;
     height: 325px;
+    text-align: center;
     transition: transform 0.4s ease;
 }
 .active-nav .content {
     transform: translate3d(200px, 0, 0);
 }
+
 
 .links a{
     border-top: 1px solid #373737;
@@ -91,24 +92,36 @@ nav ul li a {
 .Suporte{
     position: absolute;
     top: 60%;
+   
     width: 200px;
+   
 }
+
 
 /* Final nav */
 
-/* Começo Cadastro */
+/* Começo Login */
 .FundoLogin{
-    border-right: 2px solid #373737;
+    border-right: 0px solid #373737;
     border-bottom: 3px solid #1A1A1A;
     background-color: rgb(104, 109, 109);
     position: absolute;
     transform: translate(50%,-50%);
     padding: 0.5%;
-    top: 64%;
+    top: 50%;
     left: 25%;
-    height: 652px;
-    width: 365px;
-    border-radius: 2%;
+    height: 341px;
+    width: 350px;
+    border-radius: 3%;
+    
+}
+
+.posicaoinput{
+    position: absolute;
+    top: 18%;
+    padding: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px; 
 }
 
 .FundoLogin input{
@@ -119,56 +132,55 @@ nav ul li a {
     padding: 1% 1%;
     font-size: 16px;
     margin-top: 2%;
-    margin-left: 4%;
-}
 
-.posicaoCad{
-    position: absolute;
-    top: 15%;
 }
-
 .FundoLogin h1{
-    position: relative;
-    top: 5%;
-    text-align: center;
+position: relative;
+top: 5%;
 }
 
 .labels{
     font-size: 130%;
     position: relative;
-    left: 6%;
-    text-emphasis: none;
+    left: -35%;
 }
 
-/* Final Cadastro */
+a { color: inherit; } /*Tirei o zul dos links*/
+a { text-decoration: none;}
+/* Final Login */
 
 
 /* Botão */
 
+
 .posicaBtA{
     position: absolute;
-    top: 75%;
-    left: 5%;
-    width: 0;
-    height: 0;
+    top: 63%;
+    left: 4%;
+    width: 68px;
+    height: 60px;
     padding: 1%;
 }
 .posicaBtA button{
     border: none;
     position: absolute;
-    left: 2826%;
-    top: 1401%;
+    left: 250%;
+    top:70%;
     background: transparent;
     cursor: pointer;
-    opacity: 0.8;
+    opacity:0.8;
     outline: none;
+}
+
+.posicaBtA button:hover{
+    opacity:5;
 }
 
 .posicaBtA_voltar{
     position: absolute;
     top: 87%;
     left: 4%;
-    width: 209px;
+    width: 310px;
     height: 60px;
     padding: 1%;
     transform: rotate(180deg);
@@ -177,11 +189,11 @@ nav ul li a {
 .posicaBtA_voltar button{
     border: none;
     position: absolute;
-    left: 38%;
-    top: -16%;
+    left: 60%;
+    top: 84%;
     background: transparent;
     cursor: pointer;
-    opacity: 0.8;
+    opacity:0.8;
     outline: none;
 }
 
@@ -189,21 +201,10 @@ nav ul li a {
     opacity:5;
 }
 
-.posicaBtA button:hover{
-    opacity:5;
-}
-
-.checkboxx{
+.esquecer{
     position: absolute;
-    top: 447px;
-    left: -39%;
-}
-
-.label_termos{
-    font-size: 133%;
-    position: absolute;
-    left: 12%;
-    top: 101%;
+    top: 66%;
+    left: 58%;
+    
 }
 /* Final Botão */
-

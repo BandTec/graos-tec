@@ -9,8 +9,6 @@ body {
     /* background-color: rgba(88, 63, 30, 0.596); */
     background-image: url("../imagens/fundo7.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 
 /* Começo nav */
@@ -98,63 +96,10 @@ nav ul li a {
 }
 
 
-/* Gráfico */
-
-.grafico_temperatura{
-    position: absolute;
-    top: 10%;
-    background-color: #ffffff9c;
-    width: 80%;
-    height: 50%;
-    margin-left: 10%;
-    
-}
-
-.grafico_umidade{
-    position: absolute;
-    top: 70%;
-    background-color: #ffffff9c;
-    width: 80%;
-    height: 50%;
-    margin-left: 10%;
-    margin-bottom: 5%;
-}
-
-canvas 
-{
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-}
-
-
-.AnaliTemp{
-    border: solid 1px;
-    padding: 2px;
-    position: absolute;
-    left: 15%;
-    top: 2%;
-}
-
-.AnaliUmi{
-    border: solid 1px;
-    padding: 2px;
-    position: absolute;
-    left: 15%;
-    top: 2%;
-}
-
-
-
 /* Final nav */
 
 
 
 
-/* Botão */
 
-
-
-
-/* Final Botão */
 

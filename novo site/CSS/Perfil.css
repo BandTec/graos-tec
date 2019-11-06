@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -9,6 +10,7 @@ body {
     /* background-color: rgba(88, 63, 30, 0.596); */
     background-image: url("../imagens/fundo7.jpg");
     background-size: cover;
+    background-attachment: fixed;
 }
 
 /* Começo nav */
@@ -90,15 +92,72 @@ nav ul li a {
 .Suporte{
     position: absolute;
     top: 80%;
-   
     width: 200px;
    
 }
-
-
 /* Final nav */
 
 
+/* Começo do fundo das informações */
+
+.FundoPessoas{
+    position: absolute;
+    background-color: rgb(104, 109, 109);
+    border-right: 2px solid #373737;
+    border-bottom: 3px solid #1A1A1A;
+    top:15%;
+    left: 25%;
+    width: 50%;
+    height: 70%;
+}
+
+.FundoInputpessoas{
+    border: solid 1px;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    height: 80%;
+    width: 90%;
+}
+
+
+.dadosUse {
+    border-bottom:solid 2px rgb(90, 89, 89);
+    height: 40%;
+    text-align: left;
+    padding:1%;
+}
+
+.dadosUse label{
+    display: block;
+    margin-bottom: 2%;
+    width: 11%;
+    height: 14%;
+    /* text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap; faz as reticências no final(...)*/ 
+}
+
+.DadosEnde{
+    height: 52.5%;  
+    text-align: left;  
+    padding: 1%;
+    
+}
+
+.DadosEnde label{
+    display: block;
+    width: 11%;
+    height: 14%;
+    margin-bottom:1% ;
+    
+}
+
+
+
+
+
+/* Final do fundo das informações */
 
 
 

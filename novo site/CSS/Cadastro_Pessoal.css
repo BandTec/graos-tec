@@ -206,5 +206,11 @@ nav ul li a {
     left: 12%;
     top: 101%;
 }
-/* Final Botão */
 
+/*validação*/
+
+.posicaoCad div{
+    position: absolute;
+    margin-top: -3vh;
+    margin-left: 6%;
+}

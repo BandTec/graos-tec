@@ -11,3 +11,15 @@
     
     
 })();
+
+function login() {
+    alert("Teste de Login");
+ }
+
+ function cadastrar(){
+    alert("Teste de Cadastro");
+ }
+
+ function voltar_login() { 
+     
+  }

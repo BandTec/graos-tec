@@ -11,9 +11,9 @@ function validacao_cadastro_pessoal(){
     var senha2 = valor_senha2.value;
     var telefone = Number(valor_telefone.value);
 
-    if(nome == "" || nome.length >=20 || nome.length <=2 || email.length <=10 || email.length >=40 || email.indexOf ("@") == -1 || email == "" ||
-    telefone == "" || telefone.length <2 || telefone.length >11 || senha1 == "" || senha1.length <=8 || senha1.length >=19 || 
-    senha1 == senha2 || senha2 == ""){
+    if(nome == "" || nome.length >=30 || nome.length <=2 || email.length <=10 || email.length >=40 || email.indexOf ("@") == -1 || email == "" ||
+    telefone == "" || telefone.length <9 || telefone.length >11 || senha1 == "" || senha1.length <=8 || senha1.length >=19 || 
+    senha1 != senha2 || senha2 == ""){
         
         if(nome.length >=30 || nome.length <=2){
             valida_nome.style.color = 'red';

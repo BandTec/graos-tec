@@ -27,15 +27,18 @@
                 <h1>Login</h1>
                 <div class="posicaoinput">
                     <label class="labels">Usuario</label>
-                    <input placeholder="Usuário">
+                    <input placeholder="Usuário" id="usuario_validar">
+                    <div id="div_validar_login"></div>
+                    
                     <label class="labels">Senha</label>
-                    <input type="password" placeholder="Senha">
+                    <input placeholder="Senha" type="password" id="senha_validar">
+                    <div id="div_validar_senha"></div>
                  </div>
             
             <a  class="esquecer" href="">Esqueci a senha!?</a>
 
             <div class="posicaBtA">
-                <button onclick="login()"><img src="./imagens/login.png" alt=""></button>
+                <button onclick="entrar()"><img src="./imagens/login.png" alt=""></button>
             </div>
 
             <div class="posicaBtA_voltar">

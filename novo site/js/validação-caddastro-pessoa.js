@@ -62,3 +62,7 @@ function validacao_cadastro_pessoal(){
         location.href = `../corpo/DashBoard.html`;
     }
 }
+
+function voltar(){
+    this.open("../index.html");
+}

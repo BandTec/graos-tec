@@ -104,7 +104,7 @@ nav ul li a {
     padding: 0.5%;
     top: 13%;
     left: 16%;
-    height: 63%;
+    height: 39%;
     width: 48%;
     border-radius: 2%;
     margin-bottom: 5%;
@@ -118,21 +118,21 @@ nav ul li a {
 
 .conteudo{
     position: absolute;
-    top: 12%;
+    top: 19%;
     left: 7%;
     font-size: 3vh;
 }
 
 .subtitulo{
     position: absolute;
-    top: 26%;
+    top: 40%;
     left: 5%;
     font-size: 4vh;
 }
 
-.caixa input{
+.inputt{
     position: absolute;
-    top: 35%;
+    top: 56%;
     left: 6%;
     width: 37%;
     height: 8%;
@@ -145,18 +145,39 @@ nav ul li a {
 
 .subtitulo1{
     position: absolute;
-    top: 53%;
+    top: 41%;
     left: 6%;
     font-size: 4vh;
 }
 
-.caixa label{
+.conteudo_checkbox1{
     position: absolute;
     left: 6%;
     top: 68%;
 }
 
+.conteudo_checkbox2{
+    position: absolute;
+    left: 6%;
+    top: 77%;
+}
 
-.checkbox1{
+::-webkit-input-placeholder{
+    color: black;
+}
 
+.caixa button{
+    position: absolute;
+    width: 28%;
+    height: 12%;
+    top: 81%;
+    left: 8%;
+    border-radius: 1vh;
+    border: 0;
+}
+
+.resultado_valida{
+    position: absolute;
+    top: 67%;
+    left: 7%;
 }

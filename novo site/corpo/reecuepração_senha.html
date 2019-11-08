@@ -6,7 +6,7 @@
         <title>Recuperação da senha</title>
         <link rel="stylesheet" href="../CSS/recuepração_senha.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <script src="../js/login.js"></script>
+        <script src="../js/esqueceu-senha.js"></script>
     </head>
     <!-- a -->
     <body>        
@@ -14,6 +14,7 @@
             <a href="#" class="nav-toggle-btn"><img src="../imagens/menu.png"></a>
             <ul class="links">
                 <span>Home</span>
+                <li><a href="./Login.html">Login</a></li>
                 <li><a href="./Cadastro_pessoal.html">Cadastre-se</a></li>
                 <li><a href="#">Simulador de perdas</a></li>
                 <li><a href="#">Quem somos</a></li>
@@ -25,12 +26,10 @@
             <div class="tiutlo">Recuperação de senha!</div>
                 <div class="conteudo">Recupere sua senha de forma simples e rápida para acessar o site GraosTech!</div>
             <div class="subtitulo">Identificação do usuário.</div>
-            <input placeholder="E-mail" id="">
-            <div class="subtitulo1">Formas de envio:</div>
-            <form>
-                <label class="conteudo_checkbox1"><input type="checkbox" class="checkbox1" id="validacao_checkbox">Em seu e-mail de usuário</label>
-                <div class="resulatdo_checkbox" id="resultado_checkbox"></div>
-            </form>
+            <input placeholder="E-mail" class="inputt" id="valor_email">
+            <div class="resultado_valida" id="div_recupera"></div>
+
+            <button onclick="Ir()">confirmar</button>
     
         </div>
 

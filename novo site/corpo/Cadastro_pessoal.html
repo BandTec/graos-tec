@@ -52,19 +52,24 @@
                 </div>
 
                 <div class="endereço">
-                       <label class="labels">CEP<input placeholder="CEP"></label>
-                       <label class="labels">Numero<input placeholder="Numero"></label>
-                       <label class="labels">Bairro<input placeholder="Bairro   "></label>
-                       <label class="labels">Cidade<input placeholder="Cidade"></label> 
-                       <label class="labels">Estado<input placeholder="Estado"></label>
+                       <label class="labels">CEP<input placeholder="CEP" id="valor_cep"></label>
+                        <div id="valida_cep"></div>
+
+                       <label class="labels">Numero<input placeholder="Numero" id="valor_numero"></label>
+                       <div id="valida_numero"></div>
+
+                       <label class="labels">Bairro<input placeholder="Bairro" id="valor_bairro"></label>
+                       <div id="valida_bairro"></div>
+
+                       <label class="labels">Cidade<input placeholder="Cidade" id="valor_cidade"></label>
+                       <div id="valida_cidade"></div>
+
+                       <label class="labels">Estado<input placeholder="Estado" id="valor_estado"></label>
+                       <div class="validação_estado" id="valida_estado"></div>
                 </div>
             
                 <div class="posicaBtA">
                     <button onclick="validacao_cadastro_pessoal()"><img src="../imagens/login.png" alt=""></button>
-                </div>
-
-                <div class="posicaBtA_voltar">
-                    <button onclick="voltar()"><img src="../imagens/login.png" alt=""></button>
                 </div>
 
             </div>

@@ -52,14 +52,13 @@ nav ul li a {
 
 .content {
     padding-top: 300px;
-    height: 325px;
+    height: 308px;
     text-align: center;
     transition: transform 0.4s ease;
 }
 .active-nav .content {
     transform: translate3d(200px, 0, 0);
 }
-
 
 .links a{
     border-top: 1px solid #373737;
@@ -92,11 +91,8 @@ nav ul li a {
 .Suporte{
     position: absolute;
     top: 60%;
-   
-    width: 200px;
-   
+    width: 200px;   
 }
-
 
 /* Final nav */
 
@@ -204,9 +200,16 @@ a { text-decoration: none;}
 .esquecer{
     position: absolute;
     top: 66%;
-    left: 58%;
-    
+    left: 61%;
 }
-/* Final Botão */
 
+.helpdeskk{
+
+}
+
+.posicaoinput div{
+    position: absolute;
+    margin-top: -6%;
+    left: 6%;
+}
 /*Ferramenta de help Desk*/

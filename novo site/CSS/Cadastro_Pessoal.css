@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -102,35 +103,45 @@ nav ul li a {
     border-bottom: 3px solid #1A1A1A;
     background-color: rgb(104, 109, 109);
     position: absolute;
-    transform: translate(50%,-50%);
-    padding: 0.5%;
-    top: 64%;
-    left: 25%;
-    height: 586px;
-    width: 365px;
+    top: 10%;
+    left: 20%;
+    position: absolute;
+    padding: 1%;
+    height: 85%;
+    width: 65%;
     border-radius: 2%;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
 }
 
-.FundoLogin input{
-    width: 320px;
-    height: 25px;
-    margin-bottom: 7%;
+
+.posicaoCad{
+    position: absolute;
+    padding-top: 2%;
+    top: 13%;
+    border: solid 1px;
+    width: 48%;
+    height: 74%;
+}
+
+
+.posicaoCad input{
+    position: relative;
+    display: block;
+    width: 90%;
+    height: 5%;
+    margin-bottom: 4%;
     border: 0;
-    padding: 1% 1%;
+    padding: 1% ;
     font-size: 16px;
     margin-top: 2%;
     margin-left: 4%;
 }
 
-.posicaoCad{
-    position: absolute;
-    top: 15%;
-}
+
 
 .FundoLogin h1{
     position: relative;
-    top: 5%;
+    top: 2%;
     text-align: center;
 }
 
@@ -141,6 +152,37 @@ nav ul li a {
     text-emphasis: none;
 }
 
+
+/* cadastro endereço */
+
+
+.endereço{
+    border: solid;
+    position: absolute;
+    padding-top: 2.2%;
+    top: 13%;
+    right: 1%   ;
+    border: solid 1px;
+    width: 48%;
+    height: 74%
+}
+
+.endereço input{
+    position: relative;
+    right: 5.5%;
+    display: block;
+    width: 90%;
+    height: 5%;
+    margin-bottom: 4%;
+    border: 0;
+    padding: 1% ;
+    font-size: 16px;
+    margin-top: 2%;
+    margin-left: 4%;
+}
+
+
+
 /* Final Cadastro */
 
 
@@ -148,17 +190,18 @@ nav ul li a {
 
 .posicaBtA{
     position: absolute;
-    top: 75%;
-    left: 5%;
-    width: 0;
-    height: 0;
-    padding: 1%;
+    
+    padding-top:0.5% ;
+    top: 90%;
+    left: 35%;
+    width: 30%;
+    height: 10%;
+    
 }
 .posicaBtA button{
     border: none;
     position: absolute;
-    left: 2826%;
-    top: 1269%;
+    right: 10%;
     background: transparent;
     cursor: pointer;
     opacity: 0.8;
@@ -167,8 +210,8 @@ nav ul li a {
 
 .posicaBtA_voltar{
     position: absolute;
-    top: 87%;
-    left: 4%;
+    top: 84.5%;
+    left: 30%;
     width: 209px;
     height: 60px;
     padding: 1%;
@@ -219,3 +262,7 @@ nav ul li a {
     top: 111%;
     left: 7%;
 }
+
+
+
+/* Endereçooo */

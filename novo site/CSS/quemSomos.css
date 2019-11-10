@@ -126,6 +126,9 @@ nav ul li a {
 
 .apresentação{
     
-    font: 400 1.3rem/1.7 Roboto,Arial,Helvetica,Sans-serif;
-    
+    font: 400 1.3rem/1.7 Roboto,Arial,Helvetica,Sans-serif; 
+}
+
+.apresentação a{
+    text-decoration: none;
 }

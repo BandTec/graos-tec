@@ -80,12 +80,19 @@ nav ul li a {
     color: #999;
     padding-top: 20px;
     padding-left: 20px;
-    /* text-align: left; */
+    text-align: left;
     
 }
+
 .links a:hover{
     opacity:1;
 }
+
+
+
+
+
+
 
 .Suporte{
     position: absolute;
@@ -132,3 +139,4 @@ nav ul li a {
 .apresentação a{
     text-decoration: none;
 }
+

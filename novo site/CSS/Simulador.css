@@ -4,10 +4,9 @@
 }
 
 body {
-    font-family: Open Sans, Arial, sans-serif;
     overflow-x: hidden;
     /* background-color: rgba(88, 63, 30, 0.596); */
-    background-image: url("../imagens/fundo7.jpg");
+    background-image: url("../imagens/fundo-cafe.png");
     background-size: cover;
 }
 
@@ -111,20 +110,23 @@ nav ul li a {
     top: 30%;
     width: 30%;
     height: 40%;
-    border-right: 2px solid #373737;
-    border-bottom: 3px solid #1A1A1A;
-    background-color: rgb(104, 109, 109);
+    border-radius: 5%;
+    background-color: rgba(0, 0, 0, .3);
 }
 
 .FundoSimulador input{
     position: relative;
-    left: 5%;
-    top: 6%;
-    margin-bottom: 7%;
     display: block;
+    margin-bottom: 9%;
     font-size:16px;
+    border: 0;
+    left: 5%;
+    top: 8%;
     width: 90%;
     height: 10%;
+    padding: 3px;
+    color: white;
+    background-color: rgba(0, 0, 0, .9);
 }
 
 .FundoSimulador button{
@@ -132,12 +134,19 @@ nav ul li a {
     border: solid 1px;
     top: 70%;
     right: 36%;
-    
     cursor: pointer;
     padding: 1%;
-    width: 25%;
-    height: 10%;
+    width: 35%;
+    height: 11%;
+    font-weight: bold;
     background: transparent;
+    color: #feca57;
+}
+
+.FundoSimulador h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #feca57;
+    
 }
 
 /* Posição da mensagem do Simulador */
@@ -146,10 +155,10 @@ nav ul li a {
     text-align: left;
     top: 80%;
     left: 5%;
-   
     width: 90%;
     height: 15%;
-    padding-top: 1%;
+    padding-top: 2%;
+    color: white;
 }
 
 

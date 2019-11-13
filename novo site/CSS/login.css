@@ -4,12 +4,9 @@
 }
 
 body {
-    font-family: Open Sans, Arial, sans-serif;
     overflow-x: hidden;
-    /* background-color: rgba(88, 63, 30, 0.596); */
-    background-image: url("../imagens/fundo7.jpg");
+    background-image: url("../imagens/fundo-cafe.png");
     background-size: cover;
-    background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
@@ -43,7 +40,7 @@ nav ul li a {
 .nav-toggle-btn {
     display: block;
     position: absolute;
-    left: 200px;
+    left: 220px;
     top: 20px;
 }
 .nav-toggle-btn img{
@@ -81,9 +78,8 @@ nav ul li a {
     color: #999;
     padding-top: 20px;
     padding-left: 20px;
-    /* text-align: left; */
-    
 }
+
 .links a:hover{
     opacity:1;
 }
@@ -98,9 +94,7 @@ nav ul li a {
 
 /* Começo Login */
 .FundoLogin{
-    border-right: 0px solid #373737;
-    border-bottom: 3px solid #1A1A1A;
-    background-color: rgb(104, 109, 109);
+    background-color: rgba(0, 0, 0, .3);
     position: absolute;
     transform: translate(50%,-50%);
     padding: 0.5%;
@@ -108,7 +102,7 @@ nav ul li a {
     left: 25%;
     height: 341px;
     width: 350px;
-    border-radius: 3%;
+    border-radius: 5%;
     
 }
 
@@ -117,28 +111,32 @@ nav ul li a {
     top: 18%;
     padding: 2%;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px; 
+    font-size: 18px;
 }
 
 .FundoLogin input{
     width: 320px;
     height: 25px;
+    font-size: 16px;
     margin-bottom: 7%;
+    margin-top: 2%;
     border: 0;
     padding: 1% 1%;
-    font-size: 16px;
-    margin-top: 2%;
-
+    color: white;
+    background-color: rgba(0, 0, 0, .9);
 }
 .FundoLogin h1{
-position: relative;
-top: 5%;
+    position: relative;
+    top: 5%;
+    color: #feca57;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .labels{
     font-size: 130%;
     position: relative;
     left: -35%;
+    color: #feca57;
 }
 
 a { color: inherit; } /*Tirei o zul dos links*/
@@ -147,7 +145,6 @@ a { text-decoration: none;}
 
 
 /* Botão */
-
 
 .posicaBtA{
     position: absolute;
@@ -169,7 +166,7 @@ a { text-decoration: none;}
 }
 
 .posicaBtA button:hover{
-    opacity:5;
+    opacity:8;
 }
 
 .posicaBtA_voltar{
@@ -199,12 +196,10 @@ a { text-decoration: none;}
 
 .esquecer{
     position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
     top: 66%;
-    left: 61%;
-}
-
-.helpdeskk{
-
+    left: 60%;
+    color: #feca57;
 }
 
 .posicaoinput div{

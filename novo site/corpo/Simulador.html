@@ -19,7 +19,7 @@
                 <span>Logo</span>
                 <li><a href="../corpo/Cadastro_pessoal.html">Cadastrar-se</a></li>
                 <li><a href="../corpo/Login.html">Logar</a></li>
-                <li><a href="../corpo/index.html">Quem Somos</a></li>
+                <li><a href="../corpo/quemSomos.html">Quem Somos</a></li>
 
                 <li class="Suporte"><a href="">Suporte</a></li>
             </ul>
@@ -37,23 +37,18 @@
                 <span class="PerdaSimulador" id="escrever_perda"></span>
         </div>  
     </div>
-
-        <script>
+    <script>
         (function() {
             
             var bodyEl = $('body'),
-                navToggleBtn = bodyEl.find('.nav-toggle-btn');
+            navToggleBtn = bodyEl.find('.nav-toggle-btn');
             
             navToggleBtn.on('click', function(e) {
                 bodyEl.toggleClass('active-nav');
                 e.preventDefault();
             });
-            
-            
-            
         })();
-        
-        </script>
 
+        </script>
     </body>
 </html>

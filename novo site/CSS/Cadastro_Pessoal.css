@@ -7,11 +7,10 @@
 body {
     font-family: Open Sans, Arial, sans-serif;
     overflow-x: hidden;
-    background-image: url("../imagens/fundo7.jpg");
+    background-image: url("../imagens/fundo-cafe.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    /* background-color: rgba(88, 63, 30, 0.596); */
    
 }
 
@@ -98,10 +97,7 @@ nav ul li a {
 /* Final nav */
 
 /* Começo Cadastro */
-.FundoLogin{
-    border-right: 2px solid #373737;
-    border-bottom: 3px solid #1A1A1A;
-    background-color: rgb(104, 109, 109);
+.FundoCadastro{
     position: absolute;
     top: 10%;
     left: 20%;
@@ -111,6 +107,7 @@ nav ul li a {
     width: 65%;
     border-radius: 2%;
     margin-bottom: 2%;
+    background: rgba(0, 0, 0, .3);
 }
 
 .posicaoCad{
@@ -135,10 +132,16 @@ nav ul li a {
     margin-left: 4%;
 }
 
-.FundoLogin h1{
+.FundoCadastro h1{
     position: relative;
     top: 0%;
     text-align: center;
+    color: #feca57;
+}
+
+.FundoCadastro input{
+    color: white;
+    background-color: rgba(0, 0, 0, .9);
 }
 
 .labels{
@@ -146,6 +149,7 @@ nav ul li a {
     position: relative;
     left: 6%;
     text-emphasis: none;
+    color: #feca57;
 }
 
 /* cadastro endereço */

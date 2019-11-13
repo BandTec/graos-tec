@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    /* background-color: rgba(88, 63, 30, 0.596); */
+    background-image: url("../imagens/fundo-cafe.png");
+    background-size: cover;
+}
+
+/* Começo nav */
+
+nav {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    bottom: 0;
+    width: 200px;
+    background: #222;
+    transform: translate3d(-200px, 0, 0);
+    transition: transform 0.4s ease;
+}
+.active-nav nav {
+    transform: translate3d(0, 0, 0);
+}
+nav ul {
+    list-style: none;
+    margin-top: 100px;
+}
+nav ul li a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.nav-toggle-btn {
+    display: block;
+    position: absolute;
+    left: 220px;
+    top: 20px;
+}
+.nav-toggle-btn img{
+    height: 40px;
+}
+
+.content {
+    padding-top: 300px;
+    height: 325px;
+    text-align: center;
+    transition: transform 0.4s ease;
+}
+.active-nav .content {
+    transform: translate3d(200px, 0, 0);
+}
+
+
+.links a{
+    border-top: 1px solid #373737;
+    border-bottom: 1px solid #1A1A1A;
+    background: #252525;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    padding-left: 20px;
+    margin-bottom:2px ;
+    opacity: 0.5;
+}
+.links span{
+    position: absolute;
+    top:2%;
+    border-top: 1px solid #373737;
+    border-bottom: 1px solid #1A1A1A;
+    background: #252525;
+    width: 180px;
+    height: 40px;
+    color: #999;
+    padding-top: 20px;
+    padding-left: 20px;
+    /* text-align: left; */
+    
+}
+.links a:hover{
+    opacity:1;
+}
+
+.Suporte{
+    position: absolute;
+    top: 80%;
+   
+    width: 200px;
+   
+}
+
+
+/* Final nav */
+
+
+
+
+/* ******************************* */
+
+
+.FundoSimulador{
+    position: absolute;
+    padding-top:1% ; 
+    left: 35%;
+    top: 30%;
+    width: 30%;
+    height: 40%;
+    border-radius: 5%;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.FundoSimulador input{
+    position: relative;
+    display: block;
+    margin-bottom: 9%;
+    font-size:16px;
+    border: 0;
+    left: 5%;
+    top: 8%;
+    width: 90%;
+    height: 10%;
+    padding: 3px;
+    color: white;
+    background-color: rgba(0, 0, 0, .9);
+}
+
+.FundoSimulador button{
+    position: absolute;
+    border: solid 1px;
+    top: 70%;
+    right: 36%;
+    cursor: pointer;
+    padding: 1%;
+    width: 35%;
+    height: 11%;
+    font-weight: bold;
+    background: transparent;
+    color: #feca57;
+}
+
+.FundoSimulador h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #feca57;
+    
+}
+
+/* Posição da mensagem do Simulador */
+.PerdaSimulador{
+    position: absolute;
+    text-align: left;
+    top: 80%;
+    left: 5%;
+    width: 90%;
+    height: 15%;
+    padding-top: 2%;
+    color: white;
+}
+
+

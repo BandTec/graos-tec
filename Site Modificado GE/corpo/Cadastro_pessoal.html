@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Cadastro pessoal</title>
+        <link rel="stylesheet" href="../CSS/Cadastro_Pessoal.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/validação-caddastro-pessoa.js"></script>
+    </head>
+    <body>
+        
+        <nav>
+            
+            <a href="#" class="nav-toggle-btn"><img src="../imagens/menu.png" alt=""></a>
+            
+            <ul class="links">
+                <span>Home</span>
+                <li><a href="../corpo/login.html">Logar</a></li>
+                <li><a href="../corpo/Simulador.html">Simulador de perdas</a></li>
+                <li><a href="../corpo/quemSomos.html">Quem somos</a></li>
+                <li class="Suporte"><a href="">Suporte</a></li>
+            </ul>
+            
+            
+        </nav>
+        
+        <div class="content">
+            <div class="FundoCadastro">
+                <h1>Cadastro</h1>
+                <div class="posicaoCad">
+                    <label class="labels">Insira seu nome</label>
+                    <input placeholder="Nome" id="valor_nome">
+                    <div id="valida_nome"></div>
+
+                    <label class="labels">Informe seu E-mail</label>
+                    <input placeholder="E-mail" id="valor_email">
+                    <div id="valida_email"></div>
+
+                    <label class="labels">Crie uma senha</label>
+                    <input type="password" placeholder="Senha" id="valor_senha1">
+                    <div id="valida_senha"></div>
+
+                    <label class="labels">Confirme sua senha</label>
+                    <input type="password" placeholder="Confirmar Senha" id="valor_senha2">
+                    <div id="valida_confirmacao_senha"></div>
+
+                    <label class="labels">Informe seu telefone</label>
+                    <input placeholder="Telefone" id="valor_telefone">
+                    <div id="valida_telefone"></div>
+                    
+                </div>
+
+                <div class="endereço">
+                       <label class="labels">CEP<input placeholder="CEP" id="valor_cep"></label>
+                        <div id="valida_cep"></div>
+
+                       <label class="labels">Numero<input placeholder="Numero" id="valor_numero"></label>
+                       <div id="valida_numero"></div>
+
+                       <label class="labels">Bairro<input placeholder="Bairro" id="valor_bairro"></label>
+                       <div id="valida_bairro"></div>
+
+                       <label class="labels">Cidade<input placeholder="Cidade" id="valor_cidade"></label>
+                       <div id="valida_cidade"></div>
+
+                       <label class="labels">Estado<input placeholder="Estado" id="valor_estado"></label>
+                       <div class="validação_estado" id="valida_estado"></div>
+                </div>
+            
+                <div class="posicaBtA">
+                    <button onclick="validacao_cadastro_pessoal()"><img src="../imagens/login.png" alt=""></button>
+                </div>
+
+            </div>
+            </div>
+            
+        </div>
+
+        <script>
+        (function() {
+            
+            var bodyEl = $('body'),
+                navToggleBtn = bodyEl.find('.nav-toggle-btn');
+            
+            navToggleBtn.on('click', function(e) {
+                bodyEl.toggleClass('active-nav');
+                e.preventDefault();
+            });
+            
+            
+            
+        })();
+        
+        </script>
+
+
+    </body>
+</html>

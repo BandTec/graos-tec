@@ -84,14 +84,14 @@ nav ul li a {
 .Suporte{
     position: absolute;
     top: 60%;
-    width: 200px;   
+    width: 200px;
 }
 
 /* Final nav */
 
 /* Começo Login */
 .FundoLogin{
-    background-color: rgba(0, 0, 0, .3);
+    background-color: rgba(112, 103, 103, 0.09);
     position: absolute;
     transform: translate(50%,-50%);
     padding: 0.5%;
@@ -100,7 +100,7 @@ nav ul li a {
     height: 341px;
     width: 350px;
     border-radius: 5%;
-    
+
 }
 
 .posicaoinput{
@@ -143,65 +143,48 @@ a { text-decoration: none;}
 
 /* Botão */
 
-.posicaBtA{
+/* .posicaBtA{
     position: absolute;
     top: 63%;
     left: 4%;
     width: 68px;
     height: 60px;
     padding: 1%;
-}
-.posicaBtA button{
+} */
+.botao {
     border: none;
     position: absolute;
-    left: 250%;
-    top:70%;
+    top: 100%;
+    right: 44%;
     background: transparent;
     cursor: pointer;
-    opacity:0.8;
+    opacity: 0.7;
     outline: none;
 }
 
-.posicaBtA button:hover{
-    opacity:8;
+.botao:hover{
+    opacity:1;
 }
 
-.posicaBtA_voltar{
-    position: absolute;
-    top: 87%;
-    left: 4%;
-    width: 310px;
-    height: 60px;
-    padding: 1%;
-    transform: rotate(180deg);
-}
 
-.posicaBtA_voltar button{
-    border: none;
-    position: absolute;
-    left: 60%;
-    top: 84%;
-    background: transparent;
-    cursor: pointer;
-    opacity:0.8;
-    outline: none;
-}
-
-.posicaBtA_voltar button:hover{
-    opacity:5;
-}
 
 .esquecer{
     position: absolute;
     font-family: Arial, Helvetica, sans-serif;
-    top: 66%;
-    left: 60%;
+    top: 85%;
+    left: 47%;
+    width: 200px;
     color: #feca57;
+    opacity: 0.7;
 }
 
-.posicaoinput div{
+.esquecer:hover{
+    opacity: 1;
+}
+
+/* .posicaoinput div{
     position: absolute;
     margin-top: -6%;
     left: 6%;
-}
-/*Ferramenta de help Desk*/
+} */
+

@@ -23,26 +23,31 @@
         <div class="content">
             <div class="FundoLogin">
                 <h1>Login</h1>
-                <div class="posicaoinput">
+                
+                
+                <form name="formuser" action="enviar.php" method="POST" class="posicaoinput">
+
+
                     <label class="labels">E-mail</label>
-                    <input placeholder="E-mail" id="email_validar">
-                    <div id="div_validar_email"></div>
+                    <input placeholder="E-mail" name="Email">
+
                     
                     <label class="labels">Senha</label>
-                    <input placeholder="Senha" type="password" id="senha_validar">
-                    <div id="div_validar_senha"></div>
-                 </div>
-            <a  class="esquecer" href="./recuperacao_senha.html">Esqueci a senha!?</a>
-            <div class="posicaBtA">
-                <button onclick="entrar()"><img src="../imagens/login.png" alt=""></button>
-            </div>
-            <div class="posicaBtA_voltar">
-                    <button><img src="../imagens/login.png" alt=""></button>
-                </div>
+                    <input placeholder="Senha" type="password" name="Senha">
+                    
+
+                    <a  class="esquecer" href="./recuperacao_senha.html">Esqueci a senha!?</a>
+     
+                        <button class="botao" type="submit" onclick=" return entrar()"><img src="../imagens/login.png" alt=""></button>
+                  
+
+                </form>
+
+
             </div>
         </div>
 
-        <div style="position: absolute; top: 91%;left: 89%;">
+        <div style="position: absolute; top: 90%;left: 89%;">
         <!-- Ferramenta de HelpDesk -->
         <script type="text/javascript">
             // <![CDATA[

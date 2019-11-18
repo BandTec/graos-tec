@@ -1,23 +1,29 @@
 function entrar(){
-   var Email = formuser.Email.value;
-   var Senha = formuser.Senha.value;
+    div_validar_email.innerHTML = "";
+    div_validar_senha.innerHTML = "";
 
-   
+    var email = email_validar.value;
+    var senha = senha_validar.value;
 
-    if(Senha.length <=8 || Senha.length >=19 || Email.length <=10 || Email.length >=40 || Email.indexOf ("@") == -1 || Email == "" ||
-    Senha == ""){
-
-
-        if(Email.length <12 || Email.length >40||Email == "" || Email.indexOf ('@') == -1 ){
-            alert('Campo "e-mail" inválido');
-            formuser.Email.focus();
-            return false;
+    if(senha.length <=8 || senha.length >=19 || email.length <=10 || email.length >=40 || email.indexOf ("@") == -1 || email == "" ||
+    senha == ""){
+    if(senha.length <=8 || senha.length >=19){
+        div_validar_senha.style.color = 'red';
+        div_validar_senha.innerHTML = `Senha Inválida`; 
+            if(senha == ""){
+                div_validar_senha.style.color = 'red';
+                div_validar_senha.innerHTML = `Senha vazia`; 
+            }
         }
-
-        if(Senha == "" || Senha.length <8 ){
-            alert('Campo "Senha" inválido');
-            formuser.Senha.focus();
-            return false;
-        }location.href = `./DashBoard.html`;
+    if(email.length <=10 || email.length >=40 || email.indexOf ("@") == -1){
+        div_validar_email.style.color = 'red';
+        div_validar_email.innerHTML = `Senha Inválida`; 
+            if(email == ""){
+                div_validar_email.style.color = 'red';
+                div_validar_email.innerHTML = `E-mail vazio`; 
+            }
+        }
+    }else{
+        location.href = `./DashBoard.html`;
     }   
 }

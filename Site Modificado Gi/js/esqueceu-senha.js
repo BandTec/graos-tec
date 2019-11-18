@@ -10,5 +10,7 @@ function Ir(){
             div_recupera.style.color = "red";
             div_recupera.innerHTML = "Email vazio"; 
         }
+    }else{
+        location.href = `login.html`;
     }
 }

@@ -4,16 +4,15 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
     overflow-x: hidden;
     background-image: url("../imagens/fundo-cafe.png");
     background-size: cover;
-    background-repeat: no-repeat;
     background-attachment: fixed;
-   
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Começo nav */
+
 nav {
     position: fixed;
     z-index: 1000;
@@ -24,9 +23,6 @@ nav {
     transform: translate3d(-200px, 0, 0);
     transition: transform 0.4s ease-in;
 }
-
-a{text-decoration: ;}
-
 .active-nav nav {
     transform: translate3d(0, 0, 0);
 }
@@ -88,114 +84,77 @@ nav ul li a {
 .Suporte{
     position: absolute;
     top: 60%;
-    width: 200px;
+    width: 200px;   
 }
 
-/* Final nav */
+a:link{
+text-decoration:none;}
+a { color: inherit; } 
 
-/* Começo Cadastro */
-.FundoCadastro{
+/*Caixa*/
+
+.caixa{
+    border: solid 0;
+    height: 186%;
+    background-color: rgba(0, 0, 0, 0.71);
     position: absolute;
-    top: 10%;
-    left: 32.5%;
-    position: absolute;
-    padding: 1%;
-    height: 100%;
-    width: 35%;
+    top: 17%;
+    width: 76%;
+    font-family: 'Grenze', serif;
+    left: 11%;
     border-radius: 2%;
-    margin-bottom: 2%;
-    background-color: rgba(112, 103, 103, 0.09);
-    border: solid 1px ;
-    margin-bottom:5% ;
-}
-
-
-.FundoCadastro h1{
-    position: relative;
-    top: 0%;
-    text-align: center;
-    color: #feca57;
-}
-
-
-
-
-
-
-
-/* cadastro endereço */
-
-.endereço{
-    border: solid;
-    position: absolute;
-    
-    top: 13%;
-    left: 10%;
-    right: 1%   ;
-    border: solid 1px;
-    width: 80%;
-    height: 81%;
-}
-
-.endereço input{
-    position: relative;
-    left: 2%;  
-    display: block;
-    width: 96%;
-    height: 5%;
-    margin-bottom: 1%;
-    border: 0;
-    font-size: 16px;
-   
-   
-}
-
-
-.labels{
-    font-size: 130%;
-    position: relative;
-    text-emphasis: none;
-    color: #feca57;
-}
-
-
-.FundoCadastro input{
     color: white;
-    background-color: rgba(0, 0, 0, .9);
-    margin-bottom: 2%;
+    margin-bottom: 8%;
 }
 
-
-
-
-
-
-
-/* Final Cadastro */
-
-
-/* Botão */
-
-.botao{
-    border: none;
-    position: absolute;
-    top: 88%;
-    right: 44%;
-    background: transparent;
-    cursor: pointer;
-    opacity: 0.7;
-    outline: none;
-}
-.botao:hover{
-    opacity:5;
+.Titulo{
+    width: 26%;
+    position: relative;
+    left: 39%;
+    font-size: 3rem;
 }
 
+.subtitulo{
+    position: relative;
+    font-size: 2rem;
+    left: 4%;
+    top: 1%;
+}
 
+.conteudo{
+    font-size: 144%;
+    position: relative;
+    left: 5%;
+    top: 2%;
+    padding: 1%;
+}
 
+.caixa ul li img{
+    width: 87%;
+    height: 145%;
+    position: relative;
+    left: 8%;
+    top: 24%;
+    border-color: red;
+    border: solid;
+    text-align:center;
+}
+.caixa ul{
+    list-style: none;
+    display: flex;
+}
 
-/*validação*/
+.subtitulo1{
+    position: relative;
+    font-size: 2rem;
+    left: 4%;
+    top: 18%;
+}
 
-
-
-
-
+.conteudo1{
+    font-size: 144%;
+    position: relative;
+    left: 5%;
+    top: 20%;
+    padding: 1%;
+}

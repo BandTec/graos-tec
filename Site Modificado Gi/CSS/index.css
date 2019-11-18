@@ -57,7 +57,6 @@ nav ul li a {
     transform: translate3d(200px, 0, 0);
 }
 
-
 .links a{
     background: rgba(0, 0, 0, .3);
     text-align: left;
@@ -83,9 +82,8 @@ nav ul li a {
 
 .Suporte{
     position: absolute;
-    top: 80%;
-    width: 200px;
-   
+    top: 60%;
+    width: 200px;   
 }
 
 /* Final nav */

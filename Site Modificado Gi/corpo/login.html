@@ -7,57 +7,50 @@
         <link rel="stylesheet" href="../CSS/login.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script src="../js/login.js"></script>
+        <link rel="shortcut icon" type="image/x-icon" href="../2261favicon graos.ico">
     </head>
     <!-- a -->
-    <body>        
+    <body>
         <nav>
             <a href="#" class="nav-toggle-btn"><img src="../imagens/menu-button.png"></a>
             <ul class="links">
-                <span><a href="index.html">Home</a></span>
+                <span><a href="../index.html">Home</a></span>
                 <li><a href="./cadastro_pessoal.html">Cadastre-se</a></li>
                 <li><a href="../corpo/simulador.html">Simulador de perdas</a></li>
-                <li><a href="../corpo/index.html">Quem somos</a></li>
+                <li><a href="../index.html">Quem somos</a></li>
                 <li class="Suporte"><a href="">Suporte</a></li>
             </ul>          
         </nav>
         <div class="content">
             <div class="FundoLogin">
                 <h1>Login</h1>
-                
-                
-                <form name="formuser" action="enviar.php" method="POST" class="posicaoinput">
-
-
+                <div class="posicaoinput">
                     <label class="labels">E-mail</label>
-                    <input placeholder="E-mail" name="Email">
-
+                    <input placeholder="E-mail" id="email_validar">
+                    <div id="div_validar_email"></div>
                     
                     <label class="labels">Senha</label>
-                    <input placeholder="Senha" type="password" name="Senha">
-                    
-
-                    <a  class="esquecer" href="./recuperacao_senha.html">Esqueci a senha!?</a>
-     
-                        <button class="botao" type="submit" onclick=" return entrar()"><img src="../imagens/login.png" alt=""></button>
-                  
-
-                </form>
-
-
+                    <input placeholder="Senha" type="password" id="senha_validar">
+                    <div id="div_validar_senha"></div>
+                 </div>
+            <a  class="esquecer" href="./recuperacao_senha.html">Esqueci a senha!?</a>
+            <div class="posicaBtA">
+                <button onclick="entrar()"><img src="../imagens/login.png" alt=""></button>
             </div>
+            
         </div>
-
-        <div style="position: absolute; top: 90%;left: 89%;">
-        <!-- Ferramenta de HelpDesk -->
-        <script type="text/javascript">
-            // <![CDATA[
-            var url= 'https://teste-graostech.tomticket.com/chat/balao/EP36672/2347008P08112019092534'
-            + '?ts=' + new Date().getTime() + '&ref=' + document.URL; document.writeln(' <scr'
-            + 'ipt src="'+url+'" type="text\/javascript">' + ' <\/scr'
-            + 'ipt>');
-            //]]>
-        </script>
-    </div>
+    
+        <div style="position: fixed; top: 91%;left: 89%;">
+            <script type="text/javascript">
+                // <![CDATA[
+                var url= 'https://teste-graostech.tomticket.com/chat/balao/EP36672/2347008P08112019092534'
+                + '?ts=' + new Date().getTime() + '&ref=' + document.URL; document.writeln(' <scr'
+                + 'ipt src="'+url+'" type="text\/javascript">' + ' <\/scr'
+                + 'ipt>');
+                //]]>
+                </script>
+                
+        </div>
 
         <script>
         (function() {
@@ -70,7 +63,6 @@
                 e.preventDefault();
             });
         })();
-
         </script>
             
     </body>

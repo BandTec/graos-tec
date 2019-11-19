@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    background-image: url("../imagens/fundo-cafe.png");
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Começo nav */
+nav {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    bottom: 0;
+    width: 200px;
+    background: rgba(0, 0, 0, .3);
+    transform: translate3d(-200px, 0, 0);
+    transition: transform 0.4s ease-in;
+}
+
+
+
+.active-nav nav {
+    transform: translate3d(0, 0, 0);
+}
+nav ul {
+    list-style: none;
+    margin-top: 100px;
+}
+nav ul li a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.nav-toggle-btn {
+    display: block;
+    position: absolute;
+    left: 220px;
+    top: 20px;
+}
+.nav-toggle-btn img{
+    height: 40px;
+}
+
+.content {
+    padding-top: 300px;
+    height: 325px;
+    text-align: center;
+    transition: transform 0.4s ease;
+}
+.active-nav .content {
+    transform: translate3d(200px, 0, 0);
+}
+
+.links a{
+    background: rgba(0, 0, 0, .3);
+    text-align: left;
+    padding-left: 20px;
+    margin-bottom:2px ;
+    opacity: 0.5;
+}
+.links span{
+    position: absolute;
+    background: rgba(0, 0, 0, .3);
+    color: white;
+    width: 180px;
+    height: 40px;
+    top:2%;
+    padding-top: 20px;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.links a:hover{
+    opacity:1;
+}
+
+.Suporte{
+    position: absolute;
+    top: 60%;
+    width: 200px;
+}
+
+a:link
+{
+text-decoration:none;
+}
+a { color: inherit; } 
+
+/*Caixa*/
+
+.caixa{
+    border: solid 0;
+    height: 186%;
+    background-color: rgba(0, 0, 0, 0.71);
+    position: absolute;
+    top: 17%;
+    width: 76%;
+    font-family: 'Grenze', serif;
+    left: 11%;
+    border-radius: 2%;
+    color: white;
+    margin-bottom: 8%;
+}
+
+.Titulo{
+    width: 26%;
+    position: relative;
+    left: 39%;
+    font-size: 3rem;
+}
+
+.subtitulo{
+    position: relative;
+    font-size: 2rem;
+    left: 4%;
+    top: 1%;
+}
+
+.conteudo{
+    font-size: 144%;
+    position: relative;
+    left: 5%;
+    top: 2%;
+    padding: 1%;
+}
+
+.caixa ul li img{
+    width: 87%;
+    height: 114%;
+    position: relative;
+    left: 8%;
+    top: 11%;
+    border-color: red;
+    border: solid;
+    text-align: center;
+}
+.caixa ul{
+    list-style: none;
+    display: flex;
+}
+
+.subtitulo1{
+    position: relative;
+    font-size: 2rem;
+    left: 4%;
+    top: 11%;
+}
+
+.conteudo1{
+    font-size: 144%;
+    position: relative;
+    left: 5%;
+    top: 11%;
+    padding: 1%;
+}

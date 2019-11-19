@@ -6,7 +6,7 @@
         <title>Login</title>
         <link rel="stylesheet" href="../CSS/login.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <script src="../js/login.js"></script>
+        <!-- <script src="../js/login.js"></script> -->
         <link rel="shortcut icon" type="image/x-icon" href="../2261favicon graos.ico">
     </head>
     <!-- a -->
@@ -21,18 +21,20 @@
                 <li class="Suporte"><a href="">Suporte</a></li>
             </ul>          
         </nav>
+        
+        
         <div class="content">
             <div class="FundoLogin">
                 <h1>Login</h1>
-                <div class="posicaoinput">
+                <form id="form_login" method="post" onsubmit="return entrar()" class="posicaoinput">
                     <label class="labels">E-mail</label>
-                    <input placeholder="E-mail" id="email_validar">
+                    <input placeholder="E-mail" name="email" id="email_validar">
                     <div id="div_validar_email"></div>
                     
                     <label class="labels">Senha</label>
-                    <input placeholder="Senha" type="password" id="senha_validar">
+                    <input placeholder="Senha" name="senha" type="password" id="senha_validar">
                     <div id="div_validar_senha"></div>
-                 </div>
+                </form>
             <a  class="esquecer" href="./recuperacao_senha.html">Esqueci a senha!?</a>
             <div class="posicaBtA">
                 <button onclick="entrar()"><img src="../imagens/login.png" alt=""></button>
@@ -40,6 +42,7 @@
             
         </div>
     
+        
         <div style="position: fixed; top: 91%;left: 89%;">
             <script type="text/javascript">
                 // <![CDATA[
@@ -67,3 +70,36 @@
             
     </body>
 </html>
+
+<script>
+
+    function entrar() {
+        //aguardar();
+        var formulario = new URLSearchParams(new FormData(form_login));
+        fetch("/usuarios/autenticar", {
+            method: "POST",
+            body: formulario
+        }).then(resposta => {
+            
+            if (resposta.ok) {
+
+                resposta.json().then(json => {
+
+                    sessionStorage.login_usuario_meuapp = json.email;
+                    sessionStorage.nome_usuario_meuapp = json.senha;
+                    
+                    window.location.href = 'perfil_usuario.html';
+                });
+
+            } else {
+                
+                
+                alert('Login invalido');
+                senha_validar.value = '';
+            }
+        });
+
+        return false;
+    }
+
+</script>

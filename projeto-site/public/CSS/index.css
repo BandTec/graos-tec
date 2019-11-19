@@ -12,6 +12,12 @@ body {
 
 /* Começo nav */
 
+span img{
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+}
+
 nav {
     position: fixed;
     z-index: 1000;

@@ -131,13 +131,13 @@ a { color: inherit; }
 
 .caixa ul li img{
     width: 87%;
-    height: 145%;
+    height: 114%;
     position: relative;
     left: 8%;
-    top: 24%;
+    top: 11%;
     border-color: red;
     border: solid;
-    text-align:center;
+    text-align: center;
 }
 .caixa ul{
     list-style: none;
@@ -148,13 +148,13 @@ a { color: inherit; }
     position: relative;
     font-size: 2rem;
     left: 4%;
-    top: 18%;
+    top: 11%;
 }
 
 .conteudo1{
     font-size: 144%;
     position: relative;
     left: 5%;
-    top: 20%;
+    top: 11%;
     padding: 1%;
 }

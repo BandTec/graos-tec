@@ -147,4 +147,11 @@ canvas
     top: 2%;
 }
 
+.logo{
+    position: relative;
+    width: 38%;
+    left: 27%;
+    margin-bottom: 42px;
+    margin-top: 7%;
+}
 

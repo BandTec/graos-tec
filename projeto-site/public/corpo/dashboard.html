@@ -21,7 +21,6 @@
             
             <ul class="links">
                 <span>Logo</span>
-                <li><a href="#">Nome do usuário</a></li>
                 <li><a href="../corpo/perfil_usuario.html">Perfil</a></li>
                 <li><a href="#">Adiconar gráfico</a></li>
                 <li><a href="#">Pessoas</a></li>
@@ -33,10 +32,6 @@
             
         </nav>
         
-       
-
-
-
         <div class="grafico_temperatura">
             <section>
                 <h2>Média: <label id='average'>0.00</label></h2>
@@ -63,7 +58,7 @@
             <!-- <div style = "height: 100px; width: 100%;"></div> -->
          </div>
 
-    <script>
+    <script onload="dados_usuario()">
         (function() {
             
             var bodyEl = $('body'),

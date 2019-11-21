@@ -41,9 +41,12 @@ router.post('/', function(req, res, next) {
 	console.log('Criando um usuário');
 	
 	Usuario.create({
-		nome : req.body.nome,
-		login : req.body.login,
-		senha: req.body.senha
+		Nome : req.body.nome,
+		LoginUsuario : req.body.email,
+		Senha: req.body.senha,
+		Telefone: req.body.telefone,
+		Email : req.body.email,
+		Nivel_acesso: 1
 	}).then(resultado => {
 		console.log(`Registro criado: ${resultado}`)
         res.send(resultado);
@@ -52,6 +55,25 @@ router.post('/', function(req, res, next) {
 		res.status(500).send(erro.message);
   	});
 });
+
+
+/*Cadastrar endereço*/
+// router.post('/', function(req, res, next) {
+// 	console.log('Criando um endereço');
+	
+// 	Endereco.create({
+// 		Nome : req.body.nome,
+// 		LoginUsuario : req.body.email,
+// 		Senha: req.body.senha,
+// 		Telefone: req.body.telefone
+// 	}).then(resultado => {
+// 		console.log(`Registro criado: ${resultado}`)
+//         res.send(resultado);
+//     }).catch(erro => {
+// 		console.error(erro);
+// 		res.status(500).send(erro.message);
+//   	});
+// });
 
 
 /* Verificação de usuário */

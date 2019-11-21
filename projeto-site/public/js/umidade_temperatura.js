@@ -146,12 +146,12 @@ function obterDadosGrafico() {
 }
 
 // só altere aqui se souber o que está fazendo!
-function plotarGrafico(dados) {
+function plotarGrafico(dados1) {
     console.log('iniciando plotagem do gráfico...');
 
     var ctx = chart2.getContext('2d');
     window.grafico_linha = Chart.Line(ctx, {
-        data: dados,
+        data: dados1,
         options: configurarGrafico()
     });
 }

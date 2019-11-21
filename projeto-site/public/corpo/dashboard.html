@@ -40,7 +40,6 @@
             <section style="width:90%">
                 <canvas id="chart"></canvas>
             <section>
-            <script src="../js/temperatura.js"></script>
         </div>
         
             
@@ -52,16 +51,15 @@
             <section style="width:90%;"; >
                 <canvas id="chart2"></canvas>            
             <section>
-                <script src="../js/umidade.js"></script>
-        </div>	
+            </div>	
             <!-- <div style = "height: 100px; width: 100%;"></div> -->
-         </div>
-
-    <script onload="dados_usuario()">
+        </div>
+        
+        <script onload="dados_usuario()">
         (function() {
             
             var bodyEl = $('body'),
-                navToggleBtn = bodyEl.find('.nav-toggle-btn');
+            navToggleBtn = bodyEl.find('.nav-toggle-btn');
             
             navToggleBtn.on('click', function(e) {
                 bodyEl.toggleClass('active-nav');
@@ -69,6 +67,11 @@
             });      
             
         })();
-    </script>
+        </script>
+
+
+        <script src="../js/umidade_temperatura.js"></script>
+
     </body>
 </html>
+

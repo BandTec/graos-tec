@@ -93,10 +93,9 @@ function registrar_leitura(temperatura, umidade) {
 
     banco.conectar().then(() => {
 
-        return banco.sql.query(`INSERT into captura_dados (hora_data, tipo, dado)
+        return banco.sql.query(`INSERT into leitura (data_hora, temperatura, umidade)
                                 values 
-                                (CONVERT(Datetime, '${agora()}', 120),'Temperatura', ${temperatura} ),
-                                (CONVERT(Datetime, '${agora()}', 120),'umidade', ${umidade} );`);
+                                (CONVERT(Datetime, '${agora()}', 120), ${temperatura},${umidade} );`);
 
     }).catch(erro => {
 

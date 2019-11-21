@@ -32,29 +32,30 @@
                 <form class="posicaoCad" id="form_cadastro" method="POST" onsubmit="return cadastrar()">
                     <label class="labels">Insira seu nome</label>
                     <input placeholder="Nome" id="valor_nome" name="nome">
-                    <div id="valida_nome"></div>
 
                     <label class="labels">Informe seu E-mail</label>
-                    <input placeholder="E-mail" id="valor_email" name="email">
-                    <div id="valida_email"></div>
+                    <input placeholder="E-mail" id="valor_email" name="email"> 
 
                     <label class="labels">Crie uma senha</label>
                     <input type="password" placeholder="Senha" id="valor_senha1" name="senha">
-                    <div id="valida_senha"></div>
-
+                
                     <label class="labels">Confirme sua senha</label>
                     <input type="password" placeholder="Confirmar Senha" id="valor_senha2">
-                    <div id="valida_confirmacao_senha"></div>
-
+                    
                     <label class="labels">Informe seu telefone</label>
                     <input placeholder="Telefone" id="valor_telefone" name="telefone">
-                    <div id="valida_telefone"></div>
- 
+                    
                     <label class="labels">CEP<input placeholder="CEP" id="valor_cep" name="cep"></label>
+                    <div id="valida_cep"></div>
+
+                    <label class="labels">Rua<input placeholder="CEP" id="valor_cep" name="Rua"></label>
                     <div id="valida_cep"></div>
 
                     <label class="labels">Numero<input placeholder="Numero" id="valor_numero" name="numero"></label>
                     <div id="valida_numero"></div>
+
+                    <label class="labels">Complemento<input placeholder="Complemento" id="valor_cep" name="cep"></label>
+                    <div id="valida_cep"></div>
 
                     <label class="labels">Bairro<input placeholder="Bairro" id="valor_bairro" name="bairro"></label>
                     <div id="valida_bairro"></div>
@@ -74,7 +75,6 @@
                 </form>
             </div>
         
-        
     </div>
 
         <script>
@@ -88,7 +88,7 @@
         })();
         </script>
 
-<div style="position: absolute; top: 91%;left: 89%;">
+<div style="position: fixed; top: 91%;left: 89%;">
     <!-- Ferramenta de HelpDesk -->
     <script type="text/javascript">
      

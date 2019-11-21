@@ -26,7 +26,7 @@
             
         </nav>
         
-          <div class="content">
+          
             <div class="FundoCadastro">
                 <h1>Cadastro</h1>
                 <form class="posicaoCad" id="form_cadastro" method="POST" onsubmit="return cadastrar()">
@@ -49,37 +49,33 @@
                     <label class="labels">Informe seu telefone</label>
                     <input placeholder="Telefone" id="valor_telefone" name="telefone">
                     <div id="valida_telefone"></div>
-                    
+ 
+                    <label class="labels">CEP<input placeholder="CEP" id="valor_cep" name="cep"></label>
+                    <div id="valida_cep"></div>
 
+                    <label class="labels">Numero<input placeholder="Numero" id="valor_numero" name="numero"></label>
+                    <div id="valida_numero"></div>
+
+                    <label class="labels">Bairro<input placeholder="Bairro" id="valor_bairro" name="bairro"></label>
+                    <div id="valida_bairro"></div>
+
+                    <label class="labels">Cidade<input placeholder="Cidade" id="valor_cidade" name="cidade"></label>
+                    <div id="valida_cidade"></div>
+
+                    <label class="labels">Estado<input placeholder="Estado" id="valor_estado" name="estado"></label>
+                    <div class="validação_estado" id="valida_estado"></div>
                     
-             <div class="posicaBtA">
-                <button type="submit"><img src="../imagens/login.png" alt=""></button>
+                    
+                    
+                    <div class="posicaBtA">
+                        <button type="submit"><img src="../imagens/login.png" alt=""></button>
+                    </div>
+
+                </form>
             </div>
-    
-                </form>
-
-                <!-- <form class="endereço" id="form_endereco" method="POST" onsubmit="">
-                       <label class="labels">CEP<input placeholder="CEP" id="valor_cep"></label>
-                        <div id="valida_cep"></div>
-
-                       <label class="labels">Numero<input placeholder="Numero" id="valor_numero"></label>
-                       <div id="valida_numero"></div>
-
-                       <label class="labels">Bairro<input placeholder="Bairro" id="valor_bairro"></label>
-                       <div id="valida_bairro"></div>
-
-                       <label class="labels">Cidade<input placeholder="Cidade" id="valor_cidade"></label>
-                       <div id="valida_cidade"></div>
-
-                       <label class="labels">Estado<input placeholder="Estado" id="valor_estado"></label>
-                       <div class="validação_estado" id="valida_estado"></div>
-                </form>
-             -->
-
-
-            
-        </div>
-		</div>
+        
+        
+    </div>
 
         <script>
         (function() {

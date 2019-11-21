@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 var sequelize = require('../models').sequelize;
 var Usuario = require('../models').Usuario;
-
+var Endereco = require('../models').Endereco;
 let sessoes = [];
 
 /* Recuperar usuário por login e senha */
@@ -58,22 +58,22 @@ router.post('/', function(req, res, next) {
 
 
 /*Cadastrar endereço*/
-// router.post('/', function(req, res, next) {
-// 	console.log('Criando um endereço');
+router.post('/', function(req, res, next) {
+	console.log('Criando um endereço');
 	
-// 	Endereco.create({
-// 		Nome : req.body.nome,
-// 		LoginUsuario : req.body.email,
-// 		Senha: req.body.senha,
-// 		Telefone: req.body.telefone
-// 	}).then(resultado => {
-// 		console.log(`Registro criado: ${resultado}`)
-//         res.send(resultado);
-//     }).catch(erro => {
-// 		console.error(erro);
-// 		res.status(500).send(erro.message);
-//   	});
-// });
+	Endereco.create({
+		Nome : req.body.nome,
+		LoginUsuario : req.body.email,
+		Senha: req.body.senha,
+		Telefone: req.body.telefone
+	}).then(resultado => {
+		console.log(`Registro criado: ${resultado}`)
+        res.send(resultado);
+    }).catch(erro => {
+		console.error(erro);
+		res.status(500).send(erro.message);
+  	});
+});
 
 
 /* Verificação de usuário */

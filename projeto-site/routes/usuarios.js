@@ -62,10 +62,13 @@ router.post('/', function(req, res, next) {
 	console.log('Criando um endereço');
 	
 	Endereco.create({
-		Nome : req.body.nome,
-		LoginUsuario : req.body.email,
-		Senha: req.body.senha,
-		Telefone: req.body.telefone
+		Cep : req.body.cep,
+		Rua : req.body.rua,
+		Numero: req.body.numero,
+		Complemento: req.body.complemento,
+		Bairro: req.body.bairro,
+		Cidade: req.body.cidade,
+		Estado: req.body.estado
 	}).then(resultado => {
 		console.log(`Registro criado: ${resultado}`)
         res.send(resultado);

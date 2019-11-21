@@ -18,27 +18,43 @@ module.exports = (sequelize, DataTypes) => {
 			type: DataTypes.STRING,
 			allowNull: false
 		},
+
+		Rua: {
+			field: 'rua',
+			type: DataTypes.STRING,
+			allowNull: false
+		},
 		Numero: {
 			field: 'numero',
 			type: DataTypes.STRING,
 			allowNull: false
 		},
+
+		Complemento: {
+			field: 'complemento',
+			type: DataTypes.STRING,
+			allowNull: false
+		},
+
 		Bairro: {
 			field: 'bairro',
 			type: DataTypes.STRING,
 			allowNull: false
 		},
+
 		Cidade: {
 			field: 'cidade',
 			type: DataTypes.STRING,
 			allowNull: false
 		},
+
 		Estado: {
 			field: 'estado',
 			type: DataTypes.STRING,
 			allowNull: false
 		}
 	}, 
+
 	{
 		tableName: 'endereco', 
 		freezeTableName: true, 

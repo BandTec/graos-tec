@@ -15,8 +15,8 @@
 /* Começo nav */
 
 span img{
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     margin-left: 20px;
 }
 
@@ -65,7 +65,7 @@ nav ul li a {
     transform: translate3d(200px, 0, 0);
 }
 
-.links a{
+.links li a{
     background: rgba(0, 0, 0, .3);
     text-align: left;
     padding-left: 20px;

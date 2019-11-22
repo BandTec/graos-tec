@@ -1,81 +1,77 @@
-
-
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>pessoal</title>
-        <link rel="stylesheet" href="../CSS/perfil_usuario.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <script type="text/javascript" src="../novo site/js/index.js"></script>
-        <script src="../js/funcoes.js"></script>
-        <link rel="shortcut icon" type="image/x-icon" href="../2261favicon graos.ico">
-    </head>
-    <body>
-        
-        <nav>
-            
-            <a href="#" class="nav-toggle-btn"><img src="../imagens/menu-button.png" alt=""></a>
-            
-            <ul class="links">
-                <span><a href="../index.html"><img src="../imagens/logoo.png" alt=""> </a></span>
-                <li><a href="#">Nome do usuário</a></li>
-                <li><a href="../corpo/dashboard.html">DashBoard</a></li>
-                <li><a href="adicionar_armazem.html">Adicionar armazém</a></li>
-                <li><a href="#">Pessoas</a></li>
-                <li><a onclick="logoff()">Sair</a></li>
-                <li class="Suporte"><a href="Pagina-suporte-logado.html">Suporte</a></li>
-            </ul>
-            
-            
-        </nav>
-        
-        <div class="content">
-            <div class="FundoPessoas">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>pessoal</title>
+    <link rel="stylesheet" href="../CSS/perfil_usuario.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="../novo site/js/index.js"></script>
+    <script src="../js/funcoes.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="../2261favicon graos.ico">
+</head>
+
+<body>
+
+    <nav>
+
+        <a href="#" class="nav-toggle-btn"><img src="../imagens/menu-button.png" alt=""></a>
+
+        <ul class="links">
+            <span><a href="../index.html"><img src="../imagens/logoo.png" alt=""> </a></span>
+            <li><a href="#">Nome do usuário</a></li>
+            <li><a href="../corpo/dashboard.html">DashBoard</a></li>
+            <li><a href="adicionar_armazem.html">Adicionar armazém</a></li>
+            <li><a href="#">Pessoas</a></li>
+            <li><a onclick="logoff()">Sair</a></li>
+            <li class="Suporte"><a href="Pagina-suporte-logado.html">Suporte</a></li>
+        </ul>
+
+
+    </nav>
+
+    <div class="content">
+        <div class="FundoPessoas">
             <h1>Dados Pessoais</h1>
-               
-                <div class="FundoInputpessoas">
-                    <div class="dadosUse">
-                        <label>Nome:</label>
-                        <label>Usuário</label>
-                        <label>Email:</label>
-                        <label>Telefone:</label>
-                        
-                    </div>
-                    <div class="DadosEnde">
-                        <label>CEP:</label>
-                        <label>Endereço:</label>
-                        <label>Bairro:</label>
-                        <label>Cidade:</label>
-                        <label>Estado:</label>
-                        <label>Complemento:</label>
-                    </div>
-               </div>
-            </div>
             
+            <div class="FundoInputpessoas">
+                <div class="dadosUse">
+                    <label>Nome:</label> <span id="nome_texto"></span>
+                    <label>Email:</label> <span id="email_texto"></span>
+                    <label>Telefone:</label> <span id="telefone_texto"></span>
+                </div>
+                <div class="DadosEnde">
+                    <label>CEP:</label><span id="cep_texto"></span>
+                    <label>Rua:</label><span id="rua_texto"></span>
+                    <label>Bairro:</label><span id="bairro_texto"></span>
+                    <label>Cidade:</label><span id="cidade_texto"></span>
+                    <label>Estado:</label><span id="estado_texto"></span>
+                </div>
+            </div>
         </div>
 
-        <script>
-        (function() {
-            
+    </div>
+
+    <script>
+        (function () {
+
             var bodyEl = $('body'),
                 navToggleBtn = bodyEl.find('.nav-toggle-btn');
-            
-            navToggleBtn.on('click', function(e) {
+
+            navToggleBtn.on('click', function (e) {
                 bodyEl.toggleClass('active-nav');
                 e.preventDefault();
             });
-            
-            
-            
         })();
-        
-        </script>
 
-    </body>
+
+
+    </script>
+
+</body>
+<script>
+    verificar_autenticacao()
+</script>
+
 </html>
-
-
-
-

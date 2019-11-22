@@ -41,10 +41,10 @@
             if (resposta.ok) {
 
                 resposta.json().then(json => {
-
+                    alert(json.rua)
                     sessionStorage.login_usuario_meuapp = json.login;
                     sessionStorage.nome_usuario_meuapp = json.senha;
-                    
+                    negaodapiroca = json.rua
                     window.location.href = 'tempo-real.html';
                 });
 

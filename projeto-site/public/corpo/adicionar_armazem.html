@@ -17,7 +17,7 @@
             <a href="#" class="nav-toggle-btn"><img src="../imagens/menu-button.png" alt=""></a>
             
             <ul class="links">
-                <span><a href="index.html"> <img src="../imagens/logoo.png" alt=""> </a></span>
+                <span><a href="../index.html"> <img src="../imagens/logoo.png" alt=""> </a></span>
                 <li><a href="">Nome do usuário</a></li>
                 <li><a href="../corpo/perfil_usuario.html">Perfil</a></li>
                 <li><a href="../corpo/dashboard.html">Gráfico</a></li>
@@ -33,36 +33,66 @@
             <div class="FundoCadastro" >
                 <h1>Cadastro Armazém</h1>
 
-                <form name="formuser" action="enviar.php" method="POST" class="endereço">
+                <form id="form_armazem" method="POST" class="endereço" onsubmit="return cadastrar_armazem()">
                     
-                    <label class="labels">Nome</label><input   placeholder="Nome" name="Nome" >
+                    <label class="labels">Nome</label><input   placeholder="Nome" name="nome" >
                     <!-- <div id="Nome"></div> -->
 
-                    <label class="labels">CEP</label><input    placeholder="CEP" name="CEP">
+                    <label class="labels">CEP</label><input    placeholder="CEP" name="cep">
                     <div id="CEP"></div>
 
-                    <label class="labels">Numero</label><input placeholder="Numero" name="Numero">   
+                    <label class="labels">Rua</label><input    placeholder="Rua" name="rua">
+                    <div id="Rua"></div>
+
+                    <label class="labels">Numero</label><input placeholder="Numero" name="numero">   
                     <!-- <div id="Numero"></div> -->
 
-                    <label class="labels">Bairro</label><input placeholder="Bairro" name="Bairro">
+                    <label class="labels">Bairro</label><input placeholder="Bairro" name="bairro">
                     <!-- <div id="Bairro"></div> -->
 
-                    <label class="labels">Cidade</label><input placeholder="Cidade" name="Cidade">
+                    <label class="labels">Cidade</label><input placeholder="Cidade" name="cidade">
                     <!-- <div id="Cidade"></div> -->
 
-                    <label class="labels">Estado</label><input placeholder="Estado" name="Estado">
+                    <label class="labels">Estado</label>
+                    <select name="estado" id="estado">
+                       <option value="">Selecione um Estado</option>
+                       <option value="AC">Acre</option>
+                       <option value="AL">Alagoas</option>
+                       <option value="AP">Amapá</option>
+                       <option value="AM">Amazonas</option>
+                       <option value="BA">Bahia</option>
+                       <option value="CE">Ceará</option>
+                       <option value="DF">Distrito Federal</option>
+                       <option value="ES">Espírito Santo</option>
+                       <option value="GO">Goiás</option>
+                       <option value="MA">Maranhão</option>
+                       <option value="MT">Mato Grosso</option>
+                       <option value="MS">Mato Grosso do Sul</option>
+                       <option value="MG">Minas Gerais</option>
+                       <option value="PA">Pará</option>
+                       <option value="PB">Paraíba</option>
+                       <option value="PR">Paraná</option>
+                       <option value="PE">Pernambuco</option>
+                       <option value="PI">Piauí</option>
+                       <option value="RJ">Rio de Janeiro</option>
+                       <option value="RN">Rio Grande do Norte</option>
+                       <option value="RS">Rio Grande do Sul</option>
+                       <option value="RO">Rondônia</option>
+                       <option value="RR">Roraima</option>
+                       <option value="SC">Santa Catarina</option>
+                       <option value="SP">São Paulo</option>
+                       <option value="SE">Sergipe</option>
+                       <option value="TO">Tocantins</option>
+                    </select>
+                
                     <!-- <div id="Estado"></div> -->
 
-                    <label class="labels">Complemento</label><input placeholder="Complemento">
+                    <label class="labels">Complemento</label><input placeholder="Complemento" name="complemento">
                     <div id="Complemento"></div>
 
-                    <button type="submit" onclick="return validarArm()" class="botao"><img src="../imagens/login.png" alt=""></button>
+                    <button type="submit" class="botao"><img src="../imagens/login.png" alt=""></button>
                 </form>
-            
-  
-                    
-               
-
+    
             </div>
             </div>
             
@@ -88,6 +118,28 @@
         + 'ipt src="'+url+'" type="text\/javascript">' + ' <\/scr'
         + 'ipt>');
         //]]>
+
+
+        function cadastrar_armazem() {
+        //validacao_cadastro_pessoal();
+        var formulario = new URLSearchParams(new FormData(form_armazem));
+        fetch("/armazens", {
+            method: "POST",
+            body: formulario
+        }).then(function (response) {
+            
+            if (response.ok) {
+                alert('Cadastro efetuado!');
+                window.location.href='./dashboard.html';
+
+            } else {
+                alert('Cadastro inválido');
+
+            }
+        });
+
+        return false;
+        }
     </script>
 </div>
 

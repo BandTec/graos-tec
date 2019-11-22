@@ -48,13 +48,13 @@
                     <label class="labels">CEP<input placeholder="CEP" id="valor_cep" name="cep"></label>
                     <div id="valida_cep"></div>
 
-                    <label class="labels">Rua<input placeholder="CEP" id="valor_cep" name="rua"></label>
-                    <div id="valida_cep"></div>
+                    <label class="labels">Rua<input placeholder="Rua" id="valor_rua" name="rua"></label>
+                    <div id="valida_rua"></div>
 
                     <label class="labels">Numero<input placeholder="Numero" id="valor_numero" name="numero"></label>
                     <div id="valida_numero"></div>
 
-                    <label class="labels">Complemento<input placeholder="Complemento" id="valor_cep" name="complemento"></label>
+                    <label class="labels">Complemento<input placeholder="Complemento" id="valor_complemento" name="complemento"></label>
                     <div id="valida_cep"></div>
 
                     <label class="labels">Bairro<input placeholder="Bairro" id="valor_bairro" name="bairro"></label>
@@ -63,7 +63,38 @@
                     <label class="labels">Cidade<input placeholder="Cidade" id="valor_cidade" name="cidade"></label>
                     <div id="valida_cidade"></div>
 
-                    <label class="labels">Estado<input placeholder="Estado" id="valor_estado" name="estado"></label>
+                    <label class="labels">Estado  <select name="Estado" id="Estados">
+                        <option value="">Selecione um Estado</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                     </select>
+                </label>
+                
                     <div class="validação_estado" id="valida_estado"></div>
                     
                     
@@ -108,11 +139,11 @@
         }).then(function (response) {
             
             if (response.ok) {
-
+                alert('Cadastro efetuado!');
                 window.location.href='login.html';
 
             } else {
-                    alert('Cadastro efetuado!');
+                alert('Cadastro inválido!');
 
             }
         });

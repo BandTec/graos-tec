@@ -7,42 +7,79 @@ https://codewithhugo.com/sequelize-data-types-a-practical-guide/
 
 module.exports = (sequelize, DataTypes) => {
     let Usuario = sequelize.define('Usuario',{
-		idUsuario: {
-			field: 'idUsuario',
+		id_Usuario: {
+			field: 'id_Usuario',
 			type: DataTypes.INTEGER,
 			primaryKey: true,
 			autoIncrement: true
 		},		
 		Nome: {
-			field: 'Nome',
+			field: 'nome',
 			type: DataTypes.STRING,
 			allowNull: false
 		},
-		LoginUsuario: {
-			field: 'loginUsuario',
-			type: DataTypes.STRING,
-			allowNull: false
-		},
-		Senha: {
-			field: 'Senha',
-			type: DataTypes.STRING,
-			allowNull: false
-		},
+
 		Email: {
-			field: 'Email',
+			field: 'email',
 			type: DataTypes.STRING,
 			allowNull: false
 		},
+
+		Senha: {
+			field: 'senha',
+			type: DataTypes.STRING,
+			allowNull: false
+		},
+	
 		Telefone: {
-			field: 'Telefone',
+			field: 'telefone',
 			type: DataTypes.STRING,
 			allowNull: false
 		},
-		Nivel_acesso: {
-			field: 'Nivel_acesso',
-			type: DataTypes.INTEGER,
+
+		
+		Cep: {
+			field: 'cep',
+			type: DataTypes.STRING,
+			allowNull: false
+		},
+
+		Rua: {
+			field: 'rua',
+			type: DataTypes.STRING,
+			allowNull: false
+		},
+		Numero: {
+			field: 'numero',
+			type: DataTypes.STRING,
+			allowNull: false
+		},
+
+		Bairro: {
+			field: 'bairro',
+			type: DataTypes.STRING,
+			allowNull: false
+		},
+
+		Cidade: {
+			field: 'cidade',
+			type: DataTypes.STRING,
+			allowNull: false
+		},
+
+		Estado: {
+			field: 'estado',
+			type: DataTypes.STRING,
+			allowNull: false
+		},
+
+		Complemento: {
+			field: 'complemento',
+			type: DataTypes.STRING,
 			allowNull: false
 		}
+
+
 	}, 
 	{
 		tableName: 'usuario', 

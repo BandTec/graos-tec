@@ -84,10 +84,17 @@
             if (resposta.ok) {
 
                 resposta.json().then(json => {
-
-                    sessionStorage.login_usuario_meuapp = json.email;
-                    sessionStorage.nome_usuario_meuapp = json.senha;
                     
+                    sessionStorage.login_usuario_meuapp = json.email;
+                    sessionStorage.nome_usuario_meuapp = json.nome;
+                    sessionStorage.email_usuario_meuapp = json.email;
+                    sessionStorage.telefone_usuario_meuapp = json.telefone;
+                    sessionStorage.cep_usuario_meuapp = json.cep;
+                    sessionStorage.rua_usuario_meuapp = json.rua;
+                    sessionStorage.bairro_usuario_meuapp = json.bairro;
+                    sessionStorage.cidade_usuario_meuapp = json.cidade;
+                    sessionStorage.estado_usuario_meuapp = json.estado;
+
                     window.location.href = 'perfil_usuario.html';
                 });
 

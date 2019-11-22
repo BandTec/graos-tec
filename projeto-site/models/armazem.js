@@ -6,13 +6,20 @@ https://codewithhugo.com/sequelize-data-types-a-practical-guide/
 */
 
 module.exports = (sequelize, DataTypes) => {
-    let Endereco = sequelize.define('endereco',{
-		idEndereco: {
-			field: 'idUsuario',
+    let Armazem = sequelize.define('Armazem',{
+		id_Armazem: {
+			field: 'id_Armazem',
 			type: DataTypes.INTEGER,
 			primaryKey: true,
 			autoIncrement: true
-		},		
+        },		
+        
+		Nome: {
+			field: 'nome',
+			type: DataTypes.STRING,
+			allowNull: false
+        },
+        
 		Cep: {
 			field: 'cep',
 			type: DataTypes.STRING,
@@ -26,12 +33,6 @@ module.exports = (sequelize, DataTypes) => {
 		},
 		Numero: {
 			field: 'numero',
-			type: DataTypes.STRING,
-			allowNull: false
-		},
-
-		Complemento: {
-			field: 'complemento',
 			type: DataTypes.STRING,
 			allowNull: false
 		},
@@ -52,15 +53,22 @@ module.exports = (sequelize, DataTypes) => {
 			field: 'estado',
 			type: DataTypes.STRING,
 			allowNull: false
-		}
-	}, 
+		},
 
+		Complemento: {
+			field: 'complemento',
+			type: DataTypes.STRING,
+			allowNull: false
+		}
+
+
+	}, 
 	{
-		tableName: 'endereco', 
+		tableName: 'armazem', 
 		freezeTableName: true, 
 		underscored: true,
 		timestamps: false,
 	});
 
-    return Endereco;
+    return Armazem;
 };

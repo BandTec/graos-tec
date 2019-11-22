@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 var sequelize = require('../models').sequelize;
 var Usuario = require('../models').Usuario;
-var Endereco = require('../models').Endereco;
+var Armazem = require('../models').Armazem;
 let sessoes = [];
 
 /* Recuperar usuário por login e senha */
@@ -36,47 +36,39 @@ router.post('/autenticar', function(req, res, next) {
   	});
 });
 
+router.get('/usuarios', function(req, res, next){
+	console.log("recuperando dados do usuário");
+
+	
+
+});
+
 /* Cadastrar usuário */
 router.post('/', function(req, res, next) {
 	console.log('Criando um usuário');
 	
 	Usuario.create({
 		Nome : req.body.nome,
-		LoginUsuario : req.body.email,
+		Email : req.body.email,
 		Senha: req.body.senha,
 		Telefone: req.body.telefone,
-		Email : req.body.email,
-		Nivel_acesso: 1
-	}).then(resultado => {
-		console.log(`Registro criado: ${resultado}`)
-        res.send(resultado);
-    }).catch(erro => {
-		console.error(erro);
-		res.status(500).send(erro.message);
-  	});
-});
-
-
-/*Cadastrar endereço*/
-router.post('/', function(req, res, next) {
-	console.log('Criando um endereço');
-	
-	Endereco.create({
 		Cep : req.body.cep,
 		Rua : req.body.rua,
 		Numero: req.body.numero,
-		Complemento: req.body.complemento,
 		Bairro: req.body.bairro,
 		Cidade: req.body.cidade,
-		Estado: req.body.estado
+		Estado: req.body.Estado,
+		Complemento: req.body.complemento
+	
 	}).then(resultado => {
 		console.log(`Registro criado: ${resultado}`)
         res.send(resultado);
     }).catch(erro => {
 		console.error(erro);
 		res.status(500).send(erro.message);
-  	});
+		});
 });
+
 
 
 /* Verificação de usuário */
@@ -130,5 +122,6 @@ router.get('/', function(req, res, next) {
 		res.status(500).send(erro.message);
   	});
 });
+
 
 module.exports = router;

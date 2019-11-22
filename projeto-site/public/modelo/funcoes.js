@@ -1,5 +1,15 @@
+
+
 let login_usuario;
 let nome_usuario;
+// let nome;
+// let email;
+// let telefone;
+// let cep;
+// let bairro;
+// let cidade;
+// let esstado;
+
 
 function redirecionar_login() {
     window.location.href = 'login.html';
@@ -17,6 +27,7 @@ function verificar_autenticacao() {
     }
     
 }
+
 
 function logoff() {
     finalizar_sessao();

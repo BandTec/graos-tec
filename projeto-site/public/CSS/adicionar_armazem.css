@@ -62,7 +62,6 @@ nav ul li a {
 .content {
     padding-top: 300px;
     height: 325px;
-    text-align: center;
     transition: transform 0.4s ease;
 }
 .active-nav .content {
@@ -163,6 +162,7 @@ nav ul li a {
     position: relative;
     text-emphasis: none;
     color: #feca57;
+    margin-left: 2%;
 }
 
 
@@ -170,6 +170,28 @@ nav ul li a {
     color: white;
     background-color: rgba(0, 0, 0, .9);
     margin-bottom: 2%;
+}
+
+.combo{
+    position: absolute;
+    top: 78%;
+    left: 2%;
+    color: #feca57;
+    font-size: 130%;
+    text-emphasis: none;
+}
+
+#estado{
+    padding: 0.7%;
+    position: absolute;
+    top: 78%;
+    left: 20%;
+    background: transparent;
+    color: #ffffff;
+}
+
+#estado option{
+    background: gray;
 }
 
 

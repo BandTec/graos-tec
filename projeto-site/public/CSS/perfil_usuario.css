@@ -172,6 +172,54 @@ a { color: inherit; }
 
 /* Final do fundo das informações */
 
+/* Começo da estilização das informações */
 
 
+#nome_texto{
+    position: absolute;
+    top: 2%;
+    left: 10%;
+}
 
+
+#email_texto{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+
+#telefone_texto{
+    position: absolute;
+    top: 20%;
+    left: 13%;
+}
+
+#cep_texto{
+    position: absolute;
+    top: 46%;
+    left: 8%;
+}
+
+#rua_texto{
+    position: absolute;
+    top: 55%;
+    left: 7.5%;
+}
+
+#bairro_texto{
+    position: absolute;
+    top: 64%;
+    left: 10.5%;
+}
+
+#cidade_texto{
+    position: absolute;
+    top: 73%;
+    left: 11.5%;
+}
+
+#estado_texto{
+    position: absolute;
+    top: 82%;
+    left: 11.5%;
+}

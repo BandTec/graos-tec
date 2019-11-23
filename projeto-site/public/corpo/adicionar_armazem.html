@@ -18,7 +18,8 @@
             
             <ul class="links">
                 <span><a href=""> <img src="../imagens/logoo.png" alt=""> </a></span>
-                <li><a href="">Nome do usuário</a></li>
+                  <!-- nome_texto_nav recebe o nome do usuário logado -->
+                  <li><a id="nome_texto_nav" href="../corpo/perfil_usuario.html"></a></li> 
                 <li><a href="../corpo/perfil_usuario.html">Perfil</a></li>
                 <li><a href="../corpo/dashboard.html">Gráfico</a></li>
                 <li><a onclick="logoff()">Sair</a></li>
@@ -53,7 +54,7 @@
                     <!-- <div id="Cidade"></div> -->
 
                     <label class="combo">Estado</label>
-                    <select name="estado" id="estado">
+                    <select name="estado" id="estado" class="config_select">
                        <option value="" class="selecionar">Selecione um Estado</option>
                        <option value="AC">Acre</option>
                        <option value="AL">Alagoas</option>
@@ -143,4 +144,8 @@
 </div>
 
     </body>
+
+    <script>
+        verificar_autenticacao()
+    </script>
 </html>

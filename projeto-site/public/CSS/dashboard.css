@@ -107,35 +107,49 @@ a { color: inherit; }
 
 /* Gráfico */
 
-.grafico_temperatura{
-    position: absolute;
-    top: 10%;
-    background-color: rgba(255, 255, 255, 0.8);
-    width: 80%;
-    height: 50%;
-    margin-left: 10%;
-    border-radius: 10px;
-    
-}
+.fundo_grafico_temperatura{
 
-.grafico_umidade{
-    position: absolute;
-    top: 70%;
+    position: relative;
+    margin-top: 10%;
     background-color: rgba(255, 255, 255, 0.8);
     width: 80%;
-    height: 50%;
     margin-left: 10%;
     margin-bottom: 5%;
-    border-radius: 10px;
 }
 
-canvas 
+.fundo_grafico_umidade{
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 10px;
+    margin-bottom: 5%;  
+}
+
+/*divs do fundo do gráfico*/
+
+
+/* class canvas de temperatura e umidade */
+.grafico_temperatura
 {
+    width: 800px;
+    height: 500px;
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
 }
 
+.grafico_umidade 
+{
+    width: 800px;
+    height: 500px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+
+/* nosso */
 
 .AnaliTemp{
     border: solid 1px;

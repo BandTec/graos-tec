@@ -22,7 +22,6 @@ function verificar_autenticacao() {
     bairro_usuario = sessionStorage.bairro_usuario_meuapp;
     cidade_usuario = sessionStorage.cidade_usuario_meuapp;
     estado_usuario = sessionStorage.estado_usuario_meuapp;
- 
 
 
 
@@ -38,7 +37,7 @@ function verificar_autenticacao() {
         bairro_texto.innerHTML = bairro_usuario;
         cidade_texto.innerHTML =  cidade_usuario;
         estado_texto.innerHTML = estado_usuario;
-        
+        nome_texto_nav.innerHTML = nome_usuario;
         validar_sessao();
     }
 

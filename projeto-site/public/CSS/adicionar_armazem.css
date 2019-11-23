@@ -181,7 +181,7 @@ nav ul li a {
     text-emphasis: none;
 }
 
-#estado{
+.config_select{
     padding: 0.7%;
     position: absolute;
     top: 78%;

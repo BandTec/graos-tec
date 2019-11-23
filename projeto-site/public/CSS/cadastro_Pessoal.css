@@ -159,7 +159,6 @@ a { color: inherit; }
 .labels{
     font-size: 135%;
     position: relative;
-    left: 6%;
     text-emphasis: none;
     color: #feca57;
 }
@@ -218,12 +217,6 @@ a { color: inherit; }
     opacity:5;
 }
 
-.checkboxx{
-    position: absolute;
-    top: 447px;
-    left: -39%;
-}
-
 .label_termos{
     font-size: 133%;
     position: absolute;
@@ -231,17 +224,33 @@ a { color: inherit; }
     top: 101%;
 }
 
+/* .combo{
+    position: absolute;
+    left: 2%;
+    color: #feca57;
+    font-size: 130%;
+    text-emphasis: none;
+} */
+
+.config_option{
+    padding: 0.7%;
+    position: relative;
+    background: transparent;
+    color: #ffffff;
+    margin-left: 2%;
+}
+
+.config_option option{
+    background: gray;
+}
+
+
 /*validação*/
 
 .posicaoCad div{
     position: absolute;
     margin-top: -3%;
     margin-left: 6%;
-}
-
-.checkboxxx{
-    top: 111%;
-    left: 7%;
 }
 
 .endereço div{

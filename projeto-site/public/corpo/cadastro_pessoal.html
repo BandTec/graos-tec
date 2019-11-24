@@ -136,8 +136,63 @@
             method: "POST",
             body: formulario
         }).then(function (response) {
-            
-            if (response.ok) {
+            if(valor_nome.value.length <=6){
+                alert("O campo 'Nome' deve conter 6 carácteres no minímo ")
+                valor_nome.focus()
+                return false;
+            }
+
+            if(valor_email.value.length <=10 || valor_email.value.length >=40 || valor_email.value.indexOf ("@") == -1){
+                alert("Campo 'E-mail' inválido");
+                valor_email.focus()
+                return false;
+            }
+
+            if(valor_senha1.value.length <6 || valor_senha1.value.length >=19){
+                alert("O campo 'Senha' deve conter entre 6 e 19 caracteres");
+                valor_senha1.focus()
+                return false;
+            }
+
+            if(valor_senha1.value != valor_senha2.value){
+                alert("As 'Senhas' não podem ser divergentes");
+                valor_senha2.focus()
+                return false;
+            }
+
+            if(valor_telefone.value.length != 11){
+                alert("Número de 'Telefone' inválido");
+                valor_telefone.focus()
+                return false;
+            }
+
+            if(valor_cep.value.length != 8){
+                alert("O campo 'CEP' deve conter 8 caracteres");
+                valor_cep.focus()
+                return false;
+            }
+            if(valor_rua.value == ""){
+                alert("Preencha o campo 'Rua'");
+                valor_rua.focus()
+                return false;
+            }
+
+            if(valor_numero.value == ""){
+                alert("Preencha o campo 'Número'");
+                valor_numero.focus()
+                return false;
+            }
+
+            if(valor_bairro.value == "" || valor_bairro <5){
+                alert("Campo 'Bairro' inválido");
+                valor_bairro.focus()
+                return false;
+            }
+            if(valor_cidade.value == "" || valor_cidade <5){
+                alert("Campo 'Cidade' inválido");
+                valor_cidade.focus()
+                return false;
+            }else if (response.ok) {
                 alert('Cadastro efetuado!');
                 window.location.href='login.html';
 

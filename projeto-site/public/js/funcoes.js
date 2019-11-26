@@ -8,6 +8,7 @@ let bairro_usuario;
 let cidade_usuario;
 let estado_usuario;
 
+
 function redirecionar_login() {
     window.location.href = 'login.html';
 }
@@ -37,7 +38,8 @@ function verificar_autenticacao() {
         bairro_texto.innerHTML = bairro_usuario;
         cidade_texto.innerHTML =  cidade_usuario;
         estado_texto.innerHTML = estado_usuario;
-        
+        dado_umidade.innerHTML = umidade;
+        dado_temp.innerHTML = temperatura;
         validar_sessao();
     }
 

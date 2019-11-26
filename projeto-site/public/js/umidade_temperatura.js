@@ -1,5 +1,7 @@
 var exibiu_grafico = false;
 
+
+
 // verificar_autenticacao();
 
 
@@ -58,15 +60,20 @@ function obterDadosGrafico() {
         datasets: [
             {
                 yAxisID: 'y-temperatura',
-                label: 'Sensor',
+                label: 'Temperatura',
                 borderColor: window.chartColors.red,
                 backgroundColor: window.chartColors.red,
                 fill: false,
                 data: []
-            },
+            }
+        ]
+    };
+    var dados1 = {
+        labels: [],
+        datasets: [
             {
                 yAxisID: 'y-umidade',
-                label: 'Produto',
+                label: 'Umidade',
                 borderColor: window.chartColors.blue,
                 backgroundColor: window.chartColors.blue,
                 fill: false,
@@ -74,6 +81,7 @@ function obterDadosGrafico() {
             }
         ]
     };
+
 
     fetch('/leituras/ultimas', { cache: 'no-store' }).then(function (response) {
         if (response.ok) {
@@ -90,14 +98,15 @@ function obterDadosGrafico() {
                     // dos atributos que vem no JSON 
                     // que gerou na consulta ao banco de dados
 
-                    dados.labels.push(registro.momento_grafico);
+                    dados1.labels.push(registro.momento_grafico);
 
-                    dados.datasets[0].data.push(registro.umidade);
+                    dados1.datasets[0].data.push(registro.umidade);
+                   
                 }
-                console.log(JSON.stringify(dados));
+                console.log(JSON.stringify(dados1));
 
 
-                plotarGrafico(dados);
+                plotarGrafico(dados1);
             });
         } else {
             console.error('Nenhum dado encontrado ou erro na API');
@@ -127,6 +136,7 @@ function obterDadosGrafico() {
                         dados.labels.push(registro.momento_grafico);
     
                         dados.datasets[0].data.push(registro.temperatura);
+                   
                     }
                     console.log(JSON.stringify(dados));
     

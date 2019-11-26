@@ -117,7 +117,7 @@ function agora() {
 	return retorno;
 }
 
-var efetuando_insert = false;
+var efetuando_insert = true;
 
 
 if (gerar_dados_aleatorios) {

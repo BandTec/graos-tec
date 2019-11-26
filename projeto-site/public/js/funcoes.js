@@ -28,7 +28,7 @@ function verificar_autenticacao() {
     if (login_usuario == undefined) {
         redirecionar_login();
     } else {
-        
+        nome_texto_nav.innerHTML = nome_usuario;
         nome_texto.innerHTML = nome_usuario;
         email_texto.innerHTML = email_usuario;
         telefone_texto.innerHTML = telefone_usuario;
@@ -37,7 +37,7 @@ function verificar_autenticacao() {
         bairro_texto.innerHTML = bairro_usuario;
         cidade_texto.innerHTML =  cidade_usuario;
         estado_texto.innerHTML = estado_usuario;
-        nome_texto_nav.innerHTML = nome_usuario;
+        
         validar_sessao();
     }
 

@@ -117,32 +117,32 @@ function obterDadosGrafico() {
                     };
                     
                     var mensagem;
-                    if (registro.umidade > limites.max_umidade) {
+                    if (registro.umidade >= limites.max_umidade) {
                         mensagem = 'Umidade alta demais! <br>';
                         alerta_umidade.style.color = 'red';
                     }
 
-                    else if (registro.umidade > limites.emergencia_alta){
+                    else if (registro.umidade >= limites.emergencia_alta){
                         mensagem = 'Umidade alta! <br>';
                         alerta_umidade.style.color = 'orange';
                     }
 
-                    else if (registro.umidade > limites.alerta_alto){
+                    else if (registro.umidade >= limites.alerta_alto){
                         mensagem = 'Umidade ficando alta! <br>';
                         alerta_umidade.style.color = 'yellow';
                     }
 
-                    else if (registro.umidade < limites.emergencia_baixa){
-                        mensagem = 'Umidade baixa! <br>';
-                        alerta_umidade.style.color = 'orange';
-                    }
-                   
-                    else if (registro.umidade < limites.alerta_baixo){
+                    else if (registro.umidade <= limites.alerta_baixo){
                         mensagem = 'Umidade ficando baixa! <br>';
                         alerta_umidade.style.color = 'yellow';
                     }
 
-                    else if (registro.umidade < limites.min_umidade) {
+                    else if (registro.umidade <= limites.emergencia_baixa){
+                        mensagem = 'Umidade baixa! <br>';
+                        alerta_umidade.style.color = 'orange';
+                    }
+
+                    else if (registro.umidade <= limites.min_umidade) {
                         mensagem = 'Umidade baixa demais! <br>';
                         alerta_umidade.style.color = 'red';
                     }
@@ -199,32 +199,32 @@ function obterDadosGrafico() {
                         };
                 
                         var mensagem;
-                        if (registro.temperatura > limites.max_temperatura) {
+                        if (registro.temperatura >= limites.max_temperatura) {
                             mensagem = 'Temperatura alta demais! <br>';
                             alerta_temp.style.color = 'red';
                         }
     
-                        else if (registro.temperatura > limites.emergencia_alta){
+                        else if (registro.temperatura >= limites.emergencia_alta){
                             mensagem = 'Temperatura alta! <br>';
                             alerta_temp.style.color = 'orange';
                         }
     
-                        else if (registro.temperatura > limites.alerta_alto){
+                        else if (registro.temperatura >= limites.alerta_alto){
                             mensagem = 'Temperatura ficando alta! <br>';
                             alerta_temp.style.color = 'yellow';
                         }
-    
-                        else if (registro.temperatura < limites.emergencia_baixa){
-                            mensagem = 'Temperatura baixa! <br>';
-                            alerta_temp.style.color = 'orange';
-                        }
                        
-                        else if (registro.temperatura < limites.alerta_baixo){
+                        else if (registro.temperatura <= limites.alerta_baixo){
                             mensagem = 'Temperatura ficando baixa! <br>';
                             alerta_temp.style.color = 'yellow';
                         }
+
+                        else if (registro.temperatura <= limites.emergencia_baixa){
+                            mensagem = 'Temperatura baixa! <br>';
+                            alerta_temp.style.color = 'orange';
+                        }
     
-                        else if (registro.temperatura < limites.min_temperatura) {
+                        else if (registro.temperatura <= limites.min_temperatura) {
                             mensagem = 'Temperatura baixa demais! <br>';
                             alerta_temp.style.color = 'red';
                         }

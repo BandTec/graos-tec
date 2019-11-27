@@ -99,13 +99,13 @@ function obterDadosGrafico() {
                     // que gerou na consulta ao banco de dados
 
                     dados1.labels.push(registro.momento_grafico);
-
+                    dado_umidade.innerHTML = registro.umidade;
                     dados1.datasets[0].data.push(registro.umidade);
                    
                 }
                 console.log(JSON.stringify(dados1));
 
-
+                //alertar(resposta.umidade);
                 plotarGrafico(dados1);
             });
         } else {
@@ -134,13 +134,13 @@ function obterDadosGrafico() {
                         // que gerou na consulta ao banco de dados
     
                         dados.labels.push(registro.momento_grafico);
-    
+                        dado_temp.innerHTML = registro.temperatura;
                         dados.datasets[0].data.push(registro.temperatura);
                    
                     }
                     console.log(JSON.stringify(dados));
     
-    
+                   // alertar(resposta.temperatura);
                     plotarGrafico2(dados);
                 });
             } else {
@@ -178,3 +178,30 @@ function plotarGrafico2(dados) {
 
 configurarGrafico()
 atualizarGrafico()
+
+
+// function alertar(temperatura, umidade) {
+//     // ideal que venham de algum EndPoint
+//     var limites = { 
+//         max_temperatura: 40,
+//         min_temperatura: 20,
+//         max_umidade: 80,
+//         min_umidade: 50,            
+//     };
+
+//     var mensagem = '';
+//     if (temperatura > limites.max_temperatura) {
+//         mensagem += '* Temperatura alta demais! <br>';
+//     } 
+//     if (umidade > limites.max_umidade) {
+//         mensagem += '* Umidade alta demais! <br>';
+//     } 
+//     if (temperatura < limites.min_temperatura) {
+//         mensagem = '* Temperatura baixa demais! <br>';
+//     } 
+//     if (umidade < limites.min_umidade) {
+//         mensagem = '* Umidade baixa demais! <br>';
+//     }
+            
+//     div_alerta.innerHTML = mensagem;
+// }

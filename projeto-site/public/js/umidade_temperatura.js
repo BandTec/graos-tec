@@ -100,12 +100,12 @@ function obterDadosGrafico() {
                     // aqui, após 'registro.' use os nomes 
                     // dos atributos que vem no JSON 
                     // que gerou na consulta ao banco de dados
-                
+                    
                     dados1.labels.push(registro.momento_grafico);
                     dado_umidade.innerHTML = `Média: ${registro.umidade}`;
                     dados1.datasets[0].data.push(registro.umidade);
                     
-            
+                    
                     var limites = { 
                  
                         max_umidade: 20,
@@ -115,7 +115,7 @@ function obterDadosGrafico() {
                         emergencia_baixa: 8,
                         min_umidade: 6,            
                     };
-            
+                    
                     var mensagem;
                     if (registro.umidade > limites.max_umidade) {
                         mensagem = 'Umidade alta demais! <br>';
@@ -184,7 +184,7 @@ function obterDadosGrafico() {
                         // aqui, após 'registro.' use os nomes 
                         // dos atributos que vem no JSON 
                         // que gerou na consulta ao banco de dados
-    
+                      
                         dados.labels.push(registro.momento_grafico);
                         dado_temp.innerHTML = `Média: ${registro.temperatura}`
                         dados.datasets[0].data.push(registro.temperatura);
@@ -199,39 +199,39 @@ function obterDadosGrafico() {
                         };
                 
                         var mensagem;
-                        if (registro.umidade > limites.max_temperatura) {
+                        if (registro.temperatura > limites.max_temperatura) {
                             mensagem = 'Temperatura alta demais! <br>';
                             alerta_temp.style.color = 'red';
                         }
     
-                        else if (registro.umidade > limites.emergencia_alta){
+                        else if (registro.temperatura > limites.emergencia_alta){
                             mensagem = 'Temperatura alta! <br>';
                             alerta_temp.style.color = 'orange';
                         }
     
-                        else if (registro.umidade > limites.alerta_alto){
+                        else if (registro.temperatura > limites.alerta_alto){
                             mensagem = 'Temperatura ficando alta! <br>';
                             alerta_temp.style.color = 'yellow';
                         }
     
-                        else if (registro.umidade < limites.emergencia_baixa){
+                        else if (registro.temperatura < limites.emergencia_baixa){
                             mensagem = 'Temperatura baixa! <br>';
                             alerta_temp.style.color = 'orange';
                         }
                        
-                        else if (registro.umidade < limites.alerta_baixo){
+                        else if (registro.temperatura < limites.alerta_baixo){
                             mensagem = 'Temperatura ficando baixa! <br>';
                             alerta_temp.style.color = 'yellow';
                         }
     
-                        else if (registro.umidade < limites.min_temperatura) {
+                        else if (registro.temperatura < limites.min_temperatura) {
                             mensagem = 'Temperatura baixa demais! <br>';
                             alerta_temp.style.color = 'red';
                         }
     
                         else{
-                            mensagem = 'Umidade estável ideal... <br>';
-                            alerta_umidade.style.color = 'green';
+                            mensagem = 'Temperatura estável ideal... <br>';
+                            alerta_temp.style.color = 'green';
                         }
                     
                                 

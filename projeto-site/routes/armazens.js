@@ -4,36 +4,7 @@ var sequelize = require('../models').sequelize;
 var Armazem = require('../models').Armazem;
 let sessoes = [];
 
-// router.post('/armazens', function(req, res, next) {
-// 	console.log('Recuperando usuário por login e senha');
 
-// 	var login = req.body.email; // depois de .body, use o nome (name) do campo em seu formulário de login
-// 	var senha = req.body.senha; // depois de .body, use o nome (name) do campo em seu formulário de login	
-	
-// 	let instrucaoSql = `select * from armazem as ar, usuario as user, Proprietario as pr where 
-// 	user.id_usuario = pr.fk_usuario and ar.id_armazem = pr.fk_armazem'`;
-// 	console.log(instrucaoSql);
-
-// 	sequelize.query(instrucaoSql, {
-// 		model: Usuario
-// 	}).then(resultado => {
-// 		console.log(`Encontrados: ${resultado.length}`);
-
-// 		if (resultado.length == 1) {
-// 			sessoes.push(resultado[0].dataValues.email);
-// 			console.log('sessoes: ',sessoes);
-// 			res.json(resultado[0]);
-// 		} else if (resultado.length == 0) {
-// 			res.status(403).send('Login e/ou senha inválido(s)');
-// 		} else {
-// 			res.status(403).send('Mais de um usuário com o mesmo login e senha!');
-// 		}
-
-// 	}).catch(erro => {
-// 		console.error(erro);
-// 		res.status(500).send(erro.message);
-//   	});
-// });
 
 
 /* Verificação de usuário */
@@ -73,8 +44,7 @@ router.post('/', function(req, res, next) {
 		Cidade: req.body.cidade,
 		Estado: req.body.estado,
 		Complemento: req.body.complemento
-		//fk_usuario: id_usuario
-		
+	
 	}).then(resultado => {
 		console.log(`Armazém criado: ${resultado}`)
         res.send(resultado);

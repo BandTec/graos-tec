@@ -72,7 +72,8 @@ nav ul li a {
     background: rgba(0, 0, 0, .3);
     text-align: left;
     padding-left: 20px;
-    margin-bottom:2px ;
+    margin-bottom:10px;
+    border-radius: 8px;
     opacity: 0.5;
 }
 /* .links span{

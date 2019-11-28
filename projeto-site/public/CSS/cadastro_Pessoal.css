@@ -27,7 +27,7 @@ nav {
     top: 0;
     bottom: 0;
     width: 200px;
-    background: rgba(0, 0, 0, .3);
+    background-color: rgba(44, 35, 35, 0.3);
     transform: translate3d(-200px, 0, 0);
     transition: transform 0.4s ease-in;
 }
@@ -59,21 +59,25 @@ nav ul li a {
     height: 40px;
 }
 
-.content {
+/* .content {
     padding-top: 300px;
     height: 325px;
     text-align: center;
     transition: transform 0.4s ease;
-}
-.active-nav .content {
+} */
+/* .active-nav .content {
     transform: translate3d(200px, 0, 0);
-}
+} */
+
+/* comentei o content, pois, não está fazendo nada */
+
 
 .links li a{
-    background: rgba(0, 0, 0, .3);
+    background: rgba(5, 5, 5, 0.815);
     text-align: left;
     padding-left: 20px;
-    margin-bottom:2px ;
+    margin-bottom:10px;
+    border-radius: 8px;
     opacity: 0.5;
 }
 /* .links span{
@@ -111,13 +115,13 @@ a { color: inherit; }
 .FundoCadastro{
     position: absolute;
     top: 10%;
-    left: 20%;
+    left: 30%;
     padding: 1%;
     height: 212%;
-    width: 65%;
+    width: 40%;
     border-radius: 2%;
     margin-bottom: 9%;
-    background: rgba(0, 0, 0, 0.39);
+    background-color: rgba(44, 35, 35, 0.3);
 }
 
 .posicaoCad{
@@ -125,17 +129,18 @@ a { color: inherit; }
     padding-top: 2%;
     top: 5%;
     border: solid 1px;
-    width: 92%;
-    height: 88%;
+    width: 88.5%;
+    height: 90%;
     left: 5%;
+    padding: 1%;
 }
 
 .posicaoCad input{
     position: relative;
     display: block;
-    width: 56%;
-    height: 1%;
-    margin-bottom: 4%;
+    width: 90%;
+    height: 2.5%;
+    margin-bottom: 5%;
     border: 0;
     padding: 1%;
     font-size: 16px;
@@ -159,13 +164,14 @@ a { color: inherit; }
 .labels{
     font-size: 135%;
     position: relative;
+    left: 5%;
     text-emphasis: none;
     color: #feca57;
 }
 
 /* cadastro endereço */
 
-.endereço{
+/* .endereço{
     border: solid;
     position: absolute;
     padding-top: 2.2%;
@@ -174,9 +180,9 @@ a { color: inherit; }
     border: solid 1px;
     width: 48%;
     height: 71%;
-}
+} */
 
-.endereço input{
+/* .endereço input{
     position: relative;
     right: 5.5%;
     display: block;
@@ -188,22 +194,22 @@ a { color: inherit; }
     font-size: 16px;
     margin-top: 2%;
     margin-left: 4%;
-}
+} */
 
 /* Final Cadastro */
 
 
 /* Botão */
 
-.posicaBtA{
+button {
     position: absolute;
     padding-top: 0.5%;
-    top: 103%;
+    top: 92%;
     left: 35%;
     width: 30%;
     height: 10%;
 }
-.posicaBtA button{
+button{
     border: none;
     position: absolute;
     right: 78%;
@@ -213,7 +219,7 @@ a { color: inherit; }
     outline: none;
 }
 
-.posicaBtA button:hover{
+button:hover{
     opacity:5;
 }
 
@@ -224,20 +230,13 @@ a { color: inherit; }
     top: 101%;
 }
 
-/* .combo{
-    position: absolute;
-    left: 2%;
-    color: #feca57;
-    font-size: 130%;
-    text-emphasis: none;
-} */
 
 .config_option{
     padding: 0.7%;
     position: relative;
     background: transparent;
     color: #ffffff;
-    margin-left: 2%;
+    left: 8%;
 }
 
 .config_option option{
@@ -247,18 +246,18 @@ a { color: inherit; }
 
 /*validação*/
 
-.posicaoCad div{
+/* .posicaoCad div{
     position: absolute;
     margin-top: -3%;
     margin-left: 6%;
-}
+} */
 
-.endereço div{
+/* .endereço div{
     position: absolute;
     left: 6%;
     margin-top: -9%;
-}
+} */
 
-.validação_estado{
+/* .validação_estado{
     top: 104%;
-}
+} */

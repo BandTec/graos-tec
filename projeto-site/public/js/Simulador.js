@@ -8,19 +8,9 @@ function calcular(){
       
       dinheiro_perdido = toneladas_perdidas * preco;
 
-
-      if (toneladas_perdidas < 1){
-
-          toneladas_perdidas *= 1000;
-
-         escrever_perda.innerHTML = `O desperdicio foi de ${toneladas_perdidas.toFixed(2)} quilogramas e com isso se perdeu  R$ ${dinheiro_perdido.toFixed(2)}`;
-
-      }
+      escrever_perda.innerHTML = ` ${dinheiro_perdido.toFixed(2)}`;
+        escrever_toneladas.innerHTML = `${toneladas_perdidas.toFixed(2)}`;
       
-      else{
-      escrever_perda.innerHTML = `O desperdidicio foi de ${toneladas_perdidas.toFixed(2)} toneladas e com isso se perdeu R$ ${dinheiro_perdido.toFixed(2)}`;
-      }
-
 }
 
 /* 

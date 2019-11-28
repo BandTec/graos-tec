@@ -109,7 +109,6 @@ nav ul li a {
     height: 341px;
     width: 350px;
     border-radius: 5%;
-    
 }
 
 .posicaoinput{
@@ -126,11 +125,14 @@ nav ul li a {
     font-size: 16px;
     margin-bottom: 7%;
     margin-top: 2%;
-    border: 0;
+    border: 1;
     padding: 1% 1%;
     color: white;
     background-color: rgba(0, 0, 0, .9);
+    padding: 3px;
+    outline-color: yellow;
 }
+
 .FundoLogin h1{
     position: relative;
     top: 5%;
@@ -178,7 +180,7 @@ a { text-decoration: none;}
 .esquecer{
     position: absolute;
     font-family: Arial, Helvetica, sans-serif;
-    top: 66%;
+    top: 67%;
     left: 60%;
     color: #feca57;
 }

@@ -24,15 +24,24 @@
             </ul>
             
         </nav>
-        
-    <div class="content">
+
+        <div class="caixa">
+            <h2>Simulador de Perdas</h2>
+            <p><br>O simulador abaixo calcula o quanto foi perdido em sua safra anual, 
+                fazendo <br>um calculo de perda anual e multiplicado pelo preço vendido das toneladas.<br><br>
+                Faça você mesmo sua simulação e descubra quanto terá acumulado:</p>
+        </div>
+
+        <span class="inner">O desperdidicio foi de <div id="escrever_toneladas">0.00</div> toneladas com isso<br> se perdeu R$<div id="escrever_perda">0.00</div></span>
+
+    <!-- <div class="content"> -->
         <div class="FundoSimulador">
                 <h2>Simulador</h2>
-    <input id="txb_tonelada" placeholder="Digite a safra em toneladas anual">
-    <input id="txb_preco_tonelada" placeholder="Digite o preço por tonelada">
-    
+    <label>Safra em toneladas anual</label>
+    <input id="txb_tonelada" placeholder="XXXXX...">
+    <label >Preço por tonelada</label>
+    <input id="txb_preco_tonelada" placeholder="XXXXX...">
     <button onclick = "calcular()">Simular perda</button> 
-                <span class="PerdaSimulador" id="escrever_perda"></span>
         </div>  
     </div>
     <script>

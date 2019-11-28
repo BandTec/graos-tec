@@ -22,7 +22,7 @@ function configurarGrafico() {
         stacked: false,
         title: {
             display: true,
-            text: 'Histórico recente de temperatura e umidade'
+            // text: 'Histórico recente de temperatura e umidade'
         },
         scales: {
             yAxes: [{
@@ -61,8 +61,8 @@ function obterDadosGrafico() {
             {
                 yAxisID: 'y-temperatura',
                 label: 'Temperatura',
-                borderColor: window.chartColors.red,
-                backgroundColor: window.chartColors.red,
+                borderColor: window.chartColors.orange,
+                backgroundColor: window.chartColors.orange,
                 fill: false,
                 data: []
             }
@@ -74,8 +74,8 @@ function obterDadosGrafico() {
             {
                 yAxisID: 'y-umidade',
                 label: 'Umidade',
-                borderColor: window.chartColors.blue,
-                backgroundColor: window.chartColors.blue,
+                borderColor: window.chartColors.green,
+                backgroundColor: window.chartColors.green,
                 fill: false,
                 data: []
             }

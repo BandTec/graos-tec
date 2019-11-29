@@ -25,7 +25,7 @@ nav {
     top: 0;
     bottom: 0;
     width: 200px;
-    background: rgba(0, 0, 0, .3);
+    background-color: rgba(44, 35, 35, 0.3);
     transform: translate3d(-200px, 0, 0);
     transition: transform 0.4s ease-in;
 }
@@ -34,7 +34,7 @@ nav {
 }
 nav ul {
     list-style: none;
-    margin-top: 100px;
+    margin-top: 150px;
 }
 nav ul li a {
     text-decoration: none;
@@ -65,15 +65,15 @@ nav ul li a {
 }
 
 .links li a{
-    background: rgba(0, 0, 0, .3);
+    background: rgba(5, 5, 5, 0.815);
     text-align: left;
     padding-left: 20px;
-    margin-bottom:2px ;
+    margin-bottom: 10px;
+    border-radius: 8px;
     opacity: 0.5;
 }
 .links span{
     position: absolute;
-    background: rgba(0, 0, 0, .3);
     color: white;
     width: 180px;
     height: 40px;
@@ -102,7 +102,7 @@ a { color: inherit; }
 .caixa{
     border: solid 0;
     height: 186%;
-    background-color: rgba(0, 0, 0, 0.71);
+    background-color: rgba(44, 35, 35, 0.3);
     position: absolute;
     top: 17%;
     width: 76%;
@@ -116,7 +116,7 @@ a { color: inherit; }
 .Titulo{
     width: 26%;
     position: relative;
-    left: 39%;
+    left: 42%;
     font-size: 3rem;
 }
 
@@ -163,4 +163,26 @@ a { color: inherit; }
     left: 5%;
     top: 11%;
     padding: 1%;
+}
+
+/*Scroll*/
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track{
+    background: #000000c4;
+    
+}
+  
+/* Handle */
+  ::-webkit-scrollbar-thumb{
+    background: white;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover{
+    background: #feca57;
 }

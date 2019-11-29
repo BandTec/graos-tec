@@ -26,7 +26,7 @@ nav {
     top: 0;
     bottom: 0;
     width: 200px;
-    background: rgba(0, 0, 0, .3);
+    background-color: rgba(44, 35, 35, 0.3);
     transform: translate3d(-200px, 0, 0);
     transition: transform 0.4s ease-in;
 }
@@ -69,7 +69,7 @@ nav ul li a {
 } */
 
 .links li a{
-    background: rgba(0, 0, 0, .3);
+    background: rgba(5, 5, 5, 0.815);
     text-align: left;
     padding-left: 20px;
     margin-bottom:2px ;

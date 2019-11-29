@@ -261,3 +261,25 @@ button:hover{
 /* .validação_estado{
     top: 104%;
 } */
+
+/*Scroll*/
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track{
+    background: #000000c4;
+    
+}
+  
+/* Handle */
+  ::-webkit-scrollbar-thumb{
+    background: white;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover{
+    background: #feca57;
+}

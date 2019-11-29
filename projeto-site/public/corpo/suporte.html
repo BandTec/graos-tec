@@ -51,12 +51,18 @@
         <!-- Ferramenta de HelpDesk -->
         <script type="text/javascript">
             // <![CDATA[
-            var url= 'https://teste-graostech.tomticket.com/chat/balao/EP36672/2347008P08112019092534'
-            + '?ts=' + new Date().getTime() + '&ref=' + document.URL; document.writeln(' <scr'
-            + 'ipt src="'+url+'" type="text\/javascript">' + ' <\/scr'
-            + 'ipt>');
+            var ttChatLoaderS = document.createElement('script');
+            document.tomticketChatLoaderScriptVersion = 2;
+            ttChatLoaderS.src = 'https://teste-graostech.tomticket.com/scripts-chat/chat.min.js'
+            + '?id=EP36672'
+            + '&autoOpen=0'
+            + '&hideWhenOffline=0'
+            + '&d=teste-graostech'
+            + '&ts=' + new Date().getTime()
+            + '&ref=' + encodeURIComponent(document.URL);
+            document.body.appendChild(ttChatLoaderS);
             //]]>
-        </script>
+            </script>
     </div>
 
         <script>

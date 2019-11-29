@@ -91,19 +91,12 @@
                         <option value="SE">Sergipe</option>
                         <option value="TO">Tocantins</option>
                      </select>
-              
-                
                     <div class="validação_estado" id="valida_estado"></div>
-                    
-                    
-                    
                     <!-- <div class="posicaBtA"> -->
                         <button type="submit"><img src="../imagens/login.png" alt=""></button>
                     <!-- </div> -->
-
                 </form>
             </div>
-        
     </div>
 
         <script>
@@ -120,12 +113,19 @@
 <div style="position: fixed; top: 91%;left: 89%;">
     <!-- Ferramenta de HelpDesk -->
     <script type="text/javascript">
-     
-        var url= 'https://teste-graostech.tomticket.com/chat/balao/EP36672/2347008P08112019092534'
-        + '?ts=' + new Date().getTime() + '&ref=' + document.URL; document.writeln(' <scr'
-        + 'ipt src="'+url+'" type="text\/javascript">' + ' <\/scr'
-        + 'ipt>');
-       
+                // <![CDATA[
+                var ttChatLoaderS = document.createElement('script');
+                document.tomticketChatLoaderScriptVersion = 2;
+                ttChatLoaderS.src = 'https://teste-graostech.tomticket.com/scripts-chat/chat.min.js'
+                + '?id=EP36672'
+                + '&autoOpen=0'
+                + '&hideWhenOffline=0'
+                + '&d=teste-graostech'
+                + '&ts=' + new Date().getTime()
+                + '&ref=' + encodeURIComponent(document.URL);
+                document.body.appendChild(ttChatLoaderS);
+                //]]>
+                
 	   
        
         function cadastrar() {

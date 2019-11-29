@@ -90,6 +90,8 @@
                     <label class="labels">Complemento</label><input placeholder="Complemento" name="complemento">
                     <div id="Complemento"></div>
 
+                    <input name="id_usuario_meuapp2" id="id_usuario_meuapp2Input">
+
                     <button type="submit" class="botao"><img src="../imagens/login.png" alt=""></button>
                 </form>
             </div>
@@ -97,6 +99,7 @@
 
         <script>
         (function() {
+            id_usuario_meuapp2Input.style.opacity = 0;
             var bodyEl = $('body'),
                 navToggleBtn = bodyEl.find('.nav-toggle-btn');
                 navToggleBtn.on('click', function(e) {
@@ -113,6 +116,8 @@
         function cadastrar_armazem() {
         //validacao_cadastro_pessoal();
         var formulario = new URLSearchParams(new FormData(form_armazem));
+        id_usuario_meuapp2Input.value = localStorage.id_usuario_meuapp2;
+        console.log('formulario', formulario);
         fetch("/armazens", {
             method: "POST",
             body: formulario

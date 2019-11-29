@@ -2,40 +2,41 @@ var express = require('express');
 var router = express.Router();
 var sequelize = require('../models').sequelize;
 var Armazem = require('../models').Armazem;
+var Usuario = require('./usuarios').Usuario;
 let sessoes = [];
 
 
 
 
 /* Verificação de usuário */
-router.get('/sessao/:login', function(req, res, next) {
-	let login = req.params.login;
-	console.log(`Verificando se o usuário ${login} tem sessão`);
+// router.get('/sessao/:login', function(req, res, next) {
+// 	let login = req.params.login;
+// 	console.log(`Verificando se o usuário ${login} tem sessão`);
 	
-	let tem_sessao = false;
-	for (let u=0; u<sessoes.length; u++) {
-		if (sessoes[u] == login) {
-			tem_sessao = true;
-			break;
-		}
-	}
+// 	let tem_sessao = false;
+// 	for (let u=0; u<sessoes.length; u++) {
+// 		if (sessoes[u] == login) {
+// 			tem_sessao = true;
+// 			break;
+// 		}
+// 	}
 
-	if (tem_sessao) {
-		let mensagem = `Usuário ${login} possui sessão ativa!`;
-		console.log(mensagem);
-		res.send(mensagem);
-	} else {
-		res.sendStatus(403);
-	}
+// 	if (tem_sessao) {
+// 		let mensagem = `Usuário ${login} possui sessão ativa!`;
+// 		console.log(mensagem);
+// 		res.send(mensagem);
+// 	} else {
+// 		res.sendStatus(403);
+// 	}
 	
-});
+// });
 
 
 /* Cadastrar armazém */
 router.post('/', function(req, res, next) {
 	console.log('Criando um armazém');
-	Armazem.findOne()
-	Armazem.findOne({
+
+	Armazem.create({
 		Nome : req.body.nome,
 		Temperatura_Ideal: req.body.temperatura,
 		Umidade_Ideal: req.body.umidade,
@@ -46,7 +47,7 @@ router.post('/', function(req, res, next) {
 		Cidade: req.body.cidade,
 		Estado: req.body.estado,
 		Complemento: req.body.complemento,
-		// Fk_Usuario: 
+		FkUsuario: req.body.id_usuario_meuapp2,
 		
 	}).then(resultado => {
 		console.log(`Armazém criado: ${resultado}`)
@@ -56,6 +57,8 @@ router.post('/', function(req, res, next) {
 		res.status(500).send(erro.message);
 		});
 });
+
+
 
 /* Recuperar todos os armazéns */
 router.get('/', function(req, res, next) {

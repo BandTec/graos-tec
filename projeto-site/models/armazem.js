@@ -33,8 +33,8 @@ module.exports = (sequelize, DataTypes) => {
 			allowNull: false
 		},
 
-		Fk_Usuario: {
-			field:'fk_usuario',
+		FkUsuario: {
+			field:'fkUsuario',
 			type: DataTypes.INTEGER,
 			allowNull: false			
 		},

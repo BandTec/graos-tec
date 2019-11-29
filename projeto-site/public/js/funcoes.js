@@ -7,6 +7,7 @@ let rua_usuario;
 let bairro_usuario;
 let cidade_usuario;
 let estado_usuario;
+let id_usuario;
 
 function redirecionar_login() {
     window.location.href = 'login.html';
@@ -22,8 +23,7 @@ function verificar_autenticacao() {
     bairro_usuario = sessionStorage.bairro_usuario_meuapp;
     cidade_usuario = sessionStorage.cidade_usuario_meuapp;
     estado_usuario = sessionStorage.estado_usuario_meuapp;
-
-
+    id_usuario = sessionStorage.id_usuario_meuapp;
 
     if (login_usuario == undefined) {
         redirecionar_login();

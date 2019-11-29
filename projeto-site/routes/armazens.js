@@ -34,17 +34,20 @@ router.get('/sessao/:login', function(req, res, next) {
 /* Cadastrar armazém */
 router.post('/', function(req, res, next) {
 	console.log('Criando um armazém');
-	
-	Armazem.create({
+	Armazem.findOne()
+	Armazem.findOne({
 		Nome : req.body.nome,
+		Temperatura_Ideal: req.body.temperatura,
+		Umidade_Ideal: req.body.umidade,
 		Cep : req.body.cep,
 		Rua : req.body.rua,
 		Numero: req.body.numero,
 		Bairro: req.body.bairro,
 		Cidade: req.body.cidade,
 		Estado: req.body.estado,
-		Complemento: req.body.complemento
-	
+		Complemento: req.body.complemento,
+		// Fk_Usuario: 
+		
 	}).then(resultado => {
 		console.log(`Armazém criado: ${resultado}`)
         res.send(resultado);

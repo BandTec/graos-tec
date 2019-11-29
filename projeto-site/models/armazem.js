@@ -18,7 +18,26 @@ module.exports = (sequelize, DataTypes) => {
 			field: 'nome',
 			type: DataTypes.STRING,
 			allowNull: false
-        },
+		},
+		
+		
+		Temperatura_Ideal:{
+			field: 'temperatura_ideal',
+			type: DataTypes.DECIMAL,
+			allowNull: false
+		},
+
+		Umidade_Ideal:{
+			field: 'umidade_ideal',
+			type: DataTypes.DECIMAL,
+			allowNull: false
+		},
+
+		Fk_Usuario: {
+			field:'fk_usuario',
+			type: DataTypes.INTEGER,
+			allowNull: false			
+		},
         
 		Cep: {
 			field: 'cep',

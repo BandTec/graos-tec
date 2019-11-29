@@ -112,7 +112,7 @@ a { color: inherit; }
 
 .FundoPessoas{
     position: absolute;
-    background: rgba(0, 0, 0, .5);
+    background-color: rgba(44, 35, 35, 0.3);
     top:15%;
     left: 25%;
     width: 50%;
@@ -121,6 +121,8 @@ a { color: inherit; }
 
 .FundoPessoas h1{
     color: #feca57;
+    text-align: center;
+    margin-top: 1%;
 }
 
 .FundoInputpessoas{
@@ -138,7 +140,7 @@ a { color: inherit; }
     height: 40%;
     text-align: left;
     padding:1%;
-    background: rgba(0, 0, 0, .4);
+    background-color: rgba(44, 35, 35, 0.3);
 }
 
 .dadosUse label{
@@ -150,7 +152,7 @@ a { color: inherit; }
     font-weight: bold;
 }
 
-.content span{
+.fundo span{
     color: #feca57;
 }
 
@@ -158,7 +160,7 @@ a { color: inherit; }
     height: 52.5%;  
     text-align: left;  
     padding: 1%;
-    background: rgba(0, 0, 0, .4);
+    background-color: rgba(44, 35, 35, 0.3);
 }
 
 .DadosEnde label{

@@ -11,14 +11,13 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-   
 }
 
 span img{
     width: 80px;
     height: 80px;
-    margin-left: 20px;
-}
+    margin-left: 28%;
+    margin-top: 14%; }
 
 /* Começo nav */
 nav {
@@ -27,12 +26,12 @@ nav {
     top: 0;
     bottom: 0;
     width: 200px;
-    background: rgba(0, 0, 0, .3);
+    background-color: rgba(44, 35, 35, 0.3);
     transform: translate3d(-200px, 0, 0);
     transition: transform 0.4s ease-in;
 }
 
-a{text-decoration: ;}
+a{text-decoration: none;}
 
 .active-nav nav {
     transform: translate3d(0, 0, 0);
@@ -69,10 +68,11 @@ nav ul li a {
 }
 
 .links li a{
-    background: rgba(0, 0, 0, .3);
+    background: rgba(5, 5, 5, 0.815);
     text-align: left;
     padding-left: 20px;
-    margin-bottom:2px ;
+    margin-bottom:10px;
+    border-radius: 8px;
     opacity: 0.5;
 }
 /* .links span{
@@ -101,70 +101,65 @@ nav ul li a {
 
 /* Começo Cadastro */
 .FundoCadastro{
-    position: absolute;
     top: 10%;
-    left: 32.5%;
+    left: 30%;
     position: absolute;
-    padding: 1%;
-    height: 100%;
-    width: 35%;
+    height:160%;
+    width: 43%;
     border-radius: 2%;
-    margin-bottom: 2%;
-    background: rgba(39, 38, 38, );
-    border: solid 1px ;
+    background-color: rgba(44, 35, 35, 0.3);
+    border: solid 0;
     margin-bottom:5% ;
 }
 
-
 .FundoCadastro h1{
     position: relative;
-    top: 0%;
+    top: 1%;
     text-align: center;
     color: #feca57;
 }
 
-
-
-
-
-
-
 /* cadastro endereço */
 
 .endereço{
-    border: solid;
     position: absolute;
-    
-    top: 13%;
-    left: 10%;
-    right: 1%   ;
+    top: 7%;
+    left: 5%;
+    right: 1%;
     border: solid 1px;
-    width: 80%;
-    height: 81%;
+    width: 89%;
+    height: 87%;
 }
 
 .endereço input{
     position: relative;
-    left: 2%;  
+    left: 3%;
     display: block;
-    width: 96%;
-    height: 5%;
+    width: 92%;
+    height: 6vh;
     margin-bottom: 1%;
-    border: 0;
+    border: 1;
     font-size: 16px;
-   
-   
+    outline-color: yellow;
+    margin-top: 2%;
 }
 
-
-.labels{
-    font-size: 130%;
+label{
+    font-size: 135%;
     position: relative;
+    left: 5%;
     text-emphasis: none;
     color: #feca57;
-    margin-left: 2%;
 }
 
+.estado{
+    font-size: 135%;
+    position: absolute;
+    left: 6%;
+    text-emphasis: none;
+    color: #feca57;
+    margin-top: 18%;
+}
 
 .FundoCadastro input{
     color: white;
@@ -184,8 +179,8 @@ nav ul li a {
 .config_select{
     padding: 0.7%;
     position: absolute;
-    top: 78%;
-    left: 20%;
+    top: 88%;
+    left: 21%;
     background: transparent;
     color: #ffffff;
 }
@@ -194,29 +189,12 @@ nav ul li a {
     background: gray;
 }
 
-
-
-
-
-
-
-/* Final Cadastro */
-
-
-
-
-
-
-
-
-
-
 /* Botão */
 
 .botao{
     border: none;
     position: absolute;
-    top: 88%;
+    top: 93%;
     right: 44%;
     background: transparent;
     cursor: pointer;
@@ -227,3 +205,24 @@ nav ul li a {
     opacity:5;
 }
 
+/*Scroll*/
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track{
+    background: #000000c4;
+    
+}
+  
+/* Handle */
+  ::-webkit-scrollbar-thumb{
+    background: white;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover{
+    background: #feca57;
+}

@@ -102,7 +102,7 @@ a { color: inherit; }
 
 .caixa{
     border: solid 0;
-    height: 186%;
+    height: 208%;
     background-color: rgba(44, 35, 35, 0.3);
     position: absolute;
     top: 17%;
@@ -166,6 +166,24 @@ a { color: inherit; }
     padding: 1%;
 }
 
+.subtitulo2{
+    position: relative;
+    font-size: 2rem;
+    left: 4%;
+    top: 12%;
+}
+
+.caixa a{
+    position: absolute;
+    left: 7%;
+    font-size: 144%;
+    top: 95%;
+}
+
+.pdf{
+    margin-top: 25vh;
+    margin-left: 24%;
+}
 /*Scroll*/
 
 ::-webkit-scrollbar{

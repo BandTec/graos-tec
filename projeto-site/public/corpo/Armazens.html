@@ -4,11 +4,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>GrãosTech</title>
-        <link rel="stylesheet" href="../CSS/dashboard.css">
+        <link rel="stylesheet" href="../CSS/Armazens.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <!--gráficos--><script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
-    <!--gráficos--><script src="http://www.chartjs.org/dist/2.7.1/Chart.js"></script>
-    <!--gráficos--><script src="http://www.chartjs.org/samples/latest/utils.js"></script>
     <link rel="shortcut icon" type="image/x-icon" href="../2261favicon graos.ico">
     <script src="../js/funcoes.js"></script>
   
@@ -22,46 +19,27 @@
 
             <ul class="links">
                 <!-- nome_texto_nav recebe o nome do usuário logado -->
-                <li><a id="nome_texto_nav" href="../corpo/perfil_usuario.html"><span id="nome_texto"></span></a></li> 
+                <li><a id="nome_texto_nav" href="../corpo/perfil_usuario.html"></a></li> 
                 <li><a href="./perfil_usuario.html">Perfil</a></li>
                 <li><a href="./adicionar_armazem.html">Adicionar armazém</a></li>
                 <li><a onclick="logoff()">Sair</a></li>
                 <li class="Suporte"><a href="Pagina-suporte-logado.html">Suporte</a></li>
             </ul>
             
-            
         </nav>
-        <form class="detalhe_grafico">
-            Os gráficos abaixo mostram a média da temperatura e da umidade do silo onde os grãos estão armazenados, de acordo com o monitoramento observado.
+
+
+        <p>Quando o nome do armazém ficar de outra cor significa que existe alterações na temperatura e/ou na umidade.</p>
+
+        <!-- 
+        <form method="POST" id="form_armazem" onload="return Armazem_Logado()">
+        <input id="id_usuario_meuapp2Input" name="fk_usuario">
         </form>
-        
-        <div class="fundo_grafico_temperatura">
-            <section>
-                <h2 id="dado_temp">Média: </h2>
-                <span class="AnaliTemp" id="alerta_temp"></span>
-                <div id="caixa_msg" class="box_msg"></div>
-            </section>
-            <section style="width:100%">
-                <canvas class="grafico_temperatura" id="chart"></canvas>
-            <section>
-        </div>
-        
-            
-        <div class="fundo_grafico_umidade">
-            <section>
-                <h2 id="dado_umidade">Média: </h2>
-                <span class="AnaliUmi" id="alerta_umidade"></span>
-            </section>
-            <section style="width:100%" >
-                <canvas class="grafico_umidade" id="chart2"></canvas>            
-            <section>
-            </div>	
-            <!-- <div style = "height: 100px; width: 100%;"></div> -->
-        </div>
-        
-        <script onload="dados_usuario()">
+        -->
+
+        <script>
         (function() {
-            
+            //id_usuario_meuapp2Input.value = sessionStorage.id_usuario;
             var bodyEl = $('body'),
             navToggleBtn = bodyEl.find('.nav-toggle-btn');
             
@@ -74,13 +52,17 @@
         </script>
 
 
-        <script src="../js/umidade_temperatura.js"></script>
+
+<div class="caixa" id="conteudo">  
+</div>
+
+
+<div id="info" class="legenda"></div>
+
 
     </body>
+    <script>verificar_autenticacao()</script>
 
-    <script>
-        verificar_autenticacao()
-    </script>
 </html>
 
 <script type="text/javascript">
@@ -96,4 +78,38 @@
     + '&ref=' + encodeURIComponent(document.URL);
     document.body.appendChild(ttChatLoaderS);
     //]]>
-    </script>
+
+//     function  Armazem_Logado() {
+//     //aguardar();
+
+//     var fk_usuario = id_usuario_meuapp2Input.value;
+//     var formulario = new URLSearchParams(new FormData(form_armazem));
+//     fetch("/armazens/corno", {
+//         method: "POST",
+//         body: formulario
+//     })
+
+//     return false;
+// }  
+
+</script>
+
+
+<script>
+function Exibir(){
+    var nome = ['Armazem Central','Armazem Norte', 'Armazem Leste', 'Armazem Sul', 'Armazem Oeste', 'Armazem Reserva'];
+    var cor  = ['green', 'yellow', 'red'];
+    var Legenda = ['Ideal: ', 'Emergencial: ', 'Crítico: '];
+   
+    for(var indice = 0; indice <= 5; indice++){
+    conteudo.innerHTML += `<img src="../imagens/silo.png" alt=""> <span>${nome[indice]}</span>`;
+    }
+
+    for(var indice = 0; indice < 3; indice++){
+    info.innerHTML += `<h1>${Legenda[indice]}</h1> <span style="background-color: ${cor[indice]};"></span>`;
+    }
+    
+}
+
+window.addEventListener = Exibir();
+</script>

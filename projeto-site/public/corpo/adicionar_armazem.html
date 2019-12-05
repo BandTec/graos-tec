@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Cadastro Armazém</title>
+        <title>GrãosTech</title>
         <link rel="stylesheet" href="../CSS/adicionar_armazem.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script  type="text/javascript" src="../js/adicionar_armazem.js"></script>
@@ -90,16 +90,25 @@
                     <label class="labels">Complemento</label><input placeholder="Complemento" name="complemento">
                     <div id="Complemento"></div>
 
-                    <input name="id_usuario_meuapp2" id="id_usuario_meuapp2Input">
+                    <input name="id_usuario_meuapp2" id="id_usuario_meuapp2Input" class="input_invi">
 
                     <button type="submit" class="botao"><img src="../imagens/login.png" alt=""></button>
                 </form>
             </div>
             </div>
 
+<style>
+ .input_invi{
+    opacity: 0;
+    position: absolute;
+    height: 1px;
+    top: 110%;
+}
+</style>
+
         <script>
         (function() {
-            id_usuario_meuapp2Input.style.opacity = 0;
+            id_usuario_meuapp2Input.value = sessionStorage.id_usuario;
             var bodyEl = $('body'),
                 navToggleBtn = bodyEl.find('.nav-toggle-btn');
                 navToggleBtn.on('click', function(e) {
@@ -116,7 +125,7 @@
         function cadastrar_armazem() {
         //validacao_cadastro_pessoal();
         var formulario = new URLSearchParams(new FormData(form_armazem));
-        id_usuario_meuapp2Input.value = localStorage.id_usuario_meuapp2;
+        
         console.log('formulario', formulario);
         fetch("/armazens", {
             method: "POST",
@@ -125,7 +134,7 @@
             
             if (response.ok) {
                 alert('Cadastro efetuado!');
-                window.location.href='./dashboard.html';
+                window.location.href='./Armazens.html';
 
             } else {
                 alert('Cadastro inválido');

@@ -1,3 +1,4 @@
+
 let login_usuario;
 let nome_usuario;
 let email_usuario;
@@ -7,7 +8,7 @@ let rua_usuario;
 let bairro_usuario;
 let cidade_usuario;
 let estado_usuario;
-let id_usuario;
+
 
 function redirecionar_login() {
     window.location.href = 'login.html';
@@ -23,12 +24,11 @@ function verificar_autenticacao() {
     bairro_usuario = sessionStorage.bairro_usuario_meuapp;
     cidade_usuario = sessionStorage.cidade_usuario_meuapp;
     estado_usuario = sessionStorage.estado_usuario_meuapp;
-    id_usuario = sessionStorage.id_usuario_meuapp;
 
     if (login_usuario == undefined) {
         redirecionar_login();
     } else {
-        
+        nome_texto_nav.innerHTML = nome_usuario;
         nome_texto.innerHTML = nome_usuario;
         email_texto.innerHTML = email_usuario;
         telefone_texto.innerHTML = telefone_usuario;
@@ -37,7 +37,7 @@ function verificar_autenticacao() {
         bairro_texto.innerHTML = bairro_usuario;
         cidade_texto.innerHTML =  cidade_usuario;
         estado_texto.innerHTML = estado_usuario;
-        nome_texto_nav.innerHTML = nome_usuario;
+       
         validar_sessao();
     }
 
@@ -68,3 +68,5 @@ function validar_sessao() {
 function finalizar_sessao() {
     fetch(`/usuarios/sair/${login_usuario}`, { cache: 'no-store' });
 }
+
+

@@ -96,10 +96,64 @@ nav ul li a {
 p{
     position: absolute;
     left: 70%;
-    color: #fef957ed;
+    color: white;
     top: 10%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 22px;
+}
+
+.parametro{
+    position: absolute;
+    left: 70%;
+    color: white;
+    top: 30%;
+}
+
+.parametro label{
+    font-size: 22px;
+    display: block;
+    margin-bottom: 5px
+}
+
+
+.verde{
+    position: absolute;
+    top: 4%;
+    left: 105%;
+    background-color: green;
+    width: 75px;
+    height: 20px;
+    opacity: 0.7;
+}
+
+.amarelo{
+    position: absolute;
+    top: 30%;
+    left: 105%;
+    background-color: yellow;
+    width: 75px;
+    height: 20px;
+    opacity: 0.7;
+}
+
+.laranja{
+    position: absolute;
+    top: 55%;
+    left: 105%;
+    background-color: orange;
+    width: 75px;
+    height: 20px;
+    opacity: 0.7;
+}
+
+.vermelho{
+    position: absolute;
+    top: 78%;
+    left: 105%;
+    background-color: red;
+    width: 75px;
+    height: 20px;
+    opacity: 0.7;
 }
 
 .caixa{
@@ -122,6 +176,7 @@ p{
     margin-left: 30px;
     margin-bottom: 10px;
     margin-right: 30px;
+    cursor: pointer;
 }
 
 .caixa span{
@@ -130,28 +185,103 @@ p{
     margin-right: 30px;
 }
 
-.legenda{
-    height: 225px;
-    width: 650px;
-    top: 45%;
-    left: 10%;
-    position: absolute;
-    padding: 5px;
-}
 
-.legenda span{
-    height: 10px;
-    width: 50px;
-    display: block;
-}
+/* CSS DO GRAFICO */
 
-.legenda h1{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 22px;
-    margin-left: 30px;
+.detalhe_grafico{
+    /* background: yellowgreen; */
     color: white;
-    margin-right: 30px;
+    width: 500px;
+    height: 200px;
+    margin-left: 30%;
+    margin-top: 10%;
 }
+
+
+.fundo_grafico_temperatura{
+    position: absolute;
+    top: 55%;
+    left: 8%;
+    display: none;
+
+    background-color: white;
+    border-radius: 5px;
+    width: 40%;
+}
+
+.fundo_grafico_umidade{
+    position: absolute;
+    top: 55%;
+    left: 55%;
+    display: none;
+
+    background-color: white;
+    border-radius: 5px;
+    width: 40%;
+}
+
+/*divs do fundo do gráfico*/
+
+
+/* class canvas de temperatura e umidade */
+.grafico_temperatura
+{
+    width: 500px;
+    height: 250px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.grafico_umidade 
+{
+    width: 500px;
+    height: 250px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.AnaliTemp{
+    position: absolute;
+    top: 51%;
+    left: 18%;
+    display: none;
+
+    width: 100px;
+    height: 20px;
+}
+
+.media-temp{
+    position: absolute;
+    top: 50%; 
+    left: 8%;
+    display: none;
+    
+    color: white;
+}
+
+
+.AnaliUmi{
+    position: absolute;
+    top: 51%;
+    left: 65%;
+    display: none;
+
+    width: 100px;
+    height: 20px;
+}
+
+.media-umidade{
+    position: absolute;
+    top: 50%; 
+    left: 55%;
+    display: none;
+    
+    color: white;
+}
+
+
 
 a:link
 {

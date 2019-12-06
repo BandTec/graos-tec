@@ -7,6 +7,9 @@
         <link rel="stylesheet" href="../CSS/Armazens.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <link rel="shortcut icon" type="image/x-icon" href="../2261favicon graos.ico">
+    <!--gráficos--><script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <!--gráficos--><script src="http://www.chartjs.org/dist/2.7.1/Chart.js"></script>
+    <!--gráficos--><script src="http://www.chartjs.org/samples/latest/utils.js"></script>
     <script src="../js/funcoes.js"></script>
   
     </head>
@@ -28,18 +31,62 @@
             
         </nav>
 
-
+        <!-- Informações para o usuário -->
         <p>Quando o nome do armazém ficar de outra cor significa que existe alterações na temperatura e/ou na umidade.</p>
 
-        <!-- 
-        <form method="POST" id="form_armazem" onload="return Armazem_Logado()">
-        <input id="id_usuario_meuapp2Input" name="fk_usuario">
+        
+        <span class="parametro">
+            <label for="">Ideal:</label><div class="verde"></div>
+            <label for="">Atenção:</label><div class="amarelo"></div>
+            <label for="">Risco</label><div class="laranja"></div>
+            <label for="">Critico:</label><div class = "vermelho"></div>
+            
+        </span>
+
+
+        <!-- Projeção de armazéns -->
+        <div class="caixa" id="conteudo"> </div>
+
+
+        
+    
+
+
+        <!-- <form class="detalhe_grafico">
+            Os gráficos abaixo mostram a média da temperatura e da umidade do silo onde os grãos estão armazenados, de acordo com o monitoramento observado.
         </form>
-        -->
+         -->
+
+
+         <h2 id="dado_temp" class = "media-temp">Média: </h2>
+         <span class="AnaliTemp" id="alerta_temp"></span>
+
+        <div class="fundo_grafico_temperatura" id="bazinga1">
+            <section>
+                <div id="caixa_msg" class="box_msg"></div>
+            </section>
+            <section style="width:100%">
+                <canvas class="grafico_temperatura" id="chart"></canvas>
+            <section>
+        </div>
+        
+        <h2 id="dado_umidade" class = "media-umidade">Média: </h2>
+        <span class="AnaliUmi" id="alerta_umidade"></span>
+
+        <div class="fundo_grafico_umidade" id="bazinga2">    
+            <section>
+            </section>
+            <section style="width:100%" >
+                <canvas class="grafico_umidade" id="chart2"></canvas>            
+            <section>
+            </div>	
+        </div>
+
+        <script src="../js/umidade_temperatura.js"></script>
+
 
         <script>
         (function() {
-            //id_usuario_meuapp2Input.value = sessionStorage.id_usuario;
             var bodyEl = $('body'),
             navToggleBtn = bodyEl.find('.nav-toggle-btn');
             
@@ -50,15 +97,6 @@
             
         })();
         </script>
-
-
-
-<div class="caixa" id="conteudo">  
-</div>
-
-
-<div id="info" class="legenda"></div>
-
 
     </body>
     <script>verificar_autenticacao()</script>
@@ -79,19 +117,6 @@
     document.body.appendChild(ttChatLoaderS);
     //]]>
 
-//     function  Armazem_Logado() {
-//     //aguardar();
-
-//     var fk_usuario = id_usuario_meuapp2Input.value;
-//     var formulario = new URLSearchParams(new FormData(form_armazem));
-//     fetch("/armazens/corno", {
-//         method: "POST",
-//         body: formulario
-//     })
-
-//     return false;
-// }  
-
 </script>
 
 
@@ -102,13 +127,18 @@ function Exibir(){
     var Legenda = ['Ideal: ', 'Emergencial: ', 'Crítico: '];
    
     for(var indice = 0; indice <= 5; indice++){
-    conteudo.innerHTML += `<img src="../imagens/silo.png" alt=""> <span>${nome[indice]}</span>`;
+    conteudo.innerHTML += `<img onclick = "Aparecer()" src="../imagens/silo.png" alt=""> <span>${nome[indice]}</span>`;
     }
+}
 
-    for(var indice = 0; indice < 3; indice++){
-    info.innerHTML += `<h1>${Legenda[indice]}</h1> <span style="background-color: ${cor[indice]};"></span>`;
-    }
-    
+
+function Aparecer(){
+    bazinga1.style.display = 'block';
+    bazinga2.style.display = 'block';
+    alerta_temp.style.display = 'block';
+    alerta_umidade.style.display = 'block';
+    dado_temp.style.display = 'block';
+    dado_umidade.style.display = 'block';
 }
 
 window.addEventListener = Exibir();

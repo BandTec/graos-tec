@@ -82,7 +82,7 @@ function registrar_leitura(temperatura, umidade) {
         console.log('Execução em curso. Aguardando 7s...');
         setTimeout(() => {
             registrar_leitura(temperatura, umidade);
-        }, 7000);
+        }, 3000);
         return;
     }
 
@@ -93,9 +93,9 @@ function registrar_leitura(temperatura, umidade) {
 
     banco.conectar().then(() => {
 
-        return banco.sql.query(`INSERT into leitura (data_hora, temperatura, umidade)
+        return banco.sql.query(`INSERT into leitura (data_hora, temperatura_atual, umidade_atual)
                                 values 
-                                (CONVERT(Datetime, '${agora()}', 120), ${temperatura-8},${umidade-77} );`);
+                                (CONVERT(Datetime, '${agora()}', 120), ${temperatura-8},${umidade-50} );`);
 
     }).catch(erro => {
 

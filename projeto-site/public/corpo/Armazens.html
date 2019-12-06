@@ -101,8 +101,7 @@
     </body>
     <script>verificar_autenticacao()</script>
 
-</html>
-
+    
 <script type="text/javascript">
     // <![CDATA[
     var ttChatLoaderS = document.createElement('script');
@@ -119,14 +118,14 @@
 
 </script>
 
+</html>
+    
 
 <script>
 function Exibir(){
-    var nome = ['Armazem Central','Armazem Norte', 'Armazem Leste', 'Armazem Sul', 'Armazem Oeste', 'Armazem Reserva'];
-    var cor  = ['green', 'yellow', 'red'];
-    var Legenda = ['Ideal: ', 'Emergencial: ', 'Crítico: '];
-   
-    for(var indice = 0; indice <= 5; indice++){
+    var nome = ['Armazem do Robson']; //,'Armazem Norte', 'Armazem Leste', 'Armazem Sul', 'Armazem Oeste', 'Armazem Reserva'];
+
+    for(var indice = 0; indice <= nome.length -1; indice++){
     conteudo.innerHTML += `<img onclick = "Aparecer()" src="../imagens/silo.png" alt=""> <span>${nome[indice]}</span>`;
     }
 }

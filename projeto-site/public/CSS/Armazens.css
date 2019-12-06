@@ -158,7 +158,6 @@ p{
 
 .caixa{
     position: absolute;
-    border: solid 1 white;
     height: 225px;
     width: 55%;
     top: 6%;
@@ -168,6 +167,7 @@ p{
     flex-direction: column;
     flex-wrap: wrap;
     overflow-x: scroll;
+    border: solid white;
 }
 
 .caixa img{

@@ -7,27 +7,29 @@ https://codewithhugo.com/sequelize-data-types-a-practical-guide/
 
 module.exports = (sequelize, DataTypes) => {
     let Leitura = sequelize.define('Leitura',{	
-		idCaptura: {
+		idLeitura: {
 			field: 'idLeitura',
 			type: DataTypes.INTEGER,
 			primaryKey: true,
 			autoIncrement: true
 		},	
-		hora_data: {
+		data_hora: {
 			field: 'data_hora',
 			type: DataTypes.DATE,
 			allowNull: false
 		},
-		tipo: {
+		temperatura_atual: {
 			field: 'temperatura_atual',
 			type: DataTypes.DECIMAL,
 			allowNull: false
 		},
-		dado: {
+		temperatura_atual: {
 			field: 'temperatura_atual',
 			type: DataTypes.DECIMAL,
 			allowNull: false
-	}, 
+		}
+	},
+
 	{
 		tableName: 'leitura', 
 		freezeTableName: true, 

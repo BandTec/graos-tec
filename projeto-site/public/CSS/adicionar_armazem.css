@@ -151,15 +151,13 @@ label{
     text-emphasis: none;
     color: #feca57;
 }
-
+/* 
 .estado{
     font-size: 135%;
-    position: absolute;
-    left: 6%;
     text-emphasis: none;
     color: #feca57;
     margin-top: 18%;
-}
+} */ 
 
 .FundoCadastro input{
     color: white;
@@ -179,10 +177,10 @@ label{
 .config_select{
     padding: 0.7%;
     position: absolute;
-    top: 93%;
     left: 21%;
     background: transparent;
     color: #ffffff;
+
 }
 
 .input_invi{

@@ -168,17 +168,18 @@ a { color: inherit; }
 
 .subtitulo2{
     position: relative;
-    font-size: 2rem;
-    left: 4%;
+    font-size: 150%;
+    left: 6%;
     top: 12%;
 }
 
-.caixa a{
-    position: absolute;
-    left: 7%;
-    font-size: 144%;
-    top: 95%;
+.subtitulo2 a{
+    border: solid 1px;
+    padding: 2px;
+    margin-left: 30px;
 }
+
+
 
 .pdf{
     margin-top: 25vh;

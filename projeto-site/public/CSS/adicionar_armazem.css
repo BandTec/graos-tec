@@ -179,7 +179,7 @@ label{
 .config_select{
     padding: 0.7%;
     position: absolute;
-    top: 88%;
+    top: 93%;
     left: 21%;
     background: transparent;
     color: #ffffff;
@@ -202,7 +202,6 @@ label{
 .botao{
     border: none;
     position: absolute;
-    top: 93%;
     right: 44%;
     background: transparent;
     cursor: pointer;

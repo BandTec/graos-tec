@@ -175,7 +175,6 @@ function obterDadosGrafico() {
                         // aqui, após 'registro.' use os nomes 
                         // dos atributos que vem no JSON 
                         // que gerou na consulta ao banco de dados
-                        registro.temperatura_atual = 22;
                         dados.labels.push(registro.momento_grafico);
                         dado_temp.innerHTML = `Média: ${registro.temperatura_atual}`
                         dados.datasets[0].data.push(registro.temperatura_atual);
